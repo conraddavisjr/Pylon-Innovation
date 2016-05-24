@@ -1,15 +1,17 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     concat: {
       options: {
         separator: ';'
       },
       dist: {
         src: ['templates/js/*.js'],
-        dest: 'compiled/js'
+        dest: 'compiled-dev/js'
       }
     },
+
     // minify JS
     uglify: {
       options: {
@@ -17,16 +19,29 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'anything/<%= pkg.name %>.min.js': ['<%= concat.dist.src %>']
-        }//dist/<%= pkg.name %>.min.js
+          'compiled-dev/js/<%= pkg.name %>.min.js': ['templates/js/*.js']
+        }
       }
     },
+
     // run tests
     qunit: {
       files: ['test/**/*.html']
     },
+
+    sass: {    
+      dist: {  
+        options: {    
+          style: 'expanded'
+        },
+        files: {                      
+          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss'      // 'destination': 'source'
+        }
+      }
+    },
+
     jshint: {
-      files: ['Gruntfile.js', '<%= concat.dist.src %>', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'templates/js/*.js', 'test/**/*.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
@@ -37,9 +52,14 @@ module.exports = function(grunt) {
         }
       }
     },
+
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'qunit']
+      files: ['templates/styles/sass/intro.scss'],
+      tasks: ['sass'],
+      options: {
+        event: ['added', 'deleted'],
+        reload: true
+      }
     }
   });
 
@@ -49,10 +69,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('test', ['jshint', 'qunit']);
 
   // Grunt task cmds
-  grunt.registerTask('default', ['jshint', /*'qunit',*/ 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'sass'/*'qunit', 'concat', 'uglify'*/]);
 
 };

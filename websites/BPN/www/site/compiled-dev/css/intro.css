@@ -1,0 +1,14 @@
+#intro {
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+}
+#intro .test {
+  display: none;
+  border: 10px;
+}
+
+/*# sourceMappingURL=intro.css.map */
