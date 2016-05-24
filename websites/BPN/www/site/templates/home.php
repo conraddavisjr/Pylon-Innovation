@@ -10,6 +10,7 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/intro.css" />
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -21,7 +22,7 @@
 		<!-- Intro container -->
 
 			<div id="intro">
-				<div class="bpn-logo"></div>
+				<div class="bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
 			</div>
 
 		<!-- Intro container (END)-->
