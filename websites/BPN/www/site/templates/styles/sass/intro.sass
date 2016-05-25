@@ -1,0 +1,23 @@
+#intro
+  background: white
+  position: fixed
+  height: 100%
+  width: 100%
+  z-index: 2
+  top: 0
+  .bpn-logo
+    transform: translate(-50%, -50%)
+    position: absolute
+    display: table
+    opacity: 0
+    left: 50%
+    top: 50%
+    animation: logoIn 1s 1s
+
+
+
+// animate the logo in
+@keyframes logoIn{
+  0% {opacity: 0}
+  100% {opacity: 1}
+}

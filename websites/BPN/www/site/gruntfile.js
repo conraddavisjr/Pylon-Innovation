@@ -35,7 +35,8 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {                      
-          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss'      // 'destination': 'source'
+          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss'//,      // 'destination': 'source'
+          // 'compiled-dev/css/base.css': 'templates/styles/sass/base.scss'
         }
       }
     },
@@ -57,8 +58,11 @@ module.exports = function(grunt) {
       files: ['templates/styles/sass/intro.scss'],
       tasks: ['sass'],
       options: {
-        event: ['added', 'deleted'],
-        reload: true
+        event: ['added', 'deleted', 'changed'],
+        livereload: {
+          host: 'localhost',
+          port: 8888
+        }
       }
     }
   });
