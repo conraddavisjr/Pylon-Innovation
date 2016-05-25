@@ -23,16 +23,11 @@
 
 			<div class="intro">
 				<div class="intro__content">
-					<div class="intro__content__loader"></div>
-					<div class="loading-bar-container clearfix">
+					<div class="intro__content__loader clearfix">
 						<div class="bar b1"></div>
-						<div class="bar b2"></div>
-						<div class="bar b3"></div>
-						<div class="bar b4"></div>
-						<div class="bar b5"></div>
-						<div class="bar rotate-loader"></div>
+						<div class="bar bar-rotate rotate-loader"></div>
 					</div>
-					<div class="intro__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
+					<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
 				</div>		
 			</div>
 
