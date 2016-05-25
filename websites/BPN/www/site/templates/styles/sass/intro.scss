@@ -1,23 +1,99 @@
-#intro{
+.intro{
   background: white;
   position: fixed;
   height: 100%;
   width: 100%;
   z-index: 2;
   top: 0;
-  .bpn-logo{
+  &__bpn-logo{
     transform: translate(-50%, -50%);
     position: absolute;
     display: table;
     opacity: 0;
     left: 50%;
     top: 50%;
-    animation: logoIn 1s 1s;
+    animation: logoIn 1.8s  forwards;
+  }
+  &__loader{
+
+  }
+}
+
+
+.bar{
+  position: absolute;
+  margin: 0 auto;
+  width:40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 20px solid gray;
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+  transform-origin: 50% 50%;
+  background: white;
+  opacity: 0.9;
+  transition: 2s;
+  z-index: 2;
+}
+.intro__content__loader{
+  position: absolute;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  left: 22%;
+  top: 0%;
+  overflow: hidden;   
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+.b1{
+  transform: rotate(0deg);
+}
+.b2{
+  transform: rotate(72deg);
+}
+.b3{
+  transform: rotate(144deg);
+}
+.b4{
+  transform: rotate(219deg);
+}
+.b5{
+  transform: rotate(290deg);
+}
+.rotate-loader{
+  transform: rotate(0deg);
+  border-color: #828282;
+  z-index: 1;
+}
+
+
+
+
+.bar{
+  -webkit-clip-path: polygon(65% 89%, 85% 100%, 17% 100%, 37% 89%);
+  //-webkit-clip-path: polygon(65% 89%, 73% 100%, 25% 100%, 37% 89%);
+}
+.rotate-loader{
+  animation: rotateLoader 1.5s 0.5s linear infinite;
+}
+.intro__content__loader{
+  label{
+    color: black;
+    opacity: 1;
   }
 }
 
 // animate the Intro logo in
 @keyframes logoIn{
-  0% {opacity: 0}
-  100% {opacity: 1}
+  0% {top: 51%; opacity: 0}
+  100% {top: 50%; opacity: 1}
+}
+
+
+@-webkit-keyframes rotateLoader{
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
 }
