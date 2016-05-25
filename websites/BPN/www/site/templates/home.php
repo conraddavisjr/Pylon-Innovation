@@ -24,7 +24,7 @@
 			<div class="intro">
 				<div class="intro__content">
 					<div class="intro__content__loader clearfix">
-						<div class="bar b1"></div>
+						<div class="bar orbit"></div>
 						<div class="bar bar-rotate rotate-loader"></div>
 					</div>
 					<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
@@ -33,7 +33,7 @@
 
 		<!-- Intro container (END)-->
 
-		<div id="container" class="container">
+		<div id="home-pg" class="container">
 			<section class="items-wrap">
 				<a href="#" class="item">
 					<img class="item__image" src="<?php echo $config->urls->assets?>/images/item04.jpg" alt="item04"/>

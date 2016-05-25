@@ -14,26 +14,8 @@
   top: 50%;
 }
 .intro__content__bpn-logo {
-  animation: logoIn 1.8s  forwards;
+  animation: logoIn 1.8s forwards;
 }
-
-.bar {
-  position: absolute;
-  margin: 0 auto;
-  width: 160px;
-  height: 160px;
-  left: 0;
-  top: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 15px solid white;
-  transform-origin: 50% 50%;
-  background: transparent;
-  opacity: 0.9;
-  transition: 2s;
-  z-index: 2;
-}
-
 .intro__content__loader {
   position: absolute;
   margin: 0 auto;
@@ -46,16 +28,51 @@
   transition: 0.5s;
 }
 
-.b1 {
-  transform: rotate(0deg);
+.bar, .orbit {
+  position: absolute;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 15px solid white;
+  transform-origin: 50% 50%;
+  background: transparent;
+  opacity: 0.9;
+  transition: 2s;
+  z-index: 2;
+}
+
+.orbit:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 1px solid #D0D0D0;
+  border-radius: 50%;
 }
 
 .rotate-loader {
   -webkit-clip-path: polygon(65% 79%, 85% 100%, 17% 100%, 37% 79%);
-  animation: rotateLoader 1.5s 0.5s linear infinite;
   transform: rotate(0deg);
   border-color: #097ABB;
+  left: 0;
+  top: 0;
   z-index: 3;
+  animation: rotateLoader 1.5s 0s linear infinite;
+}
+
+.fly-out {
+  animation: flyOut 1.5s linear forwards;
+}
+.fly-out #home-pg {
+  opacity: 0;
+  animation: flyOut 1.5s linear forwards;
 }
 
 @keyframes logoIn {
@@ -68,12 +85,20 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes rotateLoader {
+@keyframes rotateLoader {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes flyOut {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: -100%;
   }
 }
 
