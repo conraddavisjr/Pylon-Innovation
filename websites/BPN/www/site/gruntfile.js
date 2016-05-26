@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     // minify JS
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner: '/*! intro.js <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
       dist: {
         files: {
@@ -58,11 +58,7 @@ module.exports = function(grunt) {
       files: ['templates/styles/sass/intro.scss', 'templates/js/intro.js'],
       tasks: ['sass', 'uglify'],
       options: {
-        event: ['added', 'deleted', 'changed'],
-        livereload: {
-          host: 'localhost',
-          port: 8888
-        }
+        event: ['added', 'deleted', 'changed']
       }
     }
   });
