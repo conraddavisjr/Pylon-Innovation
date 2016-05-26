@@ -67,14 +67,6 @@
   animation: rotateLoader 1.5s 0s linear infinite;
 }
 
-.fly-out {
-  animation: flyOut 1.5s linear forwards;
-}
-.fly-out #home-pg {
-  opacity: 0;
-  animation: flyOut 1.5s linear forwards;
-}
-
 @keyframes logoIn {
   0% {
     top: 51%;
@@ -91,14 +83,6 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@keyframes flyOut {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: -100%;
   }
 }
 

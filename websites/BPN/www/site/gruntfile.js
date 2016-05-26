@@ -55,8 +55,8 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['templates/styles/sass/intro.scss'],
-      tasks: ['sass'],
+      files: ['templates/styles/sass/intro.scss', 'templates/js/intro.js'],
+      tasks: ['sass', 'uglify'],
       options: {
         event: ['added', 'deleted', 'changed'],
         livereload: {
