@@ -12,7 +12,7 @@ html, body, .perspective {
 }
 
 nav#nav-menu {
-  left: 0;
+  right: 0;
   top: 0;
   height: 80px;
   width: 100%;
@@ -25,6 +25,20 @@ nav#nav-menu a {
   display: inline;
 }
 
+@media (max-width: 960px) {
+  nav#nav-menu {
+    right: 25%;
+    top: 50%;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  nav#nav-menu a {
+    display: block;
+  }
+}
 .perspective {
   background: #aaa;
   position: relative;
@@ -110,29 +124,8 @@ nav#nav-menu a {
   transform-style: preserve-3d;
 }
 
-.outer-nav.horizontal {
-  left: 50%;
-  width: 75%;
-  max-width: 1000px;
-  text-align: center;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.outer-nav.left {
-  left: 25%;
-}
-
 .outer-nav.right {
   right: 25%;
-}
-
-.outer-nav.top {
-  top: 25%;
-}
-
-.outer-nav.bottom {
-  bottom: 25%;
 }
 
 .outer-nav a {
