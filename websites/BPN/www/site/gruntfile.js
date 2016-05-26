@@ -15,9 +15,9 @@ module.exports = function(grunt) {
     // minify JS
     uglify: {
       dist: {
-        files: {
-          'compiled-dev/js/intro.min.js': ['templates/js/intro.js'],
-          'compiled-dev/js/base.min.js': ['templates/js/base/*.js']
+        files: {   // 'destination': 'source'
+          'compiled-dev/js/intro.min.js': ['templates/js/intro.js']//,
+          // 'compiled-dev/js/base.min.js': ['templates/js/base/*.js']
         }
       }
     },
@@ -32,8 +32,8 @@ module.exports = function(grunt) {
         options: {    
           style: 'expanded'
         },
-        files: {                      
-          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss',      // 'destination': 'source'
+        files: {   // 'destination': 'source'                   
+          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss',      
           'compiled-dev/css/base.css': 'templates/styles/sass/base.scss'
         }
       }

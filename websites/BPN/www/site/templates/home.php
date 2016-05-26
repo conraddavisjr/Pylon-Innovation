@@ -9,7 +9,7 @@
 		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/intro.css" />
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +21,7 @@
 		<div id="perspective" class="perspective effect-rotateleft">
 			<div class="container">
 				<div class="wrapper"><!-- wrapper needed for scroll -->
-					
+					<p><button id="showMenu">Show Menu</button></p>
 					<!-- Intro container -->
 					<div class="intro">
 						<div class="intro__content">
@@ -34,7 +34,7 @@
 					</div>
 					<!-- Intro container (END)-->
 
-					<div id="home-pg" class="container">
+					<div id="home-pg">
 						<section class="items-wrap">
 							<a href="#" class="item">
 								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item04.jpg" alt="item04"/>
@@ -64,14 +64,27 @@
 					</div><!-- /home-pg -->
 				</div> <!-- page wrapper -->
 			</div> <!-- container -->
+			<nav class="outer-nav right vertical">
+				<a href="#" class="icon-home">Home</a>
+				<a href="#" class="icon-news">News</a>
+				<a href="#" class="icon-image">Images</a>
+				<a href="#" class="icon-upload">Uploads</a>
+				<a href="#" class="icon-star">Favorites</a>
+				<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a>
+			</nav>
 		</div> <!-- perspective -->
 	</body>
 
 	<!-- Load in scripts and styles after the HTML -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
+
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/home-grid.css" />
+
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
-	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/base.min.js"></script>
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
 </html>
