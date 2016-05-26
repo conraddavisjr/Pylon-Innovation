@@ -14,12 +14,10 @@ module.exports = function(grunt) {
 
     // minify JS
     uglify: {
-      options: {
-        banner: '/*! intro.js <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-      },
       dist: {
         files: {
-          'compiled-dev/js/intro.min.js': ['templates/js/intro.js']
+          'compiled-dev/js/intro.min.js': ['templates/js/intro.js'],
+          'compiled-dev/js/base.min.js': ['templates/js/base/*.js']
         }
       }
     },
@@ -35,8 +33,8 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {                      
-          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss'//,      // 'destination': 'source'
-          // 'compiled-dev/css/base.css': 'templates/styles/sass/base.scss'
+          'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss',      // 'destination': 'source'
+          'compiled-dev/css/base.css': 'templates/styles/sass/base.scss'
         }
       }
     },
@@ -55,7 +53,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['templates/styles/sass/intro.scss', 'templates/js/intro.js'],
+      files: ['templates/styles/**/*.scss', 'templates/**/*.js'],
       tasks: ['sass', 'uglify'],
       options: {
         event: ['added', 'deleted', 'changed']

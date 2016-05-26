@@ -17,6 +17,7 @@
 	</head>
 	<body>
 		<?php if($page->editable()) echo "<p><a href='$page->editURL'>Edit</a></p>"; ?>
+
 		<div id="perspective" class="perspective effect-rotateleft">
 			<div class="container">
 				<div class="wrapper"><!-- wrapper needed for scroll -->
@@ -69,7 +70,8 @@
 	<!-- Load in scripts and styles after the HTML -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/nav.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/home-grid.css" />
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/base.min.js"></script>
 </html>
