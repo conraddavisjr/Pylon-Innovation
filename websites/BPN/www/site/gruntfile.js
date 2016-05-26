@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'compiled-dev/js/<%= pkg.name %>.min.js': ['templates/js/*.js']
+          'compiled-dev/js/intro.min.js': ['templates/js/intro.js']
         }
       }
     },

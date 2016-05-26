@@ -21,15 +21,15 @@
 
 		<!-- Intro container -->
 
-			<div class="intro">
-				<div class="intro__content">
-					<div class="intro__content__loader clearfix">
-						<div class="bar orbit"></div>
-						<div class="bar bar-rotate rotate-loader"></div>
-					</div>
-					<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
-				</div>		
-			</div>
+		<div class="intro">
+			<div class="intro__content">
+				<div class="intro__content__loader clearfix">
+					<div class="bar orbit"></div>
+					<div class="bar bar-rotate rotate-loader"></div>
+				</div>
+				<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
+			</div>		
+		</div>
 
 		<!-- Intro container (END)-->
 
@@ -63,6 +63,9 @@
 		</div><!-- /container -->
 	</body>
 
-	<!-- Load the grid in styles after the HTML -->
+	<!-- Load in scripts and styles after the HTML -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/home-grid.css" />
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
 </html>
