@@ -21,7 +21,9 @@
 		<div id="perspective" class="perspective effect-rotateleft">
 			<div class="container">
 				<div class="wrapper"><!-- wrapper needed for scroll -->
-					<p><button id="showMenu">Show Menu</button></p>
+
+					<button id="showMenu">Show Menu</button> <!-- Nav Button -->
+
 					<!-- Intro container -->
 					<div class="intro">
 						<div class="intro__content">
@@ -64,7 +66,7 @@
 					</div><!-- /home-pg -->
 				</div> <!-- page wrapper -->
 			</div> <!-- container -->
-			<nav class="outer-nav right vertical">
+			<nav id="nav-menu" class="outer-nav right vertical">
 				<a href="#" class="icon-home">Home</a>
 				<a href="#" class="icon-news">News</a>
 				<a href="#" class="icon-image">Images</a>
