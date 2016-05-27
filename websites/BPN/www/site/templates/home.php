@@ -39,27 +39,27 @@
 					<div id="home-pg">
 						<section class="items-wrap">
 							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item04.jpg" alt="item04"/>
+								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_1.jpg" alt="item04"/>
 								<h2 class="item__title">Crucial</h2>
 							</a>
 							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item05.jpg" alt="item05"/>
+								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_2.jpg" alt="item05"/>
 								<h2 class="item__title">Awe-inspiring</h2>
 							</a>
 							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item06.jpg" alt="item06"/>
+								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_3.jpg" alt="item06"/>
 								<h2 class="item__title">Serene</h2>
 							</a>
 							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item07.jpg" alt="item07"/>
+								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_4.jpg" alt="item07"/>
 								<h2 class="item__title">Vulnerable</h2>
 							</a>
 							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item08.jpg" alt="item08"/>
+								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_5.jpg" alt="item08"/>
 								<h2 class="item__title">Bountiful</h2>
 							</a>
 							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/item09.jpg" alt="item09"/>
+								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_6.jpg" alt="item09"/>
 								<h2 class="item__title">Endangered</h2>
 							</a>
 						</section>
