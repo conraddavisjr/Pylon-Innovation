@@ -339,9 +339,12 @@ figure.open-up {
   display: block !important;
   max-width: none;
   max-height: none;
-  left: -300px;
   margin: 0;
   z-index: 100;
+}
+figure.open-up img {
+  position: relative;
+  right: -100px;
 }
 
 figure.teaser figcaption {
@@ -379,7 +382,7 @@ figure.teaser figcaption::after {
 figure.teaser img,
 figure.teaser p a {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  transition: 0.5s;
 }
 
 figure.teaser img {

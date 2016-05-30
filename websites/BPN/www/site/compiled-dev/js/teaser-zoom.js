@@ -35,11 +35,12 @@ $(function() {
 
       teaserZoom.$teaser.css({
           'display': 'none',
-          'left': teaserPosition.left - teaserPosition.width
+          'left': teaserPosition.left - (teaserPosition.width - 20) //the 20 is the margin (left and right)
         });
       $(teaser).addClass('open-up');
 
-      tl.to(teaser, 1.5, {left: -300, top: 100, width:'100%', height:'100%', scale:2})
+      tl.to($('img', teaser), 0.2, {left:'200%'})
+        .to(teaser, 0.5, {left: -300, top: 100, width:'100%', height:'100%', scale:2}, "-=0.2")
         // .fromTo(this.$homePg, 1.2, {top:"100%", scale:4}, {top:this.navHeight, scale:1, ease:Power2.easeOut}, "-=1.5")
         // .fromTo(this.$navMenu, 1, {left:"-100%", backgroundColor: "white", opacity:0}, {left:"0%", backgroundColor: "#f7f7f7",opacity:1}, "-=0.6")
         // .fromTo(this.$navItems, 0.5, {top:"35%", opacity:0}, {top:"50%", opacity:1})
