@@ -16,7 +16,7 @@
 		<![endif]-->
 	</head>
 	<body>
-		<?php if($page->editable()) echo "<p><a href='$page->editURL'>Edit</a></p>"; ?>
+		<?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
 		<div id="perspective" class="perspective effect-rotateleft">
 			<div class="container">
@@ -68,14 +68,16 @@
 			</div> <!-- container -->
 			<nav id="nav-menu" class="outer-nav right vertical">
 				<div class="bounding-container">
+					<!-- Nav Logo -->
 					<div class="nav-menu__logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
-					<a href="#" class="icon-home">Home</a>
-					<a href="#" class="icon-news">News</a>
-					<a href="#" class="icon-image">Images</a>
-					<a href="#" class="icon-upload">Uploads</a>
-					<a href="#" class="icon-star">Favorites</a>
-					<a href="#" class="icon-mail">Messages</a>
-					<a href="#" class="icon-lock">Security</a>
+					<!-- Menu Items -->
+					<?php
+		        $root = $pages->get("/");
+		        $children = $root->children();
+		        foreach($children as $child) {
+		          echo "<a href='{$child->url}' class=\"icon-home\">{$child->title}</a>";
+		        }
+		      ?>
 				</div>
 			</nav>
 		</div> <!-- perspective -->

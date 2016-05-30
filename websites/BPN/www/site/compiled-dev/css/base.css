@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.admin-edit {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  color: #097ABB;
+  text-decoration: none;
+  padding: 5px;
+  background-color: black;
+}
+
 .bounding-container {
   max-width: 1500px;
 }

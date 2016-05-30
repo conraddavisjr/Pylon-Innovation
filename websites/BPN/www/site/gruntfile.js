@@ -16,8 +16,8 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {   // 'destination': 'source'
-          'compiled-dev/js/intro.min.js': ['templates/js/intro.js']//,
-          // 'compiled-dev/js/base.min.js': ['templates/js/base/*.js']
+          'compiled-dev/js/intro.min.js': ['templates/js/intro.js'],
+          'compiled-dev/js/filter-nav.min.js': ['templates/js/filter-nav.js']
         }
       }
     },
@@ -34,7 +34,8 @@ module.exports = function(grunt) {
         },
         files: {   // 'destination': 'source'                   
           'compiled-dev/css/intro.css': 'templates/styles/sass/intro.scss',      
-          'compiled-dev/css/base.css': 'templates/styles/sass/base.scss'
+          'compiled-dev/css/base.css': 'templates/styles/sass/base.scss',
+          'compiled-dev/css/events.css': 'templates/styles/sass/events.scss'
         }
       }
     },

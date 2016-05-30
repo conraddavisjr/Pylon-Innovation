@@ -1,3 +1,13 @@
+.admin-edit{
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  color: $bpnBlue;
+  text-decoration: none;
+  padding: 5px;
+  background-color: black;
+}
 .bounding-container{
   max-width: $bounding-container;
 }
