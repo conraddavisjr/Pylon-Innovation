@@ -1,8 +1,30 @@
-/*-----------------*/
-/***** Terry *****/
-/*-----------------*/
-
-.content figure {
+.content {
+  article{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    background-color: black;
+    z-index: 100;
+    img{
+      position: fixed;
+      max-width: 50%;
+    }
+    .content-copy{
+      width: 50%;
+      position: absolute;
+      right: 0;
+      color: white;
+      p{
+        word-wrap: break-word;
+      }
+    }
+  }
+  figure {
     position: relative;
     float: left;
     overflow: hidden;
@@ -19,6 +41,7 @@
       font-size: 1.5em;
       color: white;
     }
+  }
 }
 
 figure.teaser {
