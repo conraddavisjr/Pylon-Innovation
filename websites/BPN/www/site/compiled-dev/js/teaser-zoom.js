@@ -31,7 +31,6 @@ $(function() {
       var teaserPosition = teaser.getBoundingClientRect();
       // console.log('teaserWidth: ', teaserWidth);
 
-      var leftAdjustment = teaserPosition.left - (teaserPosition.left - 300);
       console.log('teaserPosition: ', teaserPosition);
 
       teaserZoom.$teaser.css({
@@ -40,7 +39,7 @@ $(function() {
         });
       $(teaser).addClass('open-up');
 
-      // tl.fromTo(teaser, 1, {left: teaserPosition.left - teaserPosition.width, top: teaserPosition.top, scale:1}, {left: leftAdjustment, top: 0, scale:4})
+      tl.to(teaser, 1.5, {left: -300, top: 100, width:'100%', height:'100%', scale:2})
         // .fromTo(this.$homePg, 1.2, {top:"100%", scale:4}, {top:this.navHeight, scale:1, ease:Power2.easeOut}, "-=1.5")
         // .fromTo(this.$navMenu, 1, {left:"-100%", backgroundColor: "white", opacity:0}, {left:"0%", backgroundColor: "#f7f7f7",opacity:1}, "-=0.6")
         // .fromTo(this.$navItems, 0.5, {top:"35%", opacity:0}, {top:"50%", opacity:1})
