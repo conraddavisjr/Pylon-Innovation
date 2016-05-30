@@ -60,6 +60,18 @@
           </p>
         </figcaption>     
       </figure>
+      <figure class="teaser">
+        <img src="<?php echo $config->urls->assets?>/images/16.jpg" alt="img16"/>
+        <figcaption>
+          <h2>Noisy <span>Terry</span></h2>
+          <p>
+            <a href="#"><i class="fa fa-fw fa-download"></i></a>
+            <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+            <a href="#"><i class="fa fa-fw fa-share"></i></a>
+            <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+          </p>
+        </figcaption>     
+      </figure>
       <!-- Ajax loaded content here -->
     </div>
   </div>
@@ -67,11 +79,12 @@
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+
   <script src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/dummydata.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/filter-nav.min.js"></script>
-  <script src="<?php echo $config->urls->site?>compiled-dev/js/item-zoom.js"></script>
-  <script src="<?php echo $config->urls->site?>compiled-dev/js/lib/dynamics.min.js"></script>
+  <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
   <script>
     (function() {
       var menuEl = document.getElementById('ml-menu'),

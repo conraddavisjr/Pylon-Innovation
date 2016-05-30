@@ -2,8 +2,6 @@
   position: relative;
   min-height: 300px;
   margin: 0 0 0 300px;
-  width: 100%;
-  height: 100%;
 }
 .content .filter-items {
   margin: 0;
@@ -331,7 +329,7 @@
 }
 
 figure.teaser {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   transition: 1s;
@@ -339,13 +337,15 @@ figure.teaser {
 }
 
 figure.open-up {
+  display: block !important;
   width: 100vw;
   height: 100vh;
   max-width: none;
   max-height: none;
-  top: 0px;
+  top: -300px;
   left: -300px;
   margin: 0;
+  z-index: 100;
 }
 
 figure.teaser figcaption {
