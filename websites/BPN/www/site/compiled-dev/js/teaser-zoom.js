@@ -47,6 +47,7 @@ $(function() {
         .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.3")
         .fromTo($articleImg, 0.5, {opacity: 0, left: '-5%'}, {opacity: 1, left: 0})
         .fromTo($articleCopy, 0.5, {opacity: 0, top: '5%'}, {opacity: 1, top: 0}, "-=0.5")
+        .to(teaser, 0, {visibility: 'hidden', display: 'none !important'})
 
     },
 
@@ -56,7 +57,7 @@ $(function() {
       $(teaserZoom.currentTeaser).removeClass('open-up');
 
       tl = new TimelineLite;
-      tl.fromTo($('.teaser'), 1, {opacity: 0, display: 'block', left: 0}, {opacity: 1, left: 0, delay: 0.9});
+      tl.fromTo($('.teaser'), 1, {opacity: 0, display: 'block', left: 0}, {opacity: 1, left: 0, delay: 1.1});
 
       // setTimeout(function(){
       //   teaserZoom.$teaser.css({
