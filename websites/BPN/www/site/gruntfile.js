@@ -18,6 +18,7 @@ module.exports = function(grunt) {
         files: {   // 'destination': 'source'
           'compiled-dev/js/intro.min.js': ['templates/js/intro.js'],
           'compiled-dev/js/filter-nav.min.js': ['templates/js/filter-nav.js']
+          // 'compiled-dev/js/item-zoom.min.js': ['templates/js/item-zoom.js']
         }
       }
     },

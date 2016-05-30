@@ -235,16 +235,19 @@ body {
 }*/
 
 .content--open {
-	position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  overflow-y: scroll;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background: #18191b;
+	left: 0;
+	.content{
+		position: fixed;
+	  z-index: 1000;
+	  top: 0;
+	  left: 0;
+	  overflow: hidden;
+	  overflow-y: scroll;
+	  width: 100%;
+	  height: 100vh;
+	  margin: 0;
+	  background: #18191b;
+	}
 }
 
 .content__item {

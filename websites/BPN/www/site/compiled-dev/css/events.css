@@ -581,6 +581,9 @@ body {
 	-webkit-overflow-scrolling: touch;
 }*/
 .content--open {
+  left: 0;
+}
+.content--open .content {
   position: fixed;
   z-index: 1000;
   top: 0;

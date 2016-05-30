@@ -37,20 +37,13 @@
 		win = {width: window.innerWidth, height: window.innerHeight},
 		// some helper vars to disallow scrolling
 		lockScroll = false, xscroll, yscroll,
-		scrollContainer = document.querySelector('.container'),
-		// the main slider and its items
-		sliderEl = document.querySelector('.slider'),
-		items = [].slice.call(sliderEl.querySelectorAll('.slide')),
-		// total number of items
-		itemsTotal = items.length,
-		// navigation controls/arrows
-		navRightCtrl = sliderEl.querySelector('.button--nav-next'),
-		navLeftCtrl = sliderEl.querySelector('.button--nav-prev'),
-		zoomCtrl = sliderEl.querySelector('.button--zoom'),
+		scrollContainer = $('.container'),
+		// the filter menu items; use bind listeners to the links
+		filterItems = $('.menu__link'),
 		// the main content element
-		contentEl = document.querySelector('.content'),
+		contentEl = $('.content'),
 		// close content control
-		closeContentCtrl = contentEl.querySelector('button.button--close'),
+		closeContentCtrl = $('button.button--close', contentEl),
 		// index of current item
 		current = 0,
 		// check if an item is "open"
@@ -81,10 +74,19 @@
 
 	// event binding
 	function initEvents() {
-		// open items
-		zoomCtrl.addEventListener('click', function() {
-			openItem(items[current]);
+
+		// find the sliderEl and the zoomCtrl upon clicking a filter item
+		filterItems.addEventListener('click', function() {
+			// the main slider and its items
+			sliderEl = $('.slider'),
+			zoomCtrl = sliderEl.querySelector('.button--zoom, .zoomer'),
+
+			// open items
+			zoomCtrl.addEventListener('click', function() {
+				openItem(items[current]);
+			});
 		});
+		
 
 		// close content
 		closeContentCtrl.addEventListener('click', closeContent);
