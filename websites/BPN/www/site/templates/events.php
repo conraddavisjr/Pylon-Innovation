@@ -62,6 +62,7 @@
 
       <article>
         <img src="<?php echo $config->urls->assets?>/images/16.jpg">
+        <div class="close-content-btn"></div>
         <div class="content-copy">
           <h2> TITLE </h2>
           <h3>Subtitle</h3>
