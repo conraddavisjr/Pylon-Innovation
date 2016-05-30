@@ -55,11 +55,11 @@
 
 	MLMenu.prototype.options = {
 		// show breadcrumbs
-		breadcrumbsCtrl : true,
+		breadcrumbsCtrl : false,
 		// initial breadcrumb text
 		initialBreadcrumb : 'all',
 		// show back button
-		backCtrl : true,
+		backCtrl : false,
 		// delay between each menu item sliding animation
 		itemsDelayInterval : 60,
 		// direction 
