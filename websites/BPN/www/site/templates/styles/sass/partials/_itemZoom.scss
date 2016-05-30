@@ -33,34 +33,34 @@ body {
 	-khtml-user-select: none;
 }
 
-.slide {
+.teaser {
 	position: absolute;
 	top: 0;
 	visibility: hidden;
-	width: 100%;
+	width: 33%;
 	opacity: 0;
 }
 
-.slide--current {
+.teaser--current {
 	position: relative;
 	z-index: 100;
 	visibility: visible;
 	opacity: 1;
 }
 
-.slide__mover {
+.teaser__mover {
 	position: relative;
 	z-index: 100;
 }
 
-.slide__title {
+.teaser__title {
 	font-size: 1.75em;
 	font-weight: normal;
 	margin: 0 auto;
 	padding: 1em 0 0 0;
 }
 
-.slide__title span {
+.teaser__title span {
 	font-size: 55%;
 	font-weight: bold;
 	display: block;

@@ -35,11 +35,36 @@
     </nav>
     <div class="content">
       <p class="info">Please choose a category</p>
-      
+      <!-- content bucket -->
+      <!-- <div class="teaser teaser--current" data-content="content-1">
+        <div class="teaser__mover">
+          <div class="zoomer flex-center">
+            <img class="zoomer__image" src="<?php echo $config->urls->assets?>/images/iphone.png" alt="iPhone" />
+            <div class="preview">
+              <img src="<?php echo $config->urls->assets?>/images/iphone-content-preview.png" alt="iPhone app preview" />
+              <div class="zoomer__area zoomer__area--size-2"></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="teaser__title"><span>The Classy</span> iPhone 6</h2>
+      </div> -->
+      <figure class="effect-terry">
+        <img src="<?php echo $config->urls->assets?>/images/16.jpg" alt="img16"/>
+        <figcaption>
+          <h2>Noisy <span>Terry</span></h2>
+          <p>
+            <a href="#"><i class="fa fa-fw fa-download"></i></a>
+            <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+            <a href="#"><i class="fa fa-fw fa-share"></i></a>
+            <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+          </p>
+        </figcaption>     
+      </figure>
       <!-- Ajax loaded content here -->
     </div>
   </div>
   <!-- /view -->
+  <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>

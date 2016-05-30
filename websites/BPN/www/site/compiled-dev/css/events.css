@@ -1,36 +1,3 @@
-/* Icons (made with Icomoon.io) */
-@font-face {
-  font-family: 'feather';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/feather/feather.eot?1gafuo");
-  src: url("../fonts/feather/feather.eot?1gafuo#iefix") format("embedded-opentype"), url("../fonts/feather/feather.woff2?1gafuo") format("woff2"), url("../fonts/feather/feather.ttf?1gafuo") format("truetype"), url("../fonts/feather/feather.woff?1gafuo") format("woff"), url("../fonts/feather/feather.svg?1gafuo#feather") format("svg");
-}
-.icon {
-  font-family: 'feather';
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-transform: none;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  speak: none;
-}
-
-.icon--arrow-left:before {
-  content: '\e901';
-}
-
-.icon--menu:before {
-  content: '\e903';
-}
-
-.icon--cross:before {
-  content: '\e117';
-}
-
 .content {
   position: relative;
   min-height: 300px;
@@ -102,8 +69,6 @@
 }
 
 .menu__link[data-submenu]::after {
-  content: '\e904';
-  font-family: 'feather';
   position: absolute;
   right: 0;
   padding: 0.25em 1.25em;
@@ -116,7 +81,6 @@
 }
 
 .menu__link--current::before {
-  content: '\00B7';
   font-size: 1.5em;
   line-height: 0;
   position: absolute;
@@ -253,8 +217,6 @@
 }
 
 .menu__breadcrumbs a:not(:last-child)::after {
-  content: '\e902';
-  font-family: 'feather';
   display: inline-block;
   padding: 0 0.5em;
   color: #33353e;
@@ -378,34 +340,34 @@ body {
   -khtml-user-select: none;
 }
 
-.slide {
+.teaser {
   position: absolute;
   top: 0;
   visibility: hidden;
-  width: 100%;
+  width: 33%;
   opacity: 0;
 }
 
-.slide--current {
+.teaser--current {
   position: relative;
   z-index: 100;
   visibility: visible;
   opacity: 1;
 }
 
-.slide__mover {
+.teaser__mover {
   position: relative;
   z-index: 100;
 }
 
-.slide__title {
+.teaser__title {
   font-size: 1.75em;
   font-weight: normal;
   margin: 0 auto;
   padding: 1em 0 0 0;
 }
 
-.slide__title span {
+.teaser__title span {
   font-size: 55%;
   font-weight: bold;
   display: block;
@@ -779,6 +741,156 @@ body {
     font-size: 82%;
     padding: 4em 3em 2em;
   }
+}
+/*-----------------*/
+/***** Terry *****/
+/*-----------------*/
+.content figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.content figure h2 {
+  font-size: 1.5em;
+  color: white;
+}
+
+figure.effect-terry {
+  background: #34495e;
+}
+
+figure.effect-terry figcaption {
+  padding: 1em;
+}
+
+figure.effect-terry figcaption::before,
+figure.effect-terry figcaption::after {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-style: solid;
+  border-color: #101010;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-terry figcaption::before {
+  right: 0;
+  bottom: 0;
+  border-width: 0 70px 60px 0;
+  -webkit-transform: translate3d(70px, 60px, 0);
+  transform: translate3d(70px, 60px, 0);
+}
+
+figure.effect-terry figcaption::after {
+  top: 0;
+  left: 0;
+  border-width: 15px 0 0 15px;
+  -webkit-transform: translate3d(-15px, -15px, 0);
+  transform: translate3d(-15px, -15px, 0);
+}
+
+figure.effect-terry img,
+figure.effect-terry p a {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-terry img {
+  opacity: 0.85;
+}
+
+figure.effect-terry h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.4em 10px;
+  width: 50%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+@media screen and (max-width: 920px) {
+  figure.effect-terry h2 {
+    padding: 0.75em 10px;
+    font-size: 120%;
+  }
+}
+figure.effect-terry p {
+  float: right;
+  clear: both;
+  text-align: left;
+  text-transform: none;
+  font-size: 111%;
+  right: 7%;
+  top: 0;
+  position: absolute;
+}
+
+figure.effect-terry p a {
+  display: block;
+  margin-bottom: 1em;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translate3d(90px, 0, 0);
+  transform: translate3d(90px, 0, 0);
+}
+
+figure.effect-terry p a:hover,
+figure.effect-terry p a:focus {
+  color: #f3cf3f;
+}
+
+figure.effect-terry:hover figcaption::before,
+figure.effect-terry:hover figcaption::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-terry:hover img {
+  opacity: 0.6;
+}
+
+figure.effect-terry:hover h2,
+figure.effect-terry:hover p a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-terry:hover p a {
+  opacity: 1;
+}
+
+figure.effect-terry:hover p a:first-child {
+  -webkit-transition-delay: 0.025s;
+  transition-delay: 0.025s;
+}
+
+figure.effect-terry:hover p a:nth-child(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-terry:hover p a:nth-child(3) {
+  -webkit-transition-delay: 0.075s;
+  transition-delay: 0.075s;
+}
+
+figure.effect-terry:hover p a:nth-child(4) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 /*# sourceMappingURL=events.css.map */
