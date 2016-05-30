@@ -45,7 +45,7 @@ $(function() {
         .to($('img', teaser), 0.2, {left:'200%'})
         .fromTo(teaser, 0.5, {left: 0, top: 0, width:'33%', height:'100%', scale:1}, {left: -300, top: 100, width:'100%', height:'100%', scale:2}, "-=0.2")
         .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.3")
-        .fromTo($articleImg, 0.5, {opacity: 0, left: '-5%'}, {opacity: 1, left: 0}, "-=0.3")
+        .fromTo($articleImg, 0.5, {opacity: 0, left: '-5%'}, {opacity: 1, left: 0})
         .fromTo($articleCopy, 0.5, {opacity: 0, top: '5%'}, {opacity: 1, top: 0}, "-=0.5")
 
     },
