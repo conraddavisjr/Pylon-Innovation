@@ -48,7 +48,7 @@
         </div>
         <h2 class="teaser__title"><span>The Classy</span> iPhone 6</h2>
       </div> -->
-      <figure class="effect-terry">
+      <figure class="teaser">
         <img src="<?php echo $config->urls->assets?>/images/16.jpg" alt="img16"/>
         <figcaption>
           <h2>Noisy <span>Terry</span></h2>
