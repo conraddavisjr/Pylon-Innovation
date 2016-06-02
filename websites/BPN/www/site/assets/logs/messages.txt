@@ -1,0 +1,4 @@
+2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "thumbnail" data in 1 row(s) from 1 page(s). [page-by-page]
+2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "subtitle" data in 1 row(s) from 1 page(s). [page-by-page]
+2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "details" data in 1 row(s) from 1 page(s). [page-by-page]
+2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "photos" data in 3 row(s) from 1 page(s). [page-by-page]

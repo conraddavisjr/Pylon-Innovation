@@ -35,6 +35,17 @@
     </nav>
     <div class="content">
       <p class="info">Please choose a category</p>
+      <?php 
+        $posts = $page->children();
+        foreach($posts as $post) {
+          
+          echo "{$post->thumbnail}",
+               "{$post->title}",
+               "{$post->subtitle}",
+               "{$post->details}",
+               "{$post->photos}";
+        }
+      ?>
       <figure class="teaser" content-id="1">
         <img src="<?php echo $config->urls->assets?>/images/16.jpg" alt="img16"/>
         <figcaption>
