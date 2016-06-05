@@ -19,12 +19,13 @@
     var eventData = [ 
       <?php $posts = $page->children();
           // convert the posted event data to a JSON format 
-          $id = 1;
+          $id = 0;
           foreach($posts as $post) { 
 
             echo "{",
                    "id:'{$id}',", 
                    "thumbnail:'{$post->thumbnail->url}',",
+                   "thumbnailAlt:'{$post->thumbnail}',",
                    "title:'{$post->title}',",
                    "subtitle:'{$post->subtitle}',",
                    "details:'{$post->details}',",
@@ -50,7 +51,7 @@
     </div>
     <div class="content">
       <article>
-        <img class="post-image" src="<?php echo $config->urls->assets?>/images/16.jpg">
+        <img class="post-image" src="">
         <div class="close-content-btn"></div>
         <div class="content-copy">
           <h2 class="post-title"></h2>
@@ -61,13 +62,13 @@
       <!-- Ajax loaded content here -->
     </div>
   </div>
+
   <!-- /view -->
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
-
 
   <script>
     (function() {
@@ -82,7 +83,7 @@
           console.log('i: ', i);
           $('.content').append(
           '<figure class="teaser" content-id="' + eventData[i].id + '">' +
-            '<img src="' + eventData[i].thumbnail + '" alt="img16"/>' +
+            '<img src="' + eventData[i].thumbnail + '" alt="' + eventData[i].thumbnailAlt + '"/>' +
             '<figcaption>' +
               '<h2>' + eventData[i].title + '</h2>' + 
               '<p>' + 
