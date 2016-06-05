@@ -22,19 +22,24 @@
           $id = 0;
           foreach($posts as $post) { 
 
-            echo "{",
-                   "id:'{$id}',", 
-                   "thumbnail:'{$post->thumbnail->url}',",
-                   "thumbnailAlt:'{$post->thumbnail}',",
-                   "title:'{$post->title}',",
-                   "subtitle:'{$post->subtitle}',",
-                   "details:'{$post->details}',",
-                   "photos:'{$post->photos->url}'",
-                 "},";
+            $postData =  "{";
+            $postData .=   "id:'{$id}',";
+            $postData .=   "thumbnail:'{$post->thumbnail->url}',";
+            $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
+            $postData .=   "title:'{$post->title}',";
+            $postData .=   "subtitle:'{$post->subtitle}',";
+            $postData .=   "details:'{$post->details}',";
+            $postData .=   "photos:'{$post->photos->url}'";
+            $postData .= "},";
+
+            $jsonData .= $postData;
             $id ++;
           }
+          echo $jsonData;
       ?>
-    ]   
+    ];
+    console.log('RELOADED');
+    eventData = eventData.replace(/\r?\n|\r/g,"");   
 
   </script>
 </head>

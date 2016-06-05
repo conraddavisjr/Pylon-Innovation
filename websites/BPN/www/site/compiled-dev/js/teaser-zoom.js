@@ -47,7 +47,7 @@ $(function() {
         .to($('img', teaser), 0.8, {left:'200%'})
         .fromTo(teaser, 1, {left: teaserZoom.teaserProperties.left, top: teaserZoom.teaserProperties.top, width:'30%', height:'100%', scale:1}, {left: 0, top: 0, width:'100vw', height:'100%', scale:2, ease: Power1.easeOut}, "-=0.8")
         .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.5")
-        .to(teaser, 0, {visibility: 'hidden', display: 'none !important'})
+        .to(teaser, 0, {visibility: 'hidden', display: 'none !important', position: 'fixed'})
 
       // // populate the detailed article
       var teaserId = $(teaser).attr('content-id');
@@ -59,9 +59,10 @@ $(function() {
 
       // hold off on article view animation until the image loads in
       teaserZoom.$articleImg.on('load', function() {
-        // do whatever you want
-        teaserZoom.$articleImg.addClass('fade-in');
-        teaserZoom.$articleCopy.addClass('fade-in');
+        setTimeout(function(){
+          teaserZoom.$articleImg.addClass('fade-in');
+          teaserZoom.$articleCopy.addClass('fade-in');
+        }, 500);
       });
 
     },
