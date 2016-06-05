@@ -1,0 +1,14 @@
+.container{
+  @include flex();
+}
+#filter-nav{
+  position: relative;
+  top: 0;
+  height: 100%;
+  min-width: 200px;
+  background-color: gray;
+  li{
+    display: block;
+    padding: 10px 0;
+  }
+}

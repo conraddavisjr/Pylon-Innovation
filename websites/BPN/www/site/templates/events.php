@@ -19,15 +19,18 @@
     var eventData = [ 
       <?php $posts = $page->children();
           // convert the posted event data to a JSON format 
+          $id = 1;
           foreach($posts as $post) { 
 
-            echo "{", 
+            echo "{",
+                   "id:'{$id}',", 
                    "thumbnail:'{$post->thumbnail->url}',",
                    "title:'{$post->title}',",
                    "subtitle:'{$post->subtitle}',",
                    "details:'{$post->details}',",
                    "photos:'{$post->photos->url}'",
                  "},";
+            $id ++;
           }
       ?>
     ]   
@@ -40,26 +43,19 @@
 
   <!-- Main container -->
   <div class="container">
-    <button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
-    <nav id="ml-menu" class="menu">
-      <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
-      <div class="menu__wrap">
-        <ul data-menu="main" class="menu__level">
-          <li class="menu__item"><a class="menu__link" data-submenu="submenu-1" href="#">Vegetables</a></li>
-          <li class="menu__item"><a class="menu__link" data-submenu="submenu-2" href="#">Fruits</a></li>
-          <li class="menu__item"><a class="menu__link" data-submenu="submenu-3" href="#">Grains</a></li>
-          <li class="menu__item"><a class="menu__link" data-submenu="submenu-4" href="#">Mylk &amp; Drinks</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="filter-nav">
+      <li>All</li>
+      <li>Voluenteer Oportunities</li>
+      <li>Socials</li>
+    </div>
     <div class="content">
       <article>
-        <img src="<?php echo $config->urls->assets?>/images/16.jpg">
+        <img class="post-image" src="<?php echo $config->urls->assets?>/images/16.jpg">
         <div class="close-content-btn"></div>
         <div class="content-copy">
-          <h2> TITLE </h2>
-          <h3>Subtitle</h3>
-          <p>copycopycopycopycopycopycopycopycopycopycopy</p>
+          <h2 class="post-title"></h2>
+          <h3 class="post-subtitle"></h3>
+          <p class="post-details"></p>
         </div>
       </article>
       <!-- Ajax loaded content here -->
@@ -85,7 +81,7 @@
         for (var i = 0; i < eventData.length; i++) {
           console.log('i: ', i);
           $('.content').append(
-          '<figure class="teaser" content-id="1">' +
+          '<figure class="teaser" content-id="' + eventData[i].id + '">' +
             '<img src="' + eventData[i].thumbnail + '" alt="img16"/>' +
             '<figcaption>' +
               '<h2>' + eventData[i].title + '</h2>' + 

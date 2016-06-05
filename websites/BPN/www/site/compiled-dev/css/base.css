@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*-------------------------
+Responsive Media Queries
+-------------------------*/
+/*-----------------------------
+Responsive Media Queries (END)
+-----------------------------*/
 .admin-edit {
   position: absolute;
   z-index: 100;

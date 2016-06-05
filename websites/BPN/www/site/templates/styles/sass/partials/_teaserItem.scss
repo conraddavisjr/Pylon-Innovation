@@ -43,10 +43,10 @@ body{
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 320px;
+    min-width: 270px;
     max-width: 480px;
     max-height: 240px;
-    width: 33%;
+    width: 30%;
     height: auto;
     background: #3085a3;
     text-align: center;
@@ -128,8 +128,8 @@ figure.teaser h2 {
   width: 50%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
+  -webkit-transform: translate3d(90%,0,0);
+  transform: translate3d(90%,0,0);
 }
 
 @media screen and (max-width: 920px) {

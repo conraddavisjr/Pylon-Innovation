@@ -5,3 +5,10 @@ $bpnBlue: #097ABB;
 
 // layout
 $bounding-container: 1500px;
+
+
+// mixins
+@mixin flex() {
+  display: -webkit-flex;
+  display: flex;
+}
