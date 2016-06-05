@@ -15,11 +15,11 @@ body{
     z-index: 100;
     img{
       position: fixed;
-      max-width: 50%;
+      width: 50%;
     }
     .close-content-btn{
       position: absolute;
-      top: 0;
+      top: 30px;
       right: 0;
       width: 30px;
       height: 30px;
@@ -27,8 +27,8 @@ body{
       z-index: 10;
       cursor: pointer;
     }
-    .content-copy{
-      width: 50%;
+    .article-copy{
+      width: 45%;
       position: absolute;
       right: 0;
       color: white;
@@ -56,6 +56,24 @@ body{
       color: white;
     }
   }
+  .post-image{
+    opacity: 0;
+    left: -7%;
+    transition: 1.5s;
+    &.fade-in{
+      opacity: 1;
+      left: 0%;
+    }
+  }
+  .article-copy{
+    opacity: 0;
+    top: 7%;
+    transition: 1.5s;
+    &.fade-in{
+      opacity: 1;
+      top: 0%;
+    }
+  }
 }
 
 figure.teaser {
@@ -67,6 +85,7 @@ figure.teaser {
 
 figure.open-up {
   display: block !important;
+  // position: fixed;
   max-width: none;
   max-height: none;
   margin: 0;
@@ -75,6 +94,10 @@ figure.open-up {
     position: relative;
     right: -100px;
   }
+  figcaption{
+    opacity: 0;
+  }
+
 }
 
 figure.teaser figcaption {

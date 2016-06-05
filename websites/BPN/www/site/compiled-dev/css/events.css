@@ -33,11 +33,11 @@ body {
 }
 .content article img {
   position: fixed;
-  max-width: 50%;
+  width: 50%;
 }
 .content article .close-content-btn {
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 0;
   width: 30px;
   height: 30px;
@@ -45,14 +45,14 @@ body {
   z-index: 10;
   cursor: pointer;
 }
-.content article .content-copy {
-  width: 50%;
+.content article .article-copy {
+  width: 45%;
   position: absolute;
   right: 0;
   color: white;
   z-index: 2;
 }
-.content article .content-copy p {
+.content article .article-copy p {
   word-wrap: break-word;
 }
 .content figure {
@@ -73,6 +73,24 @@ body {
   font-size: 1.5em;
   color: white;
 }
+.content .post-image {
+  opacity: 0;
+  left: -7%;
+  transition: 1.5s;
+}
+.content .post-image.fade-in {
+  opacity: 1;
+  left: 0%;
+}
+.content .article-copy {
+  opacity: 0;
+  top: 7%;
+  transition: 1.5s;
+}
+.content .article-copy.fade-in {
+  opacity: 1;
+  top: 0%;
+}
 
 figure.teaser {
   position: relative;
@@ -91,6 +109,9 @@ figure.open-up {
 figure.open-up img {
   position: relative;
   right: -100px;
+}
+figure.open-up figcaption {
+  opacity: 0;
 }
 
 figure.teaser figcaption {

@@ -20,6 +20,8 @@ $(function() {
     eventListeners: function(){
       this.$teaser.on('click', this.triggerZoom);
       this.$closeContentBtn.on('click', this.closeContent);
+      this.$articleImg = $('.post-image');
+      this.$articleCopy = $('.article-copy');
     },
 
     // Events
@@ -29,42 +31,38 @@ $(function() {
       teaserZoom.currentTeaser = e.currentTarget;
       var teaser = e.currentTarget;
       var $article = $('.content article');
-      var $articleImg = $('.content article img');
-      var $articleCopy = $('.content article .content-copy');
       
       teaserZoom.teaserProperties = teaser.getBoundingClientRect();
 
       teaserZoom.$teaser.css({
           'display': 'none',
-          'left': teaserZoom.teaserProperties.left - (teaserZoom.teaserProperties.width - 20) //the 20 is the margin (left and right)
+          'left': teaserZoom.teaserProperties.left - (teaserZoom.teaserProperties.width - 20), //the 20 is the margin (left and right)
+          'top': teaserZoom.teaserProperties.top //the 20 is the margin (left and right)
         });
       $(teaser).addClass('open-up');
 
       // Run GSAP animation for teaser zoom feature
       teaserZoom.tl = new TimelineLite;
-      teaserZoom.tl
-        .to($('img', teaser), 0.2, {left:'200%'})
-        .fromTo(teaser, 0.5, {left: 0, top: 0, width:'33%', height:'100%', scale:1}, {left: -300, top: 100, width:'100%', height:'100%', scale:2}, "-=0.2")
-        .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.3")
-        .fromTo($articleImg, 0.5, {opacity: 0, left: '-5%'}, {opacity: 1, left: 0})
-        .fromTo($articleCopy, 0.5, {opacity: 0, top: '5%'}, {opacity: 1, top: 0}, "-=0.5")
-        .to(teaser, 0, {visibility: 'hidden', display: 'none !important'})
+      // teaserZoom.tl
+      //   .to($('img', teaser), 0.5, {left:'200%'})
+      //   .fromTo(teaser, 1, {left: 0, top: 0, width:'30%', height:'100%', scale:1}, {left: -300, top: 100, width:'100%', height:'100%', scale:2}, "-=0.5")
+      //   .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.3")
+      //   .to(teaser, 0, {visibility: 'hidden', display: 'none !important'})
 
-      // populate the detailed article
-      var teaserId = $(teaser).attr('content-id');
-      $('.post-image').attr('src', eventData[teaserId].thumbnail);
-        // '<figure class="teaser" content-id="' + eventData[i].id + '">' +
-        //   '<img src="' + eventData[i].thumbnail + '" alt="' + eventData[i].thumbnailAlt + '"/>' +
-        //   '<figcaption>' +
-        //     '<h2>' + eventData[i].title + '</h2>' + 
-        //     '<p>' + 
-        //       '<a href="#"><i class="fa fa-fw fa-download"></i></a>' + 
-        //       '<a href="#"><i class="fa fa-fw fa-heart"></i></a>' +
-        //       '<a href="#"><i class="fa fa-fw fa-share"></i></a>' +
-        //       '<a href="#"><i class="fa fa-fw fa-tags"></i></a>' +
-        //     '</p>' +
-        //   '</figcaption>' +
-        // '</figure>');
+      // // populate the detailed article
+      // var teaserId = $(teaser).attr('content-id');
+
+      // $('.post-title').html(eventData[teaserId].title);
+      // $('.post-subtitle').html(eventData[teaserId].subtitle);
+      // $('.post-details').html(eventData[teaserId].details);
+      // teaserZoom.$articleImg.attr('src', eventData[teaserId].thumbnail)
+
+      // // hold off on article view animation until the image loads in
+      // teaserZoom.$articleImg.on('load', function() {
+      //   // do whatever you want
+      //   teaserZoom.$articleImg.addClass('fade-in');
+      //   teaserZoom.$articleCopy.addClass('fade-in');
+      // });
 
     },
 
@@ -73,6 +71,8 @@ $(function() {
       teaserZoom.tl.reverse();
 
       $(teaserZoom.currentTeaser).removeClass('open-up');
+      teaserZoom.$articleImg.removeClass('fade-in');
+      teaserZoom.$articleCopy.removeClass('fade-in');
 
       tl = new TimelineLite;
       tl.fromTo($('.teaser'), 1, {opacity: 0, display: 'block', left: 0}, {opacity: 1, left: 0, delay: 1.1});

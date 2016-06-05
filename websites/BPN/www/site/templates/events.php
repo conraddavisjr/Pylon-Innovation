@@ -53,7 +53,7 @@
       <article>
         <img class="post-image" src="">
         <div class="close-content-btn"></div>
-        <div class="content-copy">
+        <div class="article-copy">
           <h2 class="post-title"></h2>
           <h3 class="post-subtitle"></h3>
           <p class="post-details"></p>
