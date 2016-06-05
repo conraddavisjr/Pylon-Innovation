@@ -1,0 +1,2 @@
+2016-06-02 09:16:11	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/WireDatabasePDO.php line 112)
+2016-06-02 09:16:11	?	?	SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/ProcessWire.php line 216)
