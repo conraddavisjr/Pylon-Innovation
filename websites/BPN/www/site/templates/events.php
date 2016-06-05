@@ -22,13 +22,15 @@
           $id = 0;
           foreach($posts as $post) { 
 
+            $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
+
             $postData =  "{";
             $postData .=   "id:'{$id}',";
             $postData .=   "thumbnail:'{$post->thumbnail->url}',";
             $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
             $postData .=   "title:'{$post->title}',";
             $postData .=   "subtitle:'{$post->subtitle}',";
-            $postData .=   "details:'{$post->details}',";
+            $postData .=   "details:'{$postDetails}',";
             $postData .=   "photos:'{$post->photos->url}'";
             $postData .= "},";
 
@@ -37,9 +39,7 @@
           }
           echo $jsonData;
       ?>
-    ];
-    console.log('RELOADED');
-    eventData = eventData.replace(/\r?\n|\r/g,"");   
+    ]; 
 
   </script>
 </head>
