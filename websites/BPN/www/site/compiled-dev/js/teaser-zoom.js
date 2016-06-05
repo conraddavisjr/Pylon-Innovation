@@ -36,16 +36,16 @@ $(function() {
 
       teaserZoom.$teaser.css({
           'display': 'none',
-          'left': teaserZoom.teaserProperties.left - (teaserZoom.teaserProperties.width - 20), //the 20 is the margin (left and right)
+          'left': teaserZoom.teaserProperties.left - ((teaserZoom.teaserProperties.width / 2) + 20), //the 20 is the margin (left and right)
           'top': teaserZoom.teaserProperties.top //the 20 is the margin (left and right)
         });
       $(teaser).addClass('open-up');
 
       // Run GSAP animation for teaser zoom feature
       teaserZoom.tl = new TimelineLite;
-      // teaserZoom.tl
-      //   .to($('img', teaser), 0.5, {left:'200%'})
-      //   .fromTo(teaser, 1, {left: 0, top: 0, width:'30%', height:'100%', scale:1}, {left: -300, top: 100, width:'100%', height:'100%', scale:2}, "-=0.5")
+      teaserZoom.tl
+        .to($('img', teaser), 0.8, {left:'200%'})
+        .fromTo(teaser, 1, {left: teaserZoom.teaserProperties.left, top: 0, width:'30%', height:'100%', scale:1}, {left: 0, top: 100, width:'100vw', height:'100%', scale:2, ease: Power1.easeOut}, "-=0.8")
       //   .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.3")
       //   .to(teaser, 0, {visibility: 'hidden', display: 'none !important'})
 
