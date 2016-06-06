@@ -1,23 +1,16 @@
-.events-container {
-  display: -webkit-flex;
-  display: flex;
-}
-
 #filter-nav {
   position: relative;
   top: 0;
-  height: 100%;
-  min-width: 200px;
-  width: 18%;
-  background-color: #383C3E;
+  display: block;
+  height: 40px;
+  width: 100%;
+  background-color: #097ABB;
 }
 #filter-nav li {
-  display: block;
-  padding: 10px 0;
+  display: inline-block;
+  padding: 10px 10px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
+  color: white;
 }
 
 body {
@@ -41,6 +34,7 @@ body {
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+  box-shadow: 3px 3px 15px -5px;
 }
 .events-container figure h2 {
   font-size: 1.5em;
