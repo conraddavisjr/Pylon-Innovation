@@ -3,14 +3,14 @@ body{
 }
 .events-container {
   position: relative;
-  height: 100%;
+  height: calc(100% - 90px);
   figure {
     position: relative;
     float: left;
     overflow: hidden;
     margin: 10px 1%;
     min-width: 270px;
-    max-width: 480px;
+    max-width: 340px;
     max-height: 240px;
     width: 30%;
     height: auto;
@@ -21,6 +21,9 @@ body{
       font-size: 1.5em;
       color: white;
     }
+  }
+  .figure-container{
+    width: 80%;
   }
   .post-image{
     opacity: 0;
@@ -50,7 +53,6 @@ body{
   height: 100%;
   top: 0;
   left: 0;
-  overflow: scroll;
   background-color: black;
   z-index: 100;
   img{

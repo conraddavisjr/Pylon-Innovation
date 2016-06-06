@@ -56,7 +56,8 @@
         <li>All</li>
         <li>Volunteer Oportunities</li>
         <li>Socials</li>
-      </div>
+      </div>  
+      <div class="figure-container"></div>
       <div class="content">
         <!-- Ajax loaded content here -->
         <!-- article detailed view -->
@@ -95,7 +96,7 @@
 
         for (var i = 0; i < eventData.length; i++) {
           console.log('i: ', i);
-          $('.events-container').append(
+          $('.figure-container').append(
           '<figure class="teaser" content-id="' + eventData[i].id + '">' +
             '<img src="' + eventData[i].thumbnail + '" alt="' + eventData[i].thumbnailAlt + '"/>' +
             '<figcaption>' +

@@ -41,6 +41,7 @@ nav#nav-menu {
   a{
     opacity: 1;
     display: inline-block;
+    top: 50%;
     transform: translateY(-50%);
     text-decoration: none;
     margin-right: 17px;
@@ -111,7 +112,7 @@ button#showMenu{
 
 .wrapper {
 	position: relative;
-	height:100%;
+	height:100vh;
 }
 
 .component {
