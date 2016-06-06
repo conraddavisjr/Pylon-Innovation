@@ -13,7 +13,7 @@
   <!-- base styles -->
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
   <!-- menu styles -->
-  <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/events.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/news.css" />
 
   <script type="text/javascript">
     var postData = [ 
@@ -51,12 +51,7 @@
   <?php include('includes/page-wrapper-top.php');?>
     <button id="showMenu">Show Menu</button> <!-- Nav Button -->
 
-    <div class="events-container">
-      <div id="filter-nav">
-        <li>All</li>
-        <li>Volunteer Oportunities</li>
-        <li>Socials</li>
-      </div>  
+    <div class="events-container"> 
       <div class="figure-container"></div>
       <div class="content">
         <!-- Ajax loaded content here -->

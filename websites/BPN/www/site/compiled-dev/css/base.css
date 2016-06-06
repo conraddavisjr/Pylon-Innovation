@@ -83,7 +83,7 @@ button#showMenu {
 @media (max-width: 960px) {
   nav#nav-menu {
     right: 25%;
-    top: 50%;
+    top: 40%;
     font-size: 1em;
     height: auto;
     width: auto;
@@ -96,6 +96,9 @@ button#showMenu {
   }
   nav#nav-menu a::before {
     display: inline-block;
+  }
+  nav#nav-menu .nav-menu__logo {
+    position: relative;
   }
 
   button#showMenu {

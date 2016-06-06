@@ -61,7 +61,7 @@ button#showMenu{
 @media (max-width:960px){
 	nav#nav-menu {
 		right: 25%;
-		top: 50%;
+		top: 40%;
 		font-size: 1em;
 	  height: auto;
 	  width: auto;
@@ -74,10 +74,14 @@ button#showMenu{
 		  	display: inline-block;
 		  }
 	  }
+	  .nav-menu__logo{
+		 	position: relative;
+	  }
 	}
   button#showMenu{
   	display: block;
   }
+
 }
 
 .perspective {

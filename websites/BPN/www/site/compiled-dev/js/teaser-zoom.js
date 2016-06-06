@@ -54,10 +54,10 @@ $(function() {
       // // populate the detailed article
       var teaserId = $(teaser).attr('content-id');
 
-      $('.post-title').html(eventData[teaserId].title);
-      $('.post-subtitle').html(eventData[teaserId].subtitle);
-      $('.post-details').html(eventData[teaserId].details);
-      teaserZoom.$articleImg.attr('src', eventData[teaserId].thumbnail)
+      $('.post-title').html(postData[teaserId].title);
+      $('.post-subtitle').html(postData[teaserId].subtitle);
+      $('.post-details').html(postData[teaserId].details);
+      teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
 
       // hold off on article view animation until the image loads in
       teaserZoom.$articleImg.on('load', function() {
