@@ -3,7 +3,7 @@
   <nav id="nav-menu" class="outer-nav right vertical">
     <div class="bounding-container">
       <!-- Nav Logo -->
-      <div class="nav-menu__logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
+      <div class="nav-menu__logo"><a href="<?php echo $config->urls->root ?>"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></a></div>
       <!-- Menu Items -->
       <?php
         $root = $pages->get("/");

@@ -45,6 +45,7 @@ body {
 .events-container figure h2 {
   font-size: 1.5em;
   color: white;
+  z-index: 1;
 }
 .events-container .figure-container {
   width: 80%;

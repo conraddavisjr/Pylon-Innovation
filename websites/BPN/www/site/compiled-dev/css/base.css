@@ -61,6 +61,12 @@ nav#nav-menu .nav-menu__logo {
   text-align: left;
   display: inline-block;
 }
+nav#nav-menu .nav-menu__logo a {
+  margin: 0;
+  top: 0;
+  position: relative;
+  transform: translateY(0);
+}
 nav#nav-menu a {
   opacity: 1;
   display: inline-block;
