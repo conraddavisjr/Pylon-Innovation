@@ -1,3 +1,9 @@
+// Push content down to make space for the nav bar
+.events-container,
+#home-pg{
+  top: 90px;
+}
+
 .admin-edit{
   position: absolute;
   z-index: 100;

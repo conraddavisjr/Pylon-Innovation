@@ -46,10 +46,10 @@ $config->debug = false;
  * Installer: Database Configuration
  * 
  */
-$config->dbHost = 'localhost';
-$config->dbName = 'BPN';
-$config->dbUser = 'BPN';
-$config->dbPass = 'U7*#hPu@z!';
+$config->dbHost = /*'localhost';*/ 'bpnOnline.db.7199052.hostedresource.com';
+$config->dbName = /*'BPN';*/ 'bpnOnline';
+$config->dbUser = /*'BPN';*/ 'bpnOnline';
+$config->dbPass = /*'U7*#hPu@z!';*/ 'M!gYdtP@wz%97';
 $config->dbPort = '3306';
 
 /**

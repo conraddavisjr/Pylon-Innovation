@@ -18,69 +18,51 @@
 	<body>
 		<?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
-		<div id="perspective" class="perspective effect-rotateleft">
-			<div class="container">
-				<div class="wrapper"><!-- wrapper needed for scroll -->
+		<?php include('includes/page-wrapper-top.php');?>
 
-					<button id="showMenu">Show Menu</button> <!-- Nav Button -->
+			<button id="showMenu">Show Menu</button> <!-- Nav Button -->
 
-					<!-- Intro container -->
-					<div class="intro">
-						<div class="intro__content">
-							<div class="intro__content__loader clearfix">
-								<div class="bar orbit"></div>
-								<div class="bar bar-rotate rotate-loader"></div>
-							</div>
-							<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
-						</div>		
+			<!-- Intro container -->
+			<div class="intro">
+				<div class="intro__content">
+					<div class="intro__content__loader clearfix">
+						<div class="bar orbit"></div>
+						<div class="bar bar-rotate rotate-loader"></div>
 					</div>
-					<!-- Intro container (END)-->
+					<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
+				</div>		
+			</div>
+			<!-- Intro container (END)-->
 
-					<div id="home-pg">
-						<section class="items-wrap">
-							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_1.jpg" alt="item04"/>
-								<h2 class="item__title">Crucial</h2>
-							</a>
-							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_2.jpg" alt="item05"/>
-								<h2 class="item__title">Awe-inspiring</h2>
-							</a>
-							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_3.jpg" alt="item06"/>
-								<h2 class="item__title">Serene</h2>
-							</a>
-							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_4.jpg" alt="item07"/>
-								<h2 class="item__title">Vulnerable</h2>
-							</a>
-							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_5.jpg" alt="item08"/>
-								<h2 class="item__title">Bountiful</h2>
-							</a>
-							<a href="#" class="item">
-								<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_6.jpg" alt="item09"/>
-								<h2 class="item__title">Endangered</h2>
-							</a>
-						</section>
-					</div><!-- /home-pg -->
-				</div> <!-- page wrapper -->
-			</div> <!-- container -->
-			<nav id="nav-menu" class="outer-nav right vertical">
-				<div class="bounding-container">
-					<!-- Nav Logo -->
-					<div class="nav-menu__logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
-					<!-- Menu Items -->
-					<?php
-		        $root = $pages->get("/");
-		        $children = $root->children();
-		        foreach($children as $child) {
-		          echo "<a href='{$child->url}' class=\"icon-home\">{$child->title}</a>";
-		        }
-		      ?>
-				</div>
-			</nav>
-		</div> <!-- perspective -->
+			<div id="home-pg">
+				<section class="items-wrap">
+					<a href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_1.jpg" alt="item04"/>
+						<h2 class="item__title">Crucial</h2>
+					</a>
+					<a href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_2.jpg" alt="item05"/>
+						<h2 class="item__title">Awe-inspiring</h2>
+					</a>
+					<a href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_3.jpg" alt="item06"/>
+						<h2 class="item__title">Serene</h2>
+					</a>
+					<a href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_4.jpg" alt="item07"/>
+						<h2 class="item__title">Vulnerable</h2>
+					</a>
+					<a href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_5.jpg" alt="item08"/>
+						<h2 class="item__title">Bountiful</h2>
+					</a>
+					<a href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_6.jpg" alt="item09"/>
+						<h2 class="item__title">Endangered</h2>
+					</a>
+				</section>
+			</div><!-- /home-pg -->
+		<?php include('includes/page-wrapper-bottom.php');?>
 	</body>
 
 	<!-- Load in scripts and styles after the HTML -->

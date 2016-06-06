@@ -30,7 +30,7 @@ $(function() {
     triggerZoom: function(e){
       teaserZoom.currentTeaser = e.currentTarget;
       var teaser = e.currentTarget;
-      var $article = $('.content article');
+      var $article = $('.article-details');
       
       teaserZoom.teaserProperties = teaser.getBoundingClientRect();
 
@@ -42,6 +42,8 @@ $(function() {
       $(teaser).addClass('open-up');
 
       // Run GSAP animation for teaser zoom feature
+      // first fade the navigation menu out
+      $('#nav-menu').fadeOut(500);
       teaserZoom.tl = new TimelineLite;
       teaserZoom.tl
         .to($('img', teaser), 0.8, {left:'200%'})
@@ -74,6 +76,9 @@ $(function() {
       $(teaserZoom.currentTeaser).removeClass('open-up');
       teaserZoom.$articleImg.removeClass('fade-in');
       teaserZoom.$articleCopy.removeClass('fade-in');
+
+      // fade the navigation menu back in
+      $('#nav-menu').fadeIn(500);
 
       // animate the other teasers in after the article is closed
       tl = new TimelineLite;

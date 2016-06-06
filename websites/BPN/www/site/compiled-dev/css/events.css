@@ -1,4 +1,4 @@
-.container {
+.events-container {
   display: -webkit-flex;
   display: flex;
 }
@@ -8,54 +8,27 @@
   top: 0;
   height: 100%;
   min-width: 200px;
-  background-color: gray;
+  width: 18%;
+  background-color: #383C3E;
 }
 #filter-nav li {
   display: block;
   padding: 10px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
 }
 
 body {
   background-color: black;
 }
 
-.content article {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  width: 100%;
+.events-container {
+  position: relative;
   height: 100%;
-  top: 0;
-  left: 0;
-  overflow: scroll;
-  background-color: black;
-  z-index: 100;
 }
-.content article img {
-  position: fixed;
-  width: 50%;
-}
-.content article .close-content-btn {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  z-index: 10;
-  cursor: pointer;
-}
-.content article .article-copy {
-  width: 45%;
-  position: absolute;
-  right: 0;
-  color: white;
-  z-index: 2;
-}
-.content article .article-copy p {
-  word-wrap: break-word;
-}
-.content figure {
+.events-container figure {
   position: relative;
   float: left;
   overflow: hidden;
@@ -69,27 +42,64 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.content figure h2 {
+.events-container figure h2 {
   font-size: 1.5em;
   color: white;
 }
-.content .post-image {
+.events-container .post-image {
   opacity: 0;
   left: -7%;
   transition: 1.5s;
 }
-.content .post-image.fade-in {
+.events-container .post-image.fade-in {
   opacity: 1;
   left: 0%;
 }
-.content .article-copy {
+.events-container .article-copy {
   opacity: 0;
   top: 7%;
   transition: 1.5s;
 }
-.content .article-copy.fade-in {
+.events-container .article-copy.fade-in {
   opacity: 1;
   top: 0%;
+}
+
+.article-details {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  background-color: black;
+  z-index: 100;
+}
+.article-details img {
+  position: fixed;
+  width: 50%;
+}
+.article-details .close-content-btn {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  z-index: 10;
+  cursor: pointer;
+}
+.article-details .article-copy {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  color: white;
+  z-index: 2;
+}
+.article-details .article-copy p {
+  word-wrap: break-word;
 }
 
 figure.teaser {

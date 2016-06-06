@@ -48,25 +48,31 @@
   <?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
   <!-- Main container -->
-  <div class="container">
-    <div id="filter-nav">
-      <li>All</li>
-      <li>Voluenteer Oportunities</li>
-      <li>Socials</li>
-    </div>
-    <div class="content">
-      <article>
-        <img class="post-image" src="">
-        <div class="close-content-btn"></div>
-        <div class="article-copy">
-          <h2 class="post-title"></h2>
-          <h3 class="post-subtitle"></h3>
-          <p class="post-details"></p>
-        </div>
-      </article>
-      <!-- Ajax loaded content here -->
-    </div>
-  </div>
+  <?php include('includes/page-wrapper-top.php');?>
+    <button id="showMenu">Show Menu</button> <!-- Nav Button -->
+
+    <div class="events-container">
+      <div id="filter-nav">
+        <li>All</li>
+        <li>Volunteer Oportunities</li>
+        <li>Socials</li>
+      </div>
+      <div class="content">
+        <!-- Ajax loaded content here -->
+        <!-- article detailed view -->
+        <article class="article-details">
+          <img class="post-image" src="">
+          <div class="close-content-btn"></div>
+          <div class="article-copy">
+            <h2 class="post-title"></h2>
+            <h3 class="post-subtitle"></h3>
+            <p class="post-details"></p>
+          </div>
+        </article>
+      </div><!-- detailed content -->
+    </div><!-- /events-container -->
+  <?php include('includes/page-wrapper-bottom.php');?>
+
 
   <!-- /view -->
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
@@ -74,6 +80,9 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
 
   <script>
     (function() {
@@ -86,7 +95,7 @@
 
         for (var i = 0; i < eventData.length; i++) {
           console.log('i: ', i);
-          $('.content').append(
+          $('.events-container').append(
           '<figure class="teaser" content-id="' + eventData[i].id + '">' +
             '<img src="' + eventData[i].thumbnail + '" alt="' + eventData[i].thumbnailAlt + '"/>' +
             '<figcaption>' +
