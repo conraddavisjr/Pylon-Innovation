@@ -22,6 +22,11 @@ body.wipe-off:before {
   opacity: 0;
 }
 
+body.load-out:before {
+  opacity: 1;
+  animation: loadOut 0.6s forwards;
+}
+
 .events-container,
 #home-pg {
   top: 90px;
@@ -77,6 +82,30 @@ Animation
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
     /* IE6-9 */
     left: 100%;
+  }
+}
+@keyframes loadOut {
+  0% {
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */
+    left: -100%;
+  }
+  100% {
+    background: -moz-linear-gradient(right, white 0%, white 29%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(right, white 0%, white 29%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, white 0%, white 29%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */
+    left: 0%;
   }
 }
 @font-face {

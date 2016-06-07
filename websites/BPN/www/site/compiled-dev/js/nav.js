@@ -21,6 +21,13 @@
 		return check;
 	}
 
+	// run the page wipe in effect on nav item click before going to the next page
+	$('.navigation-link').on('click', function(e){
+		$('body').addClass('load-out');
+		window.location.href = e.currentTarget.href;
+		return false;
+	});
+
 	var docElem = window.document.documentElement,
 		// support transitions
 		support = Modernizr.csstransitions,
