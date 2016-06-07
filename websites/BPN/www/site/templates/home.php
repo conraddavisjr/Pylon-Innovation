@@ -36,29 +36,25 @@
 
 			<div id="home-pg">
 				<section class="items-wrap">
-					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_1.jpg" alt="item04"/>
-						<h2 class="item__title">Crucial</h2>
+					<a id="about-link" href="#" class="item">
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/grpConvoModified.jpg" alt="grpConvoModified"/>
+						<h2 class="item__title">About Us</h2>
 					</a>
 					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_2.jpg" alt="item05"/>
-						<h2 class="item__title">Awe-inspiring</h2>
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/eventsPortal.jpg" alt="item05"/>
+						<h2 class="item__title">Events</h2>
 					</a>
 					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_3.jpg" alt="item06"/>
-						<h2 class="item__title">Serene</h2>
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/galleryPortalModified.jpg" alt="item06"/>
+						<h2 class="item__title">Gallery</h2>
 					</a>
 					<a href="#" class="item">
 						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_4.jpg" alt="item07"/>
-						<h2 class="item__title">Vulnerable</h2>
+						<h2 class="item__title">News</h2>
 					</a>
 					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_5.jpg" alt="item08"/>
-						<h2 class="item__title">Bountiful</h2>
-					</a>
-					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_6.jpg" alt="item09"/>
-						<h2 class="item__title">Endangered</h2>
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/bpnExp.jpg" alt="bpnExp"/>
+						<h2 class="item__title">BPN Experience</h2>
 					</a>
 				</section>
 			</div><!-- /home-pg -->
