@@ -15,7 +15,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body class="wipe-off">
 		<?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
 		<?php include('includes/page-wrapper-top.php');?>

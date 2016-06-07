@@ -18,7 +18,10 @@ body:before {
   animation: loadIn 1s forwards;
 }
 
-body
+body.wipe-off:before {
+  opacity: 0;
+}
+
 .events-container,
 #home-pg {
   top: 90px;
@@ -73,7 +76,6 @@ Animation
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
     /* IE6-9 */
-    left: 50%;
     left: 100%;
   }
 }
