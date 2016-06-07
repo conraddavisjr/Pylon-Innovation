@@ -5,6 +5,20 @@ Responsive Media Queries
 /*-----------------------------
 Responsive Media Queries (END)
 -----------------------------*/
+body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0%;
+  z-index: 1000;
+  animation: loadIn 1s forwards;
+}
+
+body
 .events-container,
 #home-pg {
   top: 90px;
@@ -25,6 +39,44 @@ Responsive Media Queries (END)
   max-width: 1500px;
 }
 
+/*
+Animation
+*/
+@keyframes loadIn {
+  0% {
+    background: -moz-linear-gradient(left, white 0%, white 29%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, white 0%, white 29%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, white 0%, white 29%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */
+    left: 0%;
+  }
+  50% {
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */
+  }
+  100% {
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 29%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 */
+    left: 50%;
+    left: 100%;
+  }
+}
 @font-face {
   font-family: 'typicons';
   src: url("fonts/typicons/typicons.eot");
@@ -56,7 +108,7 @@ nav#nav-menu .bounding-container {
 nav#nav-menu .nav-menu__logo {
   position: absolute;
   left: 15px;
-  top: 50%;
+  top: 53%;
   transform: translateY(-50%);
   text-align: left;
   display: inline-block;

@@ -49,7 +49,7 @@
 						<h2 class="item__title">Gallery</h2>
 					</a>
 					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/GroupPic1/groupPic-slide_4.jpg" alt="item07"/>
+						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/newsPortalModified.jpg" alt="item07"/>
 						<h2 class="item__title">News</h2>
 					</a>
 					<a href="#" class="item">
