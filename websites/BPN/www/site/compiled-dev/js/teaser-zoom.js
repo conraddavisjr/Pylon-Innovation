@@ -54,6 +54,11 @@ $(function() {
       // // populate the detailed article
       var teaserId = $(teaser).attr('content-id');
 
+      // populate the map if were on the events page
+      if ($('body').hasClass('eventsPg')){
+        teaserZoom.initMap();
+      }
+
       $('.post-title').html(postData[teaserId].title);
       $('.post-subtitle').html(postData[teaserId].subtitle);
       $('.post-details').html(postData[teaserId].details);
@@ -91,8 +96,16 @@ $(function() {
           'left': 0,
           'top': 0
         });
+    },
+
+    initMap: function(){
+      var map;
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
     }
-  }
+  }// teaserZoom Module (END)
   
   // initilize this function
   teaserZoom.init();

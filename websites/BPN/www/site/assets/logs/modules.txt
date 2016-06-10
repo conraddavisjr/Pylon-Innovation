@@ -16,3 +16,10 @@
 2016-05-22 22:45:51	?	?	Saved module info caches
 2016-05-22 22:45:51	cdj	http://localhost:7777/lab/Pylon-Innovation/websites/BPN/www/processwire/?login=1	Saved module 'SystemUpdater' config data
 2016-05-22 22:45:51	cdj	http://localhost:7777/lab/Pylon-Innovation/websites/BPN/www/processwire/page/	Saved module 'SystemUpdater' config data
+2016-06-09 19:17:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/module/?reset=1	Saved module info caches
+2016-06-09 19:17:47	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/module/	Installed module 'InputfieldMapMarker'
+2016-06-09 19:17:47	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/module/	Installed module 'FieldtypeMapMarker'
+2016-06-09 19:17:47	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/module/	Saved module info caches
+2016-06-09 19:18:16	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/module/edit?name=FieldtypeMapMarker	Saved module 'FieldtypeMapMarker' config data
+2016-06-09 19:28:34	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/events/	Installed module 'MarkupGoogleMap'
+2016-06-09 19:28:34	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/events/	Saved module info caches

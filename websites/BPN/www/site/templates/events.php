@@ -31,7 +31,11 @@
             $postData .=   "title:'{$post->title}',";
             $postData .=   "subtitle:'{$post->subtitle}',";
             $postData .=   "details:'{$postDetails}',";
-            $postData .=   "photos:'{$post->photos->url}'";
+            $postData .=   "photos:'{$post->photos->url}',";
+            $postData .=   "mapAddress:'{$post->map->address}',";
+            $postData .=   "mapLat:'{$post->map->lat}',";
+            $postData .=   "mapLng:'{$post->map->lng}',";
+            $postData .=   "mapZoom:'{$post->map->zoom}'";
             $postData .= "},";
 
             $jsonData .= $postData;
@@ -42,9 +46,13 @@
     ]; 
 
   </script>
+  <!-- Google Maps API -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6gakQb9yrkZUYE0x7wiskgm4MP2unFgk">
+  </script>
 </head>
 
-<body>
+<body class="eventsPg">
   <?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
   <!-- Main container -->
@@ -69,6 +77,7 @@
             <h3 class="post-subtitle"></h3>
             <p class="post-details"></p>
           </div>
+          <div id="map"></div>
         </article>
       </div><!-- detailed content -->
     </div><!-- /events-container -->
@@ -95,7 +104,6 @@
       function loadPostData() {
 
         for (var i = 0; i < postData.length; i++) {
-          console.log('i: ', i);
           $('.figure-container').append(
           '<figure class="teaser" content-id="' + postData[i].id + '">' +
             '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +

@@ -78,5 +78,5 @@ $config->timezone = 'America/Los_Angeles';
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('localhost:8888', 'localhost:8888/lab/Pylon-Innovation/sites/BPN/www/');
+$config->httpHosts = array('localhost:8888', 'localhost:8888/lab/Pylon-Innovation/sites/BPN/www/', 'bpn.conraddavisjr.com', 'http://bpn.conraddavisjr.com/', '/');
 
