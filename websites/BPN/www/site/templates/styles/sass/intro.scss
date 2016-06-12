@@ -15,12 +15,14 @@
   &__content{
     transform: translate(-50%, -50%);
     position: absolute;
+    min-width: 330px;
     display: table;
     left: 50%;
     top: 50%;
     &__bpn-logo{  
       transform: translateY(5.5px);
       animation: logoIn 1.8s forwards;
+      text-align: center;
     }
     &__loader{
       position: absolute;
@@ -33,6 +35,15 @@
       transition: 0.5s;
     }
   }
+}
+
+.slogan{
+  position: absolute;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  text-shadow: 0px 0px 10px #565656;
+  color: white;
 }
 
 #home-pg{

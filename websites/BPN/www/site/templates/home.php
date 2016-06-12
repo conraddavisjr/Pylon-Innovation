@@ -30,14 +30,20 @@
 						<div class="bar orbit"></div>
 						<div class="bar bar-rotate rotate-loader"></div>
 					</div>
+					<!-- BPN LOGO -->
 					<div class="intro__content__bpn-logo"><img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/></div>
+					<!-- Logo Slogan -->
+					<div class="slogan">
+						<h2>BLACK PROFESSIONALS NETWORK</h2>
+						<h3>Slogan goes here :P</h3>
+					</div>
 				</div>		
 			</div>
 			<!-- Intro container (END)-->
 
 			<div id="home-pg">
 				<div id="welcome-frame">
-					
+					<video autoplay loop type="video/mp4" src="/lab/Pylon-Innovation/websites/BPN/www/site/assets/videos/SF-bridge.mp4">Your browser does not support the video tag.</video>
 				</div>
 			</div><!-- /home-pg -->
 		<?php include('includes/page-wrapper-bottom.php');?>
