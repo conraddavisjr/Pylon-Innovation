@@ -35,6 +35,11 @@ body.load-out:before {
   max-width: 1500px;
 }
 
+.copy-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /*
 Animation
 */

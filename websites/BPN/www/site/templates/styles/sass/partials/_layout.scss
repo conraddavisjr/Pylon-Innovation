@@ -43,6 +43,10 @@ body.load-out:before{
   max-width: $bounding-container;
 }
 
+.copy-container{
+  max-width: $copy-container;
+  margin: 0 auto
+}
 
 /*
 Animation

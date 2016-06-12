@@ -1,5 +1,50 @@
+.register {
+  padding: 1em;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.register:after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  top: 50%;
+  border: 5px solid white;
+  height: 80%;
+  background-color: #007ab9;
+  outline: solid #007ab9 5px;
+  outline-offset: 0px;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.register:hover {
+  color: #097ABB;
+}
+.register:hover:after {
+  text-shadow: none;
+  background-color: white;
+  border: 5px solid #097ABB;
+}
+
 #welcome-frame video {
   width: 100%;
+}
+
+#about-frame {
+  padding: 1em;
+  background-color: white;
+}
+#about-frame h2, #about-frame h3 {
+  text-align: center;
+}
+#about-frame h3 {
+  color: #097ABB;
 }
 
 /*# sourceMappingURL=homePg.css.map */
