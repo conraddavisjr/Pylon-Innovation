@@ -5,6 +5,8 @@
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
+  color: #097ABB;
+  text-shadow: none;
 }
 .register:after {
   content: " ";
@@ -15,7 +17,7 @@
   top: 50%;
   border: 5px solid #90c3e0;
   height: 80%;
-  background-color: #007ab9;
+  background-color: white;
   outline: solid #007ab9 5px;
   outline-offset: 0px;
   z-index: -1;

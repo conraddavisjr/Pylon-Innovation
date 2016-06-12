@@ -5,6 +5,8 @@
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
+  color: $bpnBlue;
+  text-shadow: none;
   &:after{
     content: " ";
     width: 100%;
@@ -14,7 +16,7 @@
     top: 50%;
     border: 5px solid rgb(144, 195, 224);
     height: 80%;
-    background-color: #007ab9;
+    background-color: white;
     outline: solid #007ab9 5px;
     outline-offset: 0px;
     z-index: -1;
