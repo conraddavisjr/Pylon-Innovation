@@ -62,44 +62,32 @@
 				</section>
 				<section id="events-frame">
 					<div class="bounding-container">
-						<div class="hp-events-teaser">
+						<div class="hp-events-teaser hp-events-teaser--category1">
 							<div class="category">Category 1</div>
-							<div class="image-container">
-								<img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/>
-							</div>
+							<div class="image-container"></div>
 						</div>
-						<div class="hp-events-teaser">
-							<div class="category">Category 1</div>
-							<div class="image-container">
-								<img src="<?php echo $config->urls->assets?>/images/lake-merrit.jpg" alt="BPN-logo"/>
-							</div>
+						<div class="hp-events-teaser hp-events-teaser--category2">
+							<div class="category">Category 2</div>
+							<div class="image-container"></div>
 						</div>
-						<div class="hp-events-teaser">
-							<div class="category">Category 1</div>
-							<div class="image-container">
-								<img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/>
-							</div>
+						<div class="hp-events-teaser hp-events-teaser--category3">
+							<div class="category">Category 3</div>
+							<div class="image-container"></div>
 						</div>
-						<div class="hp-events-teaser">
-							<div class="category">Category 1</div>
-							<div class="image-container">
-								<img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/>
-							</div>
+						<div class="hp-events-teaser hp-events-teaser--category4">
+							<div class="category">Category 4</div>
+							<div class="image-container"></div>
 						</div>
-						<div class="hp-events-teaser">
-							<div class="category">Category 1</div>
-							<div class="image-container">
-								<img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/>
-							</div>
+						<div class="hp-events-teaser hp-events-teaser--category5">
+							<div class="category">Category 5</div>
+							<div class="image-container"></div>
 						</div>
-						<div class="hp-events-teaser">
-							<div class="category">Category 1</div>
-							<div class="image-container">
-								<img src="<?php echo $config->urls->assets?>/images/BPN-Logo.png" alt="BPN-logo"/>
-							</div>
+						<div class="hp-events-teaser hp-events-teaser--category6">
+							<div class="category">Category 6</div>
+							<div class="image-container"></div>
 						</div>
-					</div>
-				</section>
+					</div> <!-- bounding-container -->
+				</section> <!-- events-frame -->
 			</div><!-- /home-pg -->
 		<?php include('includes/page-wrapper-bottom.php');?>
 	</body>

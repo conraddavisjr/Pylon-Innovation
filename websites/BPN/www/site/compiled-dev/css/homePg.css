@@ -68,11 +68,48 @@
 #events-frame .hp-events-teaser .category {
   width: 100%;
   height: 60px;
-  background-color: orange;
 }
 #events-frame .hp-events-teaser .image-container {
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 74%, 59% 74%, 44% 100%, 44% 74%, 0% 74%, 0% 100%);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 74%, 59% 74%, 44% 100%, 44% 74%, 0% 74%, 0% 100%);
+  height: 250px;
+  background-size: cover;
+}
+#events-frame .hp-events-teaser--category1 .category {
+  background-color: #097ABB;
+}
+#events-frame .hp-events-teaser--category1 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+}
+#events-frame .hp-events-teaser--category2 .category {
+  background-color: yellow;
+}
+#events-frame .hp-events-teaser--category2 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+}
+#events-frame .hp-events-teaser--category3 .category {
+  background-color: orange;
+}
+#events-frame .hp-events-teaser--category3 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+}
+#events-frame .hp-events-teaser--category4 .category {
+  background-color: gray;
+}
+#events-frame .hp-events-teaser--category4 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+}
+#events-frame .hp-events-teaser--category5 .category {
+  background-color: tan;
+}
+#events-frame .hp-events-teaser--category5 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+}
+#events-frame .hp-events-teaser--category6 .category {
+  background-color: gold;
+}
+#events-frame .hp-events-teaser--category6 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
 }
 
 /*# sourceMappingURL=homePg.css.map */
