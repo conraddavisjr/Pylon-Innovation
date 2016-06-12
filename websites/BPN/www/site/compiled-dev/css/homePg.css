@@ -1,7 +1,7 @@
 .register {
   padding: 1em;
   display: table;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
@@ -13,7 +13,7 @@
   left: 0;
   opacity: 1;
   top: 50%;
-  border: 5px solid white;
+  border: 5px solid #90c3e0;
   height: 80%;
   background-color: #007ab9;
   outline: solid #007ab9 5px;
@@ -25,10 +25,11 @@
 
 .register:hover {
   color: #097ABB;
+  text-shadow: none;
 }
 .register:hover:after {
-  text-shadow: none;
   background-color: white;
+  outline: solid transparent 5px;
   border: 5px solid #097ABB;
 }
 
