@@ -53,37 +53,38 @@
 						<p>BPN or Black Professionals Network is a premier networking platform targeting Silicon Valley’s young top talent of diverse backgrounds, think of us as the Apollo for diverse professional talent. We highlight diverse professionals that are doing great work in Silicon Valley while also combating the negative imagery seen in mainstream media. BPN connects Entrepreneurs with Venture Capitalists, premier tech talent with primer tech companies, and community leaders with like minded individuals. Last year we partnered with leaders at Salesforce, Accenture, Uber, LinkedIn, Visa, Yahoo, Kapor Center, Buildup VC and New York Life to produce this event.</p>
 					</div>
 				</section>
-				<section id="experience-frame">
+				<!-- <section id="experience-frame">
 					<div class="copy-container">
 						<h2>We All Have Limitless Potential</h2>
 						<h3>To Achieve Our Dreams & Change the World</h3>
 						<p>BPN or Black Professionals Network is a premier networking platform targeting Silicon Valley’s young top talent of diverse backgrounds, think of us as the Apollo for diverse professional talent. We highlight diverse professionals that are doing great work in Silicon Valley while also combating the negative imagery seen in mainstream media. BPN connects Entrepreneurs with Venture Capitalists, premier tech talent with primer tech companies, and community leaders with like minded individuals. Last year we partnered with leaders at Salesforce, Accenture, Uber, LinkedIn, Visa, Yahoo, Kapor Center, Buildup VC and New York Life to produce this event.</p>
 					</div>
-				</section>
+				</section> -->
 				<section id="events-frame">
+					<div class="section-title"><span class="center-copy">EVENTS</span></div>
 					<div class="bounding-container">
 						<div class="hp-events-teaser hp-events-teaser--category1">
-							<div class="category">Category 1</div>
+							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category2">
-							<div class="category">Category 2</div>
+							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category3">
-							<div class="category">Category 3</div>
+							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category4">
-							<div class="category">Category 4</div>
+							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category5">
-							<div class="category">Category 5</div>
+							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category6">
-							<div class="category">Category 6</div>
+							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
 					</div> <!-- bounding-container -->
