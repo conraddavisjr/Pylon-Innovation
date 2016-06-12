@@ -81,6 +81,7 @@
   width: 22.7%;
   margin: 20px 1%;
   display: inline-block;
+  box-shadow: -2px 3px 14px #777777;
 }
 #events-frame .hp-events-teaser .category {
   width: 100%;
