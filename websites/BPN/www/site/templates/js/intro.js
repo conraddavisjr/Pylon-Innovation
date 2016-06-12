@@ -22,13 +22,13 @@ $(function() {
       this.$navItems = $('#nav-menu a');
       this.$navLogo = $('.nav-menu__logo');
 
-      // values
+      // numeric values
       this.navHeight = this.$navMenu.height();
     },
     introAnimation: function(){
       tl = new TimelineLite;
 
-      tl.to(this.$intro, 1.5, {top:"-100%", ease:Power4.easeInOut, delay:2})
+      tl.to(this.$intro, 1.5, {top:"-100%", ease:Power4.easeInOut, delay:200})
         .from(this.$homePg, 1.2, {top:"100%", scale:4, ease:Power2.easeOut}, "-=1.5")
         .fromTo(this.$navMenu, 1, {left:"-100%", backgroundColor: "white", opacity:0}, {left:"0%", backgroundColor: "#f7f7f7",opacity:1}, "-=0.6")
         .fromTo(this.$navItems, 0.5, {top:"35%", opacity:0}, {top:"50%", opacity:1})

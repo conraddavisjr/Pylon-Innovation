@@ -35,28 +35,7 @@
 			<!-- Intro container (END)-->
 
 			<div id="home-pg">
-				<section class="items-wrap">
-					<a id="about-link" href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/grpConvoModified.jpg" alt="grpConvoModified"/>
-						<h2 class="item__title">About Us</h2>
-					</a>
-					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/eventsPortal.jpg" alt="item05"/>
-						<h2 class="item__title">Events</h2>
-					</a>
-					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/galleryPortalModified.jpg" alt="item06"/>
-						<h2 class="item__title">Gallery</h2>
-					</a>
-					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/newsPortalModified.jpg" alt="item07"/>
-						<h2 class="item__title">News</h2>
-					</a>
-					<a href="#" class="item">
-						<img class="item__image" src="<?php echo $config->urls->assets?>/images/imgIdeas/bpnExp.jpg" alt="bpnExp"/>
-						<h2 class="item__title">BPN Experience</h2>
-					</a>
-				</section>
+				
 			</div><!-- /home-pg -->
 		<?php include('includes/page-wrapper-bottom.php');?>
 	</body>
