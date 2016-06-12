@@ -23,6 +23,7 @@
 			<button id="showMenu">Show Menu</button> <!-- Nav Button -->
 
 			<!-- Intro container -->
+			<div class="intro-cover"></div>
 			<div class="intro">
 				<div class="intro__content">
 					<div class="intro__content__loader clearfix">
@@ -35,7 +36,9 @@
 			<!-- Intro container (END)-->
 
 			<div id="home-pg">
-				
+				<div id="welcome-frame">
+					
+				</div>
 			</div><!-- /home-pg -->
 		<?php include('includes/page-wrapper-bottom.php');?>
 	</body>
@@ -47,7 +50,7 @@
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/home-grid.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/homePg.css" />
 
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>

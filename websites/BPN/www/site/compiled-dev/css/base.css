@@ -27,11 +27,6 @@ body.load-out:before {
   animation: loadOut 0.6s forwards;
 }
 
-.events-container,
-#home-pg {
-  top: 90px;
-}
-
 .admin-edit {
   position: absolute;
   z-index: 100;
@@ -123,11 +118,9 @@ html, body, .perspective {
 nav#nav-menu {
   left: 0;
   top: 0;
-  height: 90px;
   width: 100%;
   font-size: 1em;
   text-align: right;
-  background-color: #f7f7f7;
   opacity: 1;
   z-index: 10;
 }
@@ -136,27 +129,11 @@ nav#nav-menu .bounding-container {
   margin: 0 auto;
   height: 100%;
 }
-nav#nav-menu .nav-menu__logo {
-  position: absolute;
-  left: 15px;
-  top: 53%;
-  transform: translateY(-50%);
-  text-align: left;
-  display: inline-block;
-}
-nav#nav-menu .nav-menu__logo a {
-  margin: 0;
-  top: 0;
-  position: relative;
-  transform: translateY(0);
-}
 nav#nav-menu a {
   opacity: 1;
   display: inline-block;
-  top: 50%;
-  transform: translateY(-50%);
   text-decoration: none;
-  margin-right: 17px;
+  margin: 10px 17px 0 0;
 }
 nav#nav-menu a:last-child {
   margin-right: 1.5em;
@@ -382,8 +359,6 @@ button#showMenu {
 
 .effect-rotateleft .outer-nav a {
   opacity: 0;
-  -webkit-transform: translateX(350px) translateZ(-1000px);
-  transform: translateX(350px) translateZ(-1000px);
   -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
   transition: transform 0.4s, opacity 0.4s;
 }

@@ -20,11 +20,6 @@ body.load-out:before {
   animation: loadOut 0.6s forwards;
 }
 
-.events-container,
-#home-pg {
-  top: 90px;
-}
-
 .admin-edit {
   position: absolute;
   z-index: 100;

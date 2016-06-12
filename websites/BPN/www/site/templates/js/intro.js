@@ -17,6 +17,8 @@ $(function() {
 
     elements: function(){
       this.$intro = $('.intro');
+      this.$introCover = $('.intro-cover');
+      this.$loadBar = $('.orbit, .rotate-loader');
       this.$homePg = $('#home-pg');
       this.$navMenu = $('#nav-menu');
       this.$navItems = $('#nav-menu a');
@@ -28,11 +30,11 @@ $(function() {
     introAnimation: function(){
       tl = new TimelineLite;
 
-      tl.to(this.$intro, 1.5, {top:"-100%", ease:Power4.easeInOut, delay:200})
+      tl.to(this.$intro, 1, {top:"-20%", delay:2})
+        .to(this.$introCover, 1, {top:"-100%", ease:Power4.easeInOut}, "-=1")
+        .to(this.$loadBar, 0.1, {scale:5, opacity:0, ease:Power4.easeOut}, "-=1.2")
         .from(this.$homePg, 1.2, {top:"100%", scale:4, ease:Power2.easeOut}, "-=1.5")
-        .fromTo(this.$navMenu, 1, {left:"-100%", backgroundColor: "white", opacity:0}, {left:"0%", backgroundColor: "#f7f7f7",opacity:1}, "-=0.6")
-        .fromTo(this.$navItems, 0.5, {top:"35%", opacity:0}, {top:"50%", opacity:1})
-        .fromTo(this.$navLogo, 0.5, {left:"0px", opacity:0}, {left:"15px", opacity:1}, "-=0.5")
+        .fromTo(this.$navItems, 0.5, {opacity:0}, {opacity:1})
     }
   }
 
