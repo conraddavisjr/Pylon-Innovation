@@ -78,7 +78,7 @@
 }
 
 #events-frame .hp-events-teaser {
-  width: 31.1%;
+  width: 22.7%;
   margin: 20px 1%;
   display: inline-block;
 }
@@ -96,37 +96,49 @@
   background-color: #097ABB;
 }
 #events-frame .hp-events-teaser--category1 .image-container {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/art-and-culture-nights.jpg");
 }
 #events-frame .hp-events-teaser--category2 .category {
   background-color: yellow;
 }
 #events-frame .hp-events-teaser--category2 .image-container {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/dinner-and-cocktail-parties.jpg");
 }
 #events-frame .hp-events-teaser--category3 .category {
   background-color: orange;
 }
 #events-frame .hp-events-teaser--category3 .image-container {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/discussion-and-speaker-events.jpg");
 }
 #events-frame .hp-events-teaser--category4 .category {
   background-color: gray;
 }
 #events-frame .hp-events-teaser--category4 .image-container {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/film-screening.jpg");
 }
 #events-frame .hp-events-teaser--category5 .category {
   background-color: tan;
 }
 #events-frame .hp-events-teaser--category5 .image-container {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/health.jpg");
 }
 #events-frame .hp-events-teaser--category6 .category {
   background-color: gold;
 }
 #events-frame .hp-events-teaser--category6 .image-container {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/travel.jpg");
+}
+#events-frame .hp-events-teaser--category7 .category {
+  background-color: green;
+}
+#events-frame .hp-events-teaser--category7 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/theatre-and-musical-performance.jpg");
+}
+#events-frame .hp-events-teaser--category8 .category {
+  background-color: purple;
+}
+#events-frame .hp-events-teaser--category8 .image-container {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/outdoor.jpg");
 }
 
 /*# sourceMappingURL=homePg.css.map */

@@ -87,6 +87,14 @@
 							<div class="category"><span class="center-copy">Category 1</span></div>
 							<div class="image-container"></div>
 						</div>
+						<div class="hp-events-teaser hp-events-teaser--category7">
+							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="image-container"></div>
+						</div>
+						<div class="hp-events-teaser hp-events-teaser--category8">
+							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="image-container"></div>
+						</div>
 					</div> <!-- bounding-container -->
 				</section> <!-- events-frame -->
 			</div><!-- /home-pg -->
