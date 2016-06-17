@@ -65,7 +65,9 @@
         <li>Volunteer Oportunities</li>
         <li>Socials</li>
       </div>  
-      <div class="figure-container"></div>
+      <div class="figure-container">
+        <div class="bounding-container"></div>
+      </div>
       <div class="content">
         <!-- Ajax loaded content here -->
         <!-- article detailed view -->
@@ -102,9 +104,9 @@
       loadPostData();
 
       function loadPostData() {
-
+        // output the teasers
         for (var i = 0; i < postData.length; i++) {
-          $('.figure-container').append(
+          $('.figure-container .bounding-container').append(
           '<figure class="teaser" content-id="' + postData[i].id + '">' +
             '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
             '<figcaption>' +
