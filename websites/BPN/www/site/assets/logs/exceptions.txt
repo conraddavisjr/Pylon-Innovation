@@ -1,2 +1,6 @@
 2016-06-02 09:16:11	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/WireDatabasePDO.php line 112)
 2016-06-02 09:16:11	?	?	SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/ProcessWire.php line 216)
+2016-06-16 17:54:59	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (in /wire/core/WireDatabasePDO.php line 112)
+2016-06-16 17:54:59	?	?	SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (in /wire/core/ProcessWire.php line 216)
+2016-06-16 17:55:52	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (in /wire/core/WireDatabasePDO.php line 112)
+2016-06-16 17:55:52	?	?	SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (in /wire/core/ProcessWire.php line 216)
