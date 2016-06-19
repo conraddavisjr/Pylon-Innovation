@@ -25,6 +25,7 @@
             $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
             $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
             $postDate = date("Y-m-d",$post->date);
+            $postCategory = $pages->get($post->category->id)->title;
 
             $postData =  "{";
             $postData .=   "id:'{$id}',";
@@ -34,7 +35,7 @@
             $postData .=   "summary:'{$postSummary}',";
             $postData .=   "details:'{$postDetails}',";
             $postData .=   "date:'{$postDate}',";
-            $postData .=   "category:'{$post->category}',";
+            $postData .=   "category:'{$postCategory}',";
             $postData .=   "eventPrice:'{$post->event_price}',";
             $postData .=   "photos:'{$post->photos->url}',";
             $postData .=   "mapAddress:'{$post->map->address}',";

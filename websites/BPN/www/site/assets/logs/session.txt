@@ -10,3 +10,5 @@
 2016-06-12 22:34:49	?	?	User 'cdj' - Error: Session fingerprint changed (IP address or useragent) (IP: 127.0.0.1)
 2016-06-16 19:02:14	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
 2016-06-18 19:55:05	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
+2016-06-19 07:16:00	?	?	User 'cdj' - Error: Session fingerprint changed (IP address or useragent) (IP: 0.0.0.0)
+2016-06-19 08:03:16	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
