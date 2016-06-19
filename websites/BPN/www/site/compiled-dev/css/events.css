@@ -162,10 +162,12 @@ Animation
   background-color: black;
   z-index: 100;
   overflow-y: scroll;
+  float: left;
 }
 .article-details img {
-  position: fixed;
+  position: relative;
   width: 50%;
+  float: left;
 }
 .article-details .close-content-btn {
   position: absolute;
@@ -187,6 +189,11 @@ Animation
 .article-details .article-copy p {
   word-wrap: break-word;
 }
+.article-details .image-copy-container {
+  margin-bottom: 1em;
+  overflow: auto;
+  zoom: 1;
+}
 
 figure.open-up {
   display: block !important;
@@ -204,8 +211,10 @@ figure.open-up figcaption {
 }
 
 #map {
+  margin-top: 1em;
+  clear: both;
   height: 400px;
-  width: 50%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=events.css.map */

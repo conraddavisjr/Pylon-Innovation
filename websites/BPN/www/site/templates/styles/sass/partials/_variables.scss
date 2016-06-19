@@ -14,3 +14,8 @@ $copy-container: 800px;
   display: -webkit-flex;
   display: flex;
 }
+
+@mixin clearfix() {
+  overflow: auto;
+  zoom: 1;
+}
