@@ -62,7 +62,20 @@ $(function() {
       $('.post-title').html(postData[teaserId].title);
       $('.post-subtitle').html(postData[teaserId].subtitle);
       $('.post-details').html(postData[teaserId].details);
-      $('.photo-gallery-teaser').html('<img src="' + postData[teaserId].photosName + postData[teaserId].photosName[0] + '">');
+
+      // check if theres a photo galery for this post
+      if (postData[teaserId].photos.length){
+        // if theres no image, disable the image teaser to set it to upcoming
+        $('.photo-gallery-teaser .image').html('<img src="' + postData[teaserId].photos[0] + '">' +
+          '<h4>' + 'There are no images here yet, check back soon or' + '</h4>' +
+          '<p>' + '<div class="sign-up">Sign up</div>' + '</p>' +
+          '<h4>' + 'to get an alert when this is posted!' + '</h4>'
+        );
+      }else{
+        $('.photo-gallery-teaser .image').html('<img src="' + postData[teaserId].photos[0] + '">' +
+          '<h4>' + 'See the pictures taken at this event!' + '</h4>'
+        );
+      }
       teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
 
       // hold off on article view animation until the image loads in

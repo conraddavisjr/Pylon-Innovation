@@ -74,6 +74,12 @@
     margin-bottom: 1em;
     @include clearfix();
   }
+  .photo-gallery-teaser{
+    width: 160px;
+    img{
+      width: 100%;
+    }
+  }
   .social-share{
     margin-top: 2em;
     width: 100%;

@@ -195,6 +195,12 @@ Animation
   overflow: auto;
   zoom: 1;
 }
+.article-details .photo-gallery-teaser {
+  width: 160px;
+}
+.article-details .photo-gallery-teaser img {
+  width: 100%;
+}
 .article-details .social-share {
   margin-top: 2em;
   width: 100%;

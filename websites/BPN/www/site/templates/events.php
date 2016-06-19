@@ -28,10 +28,11 @@
             $categoryId = $post->category;
             $postCategory = $pages->get($categoryId)->title;
             // get each photo
+            $photoCollection = "[";
             foreach($post->photos as $photo) {
-              $photoCollection .= $photo->url;
-              $photoCollection .= ','
+              $photoCollection .= "'{$photo->url}',";
             }
+            $photoCollection .= "],";
 
             $postData =  "{";
             $postData .=   "id:'{$id}',";
@@ -43,7 +44,7 @@
             $postData .=   "date:'{$postDate}',";
             $postData .=   "category:'{$postCategory}',";
             $postData .=   "eventPrice:'{$post->event_price}',";
-            $postData .=   "photos:'{$photoCollection}',";
+            $postData .=   "photos:{$photoCollection}";
             $postData .=   "mapAddress:'{$post->map->address}',";
             $postData .=   "mapLat:'{$post->map->lat}',";
             $postData .=   "mapLng:'{$post->map->lng}',";
@@ -95,7 +96,13 @@
               <div class="article-copy">
                 <h2 class="post-title"></h2>
                 <p class="post-details"></p>
-                <div class="photo-gallery-teaser"></div>
+                <div class="post-date-address">
+                  
+                </div>
+                <div class="photo-gallery-teaser">
+                  <div class="image"></div>
+                  <h4>View the Photo Gallery for this event</h4>
+                </div>
               </div>
             </div>
             <div id="map"></div>
