@@ -29,8 +29,10 @@
             $postData .=   "thumbnail:'{$post->thumbnail->url}',";
             $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
             $postData .=   "title:'{$post->title}',";
-            $postData .=   "subtitle:'{$post->subtitle}',";
+            $postData .=   "summary:'{$post->summary}',";
             $postData .=   "details:'{$postDetails}',";
+            $postData .=   "date:'{$post->date}',";
+            $postData .=   "category:'{$post->category}',";
             $postData .=   "photos:'{$post->photos->url}',";
             $postData .=   "mapAddress:'{$post->map->address}',";
             $postData .=   "mapLat:'{$post->map->lat}',";
@@ -66,7 +68,11 @@
         <li>Socials</li>
       </div>  
       <div class="figure-container">
-        <div class="bounding-container"></div>
+        <div class="bounding-container">
+          <div class="filter">
+            <i>Filter Icon</i>
+          </div>
+        </div>
       </div>
       <div class="content">
         <!-- Ajax loaded content here -->
@@ -85,8 +91,8 @@
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
 
+  <!-- /Main container -->
 
-  <!-- /view -->
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -108,15 +114,15 @@
         for (var i = 0; i < postData.length; i++) {
           $('.figure-container .bounding-container').append(
           '<figure class="teaser" content-id="' + postData[i].id + '">' +
-            '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
+            '<div class="image-container">' + 
+              '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
+              '<div class="event-category">' + '</div>' +
+            '</div>' +
             '<figcaption>' +
-              '<h2>' + postData[i].title + '</h2>' + 
-              '<p>' + 
-                '<a href="#"><i class="fa fa-fw fa-download"></i></a>' + 
-                '<a href="#"><i class="fa fa-fw fa-heart"></i></a>' +
-                '<a href="#"><i class="fa fa-fw fa-share"></i></a>' +
-                '<a href="#"><i class="fa fa-fw fa-tags"></i></a>' +
-              '</p>' +
+              '<h2>' + postData[i].title + '</h2>' +
+              '<p>' + postData[i].summary + '</p>' +
+              '<p>' + postData[i].date + '</p>' +
+              '<p>' + postData[i].mapAddress + '</p>' +
             '</figcaption>' +
           '</figure>');
         }

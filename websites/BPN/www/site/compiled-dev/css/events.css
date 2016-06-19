@@ -117,239 +117,28 @@ Animation
   color: white;
 }
 
-body {
-  background-color: black;
-}
-
-.events-container {
-  position: relative;
-  height: calc(100% - 90px);
-}
-.events-container figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 270px;
-  max-width: 340px;
-  max-height: 240px;
+.teaser {
   width: 30%;
-  height: auto;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 3px 3px 15px -5px;
+  display: inline-block;
+  margin: 20px 1.66%;
 }
-.events-container figure h2 {
-  font-size: 1.5em;
-  color: white;
-  z-index: 1;
-}
-.events-container .figure-container {
-  width: 80%;
-}
-.events-container .post-image {
+.teaser .image-container {
   position: relative;
-  opacity: 0;
-  left: -7%;
-  transition: 1.5s;
-}
-.events-container .post-image.fade-in {
-  opacity: 1;
-  left: 0%;
-}
-.events-container .article-copy {
-  opacity: 0;
-  top: 7%;
-  transition: 1.5s;
-}
-.events-container .article-copy.fade-in {
-  opacity: 1;
-  top: 0%;
-}
-
-.article-details {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: black;
-  z-index: 100;
-  overflow-y: scroll;
+  height: 270px;
+  overflow: hidden;
 }
-.article-details img {
-  position: fixed;
-  width: 50%;
-}
-.article-details .close-content-btn {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  z-index: 10;
-  cursor: pointer;
-}
-.article-details .article-copy {
-  width: 45%;
-  position: absolute;
-  right: 0;
-  color: white;
-  z-index: 2;
-}
-.article-details .article-copy p {
-  word-wrap: break-word;
-}
-
-figure.teaser {
-  position: relative;
-  top: 0;
-  left: 0;
-  background: black;
-}
-
-figure.open-up {
-  display: block !important;
-  max-width: none;
-  max-height: none;
-  margin: 0;
-  z-index: 100;
-}
-figure.open-up img {
-  position: relative;
-  right: -100px;
-}
-figure.open-up figcaption {
-  opacity: 0;
-}
-
-figure.teaser figcaption {
-  padding: 1em;
-}
-
-figure.teaser figcaption::before,
-figure.teaser figcaption::after {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  border-style: solid;
-  border-color: #101010;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-figure.teaser figcaption::before {
-  right: 0;
-  bottom: 0;
-  border-width: 0 70px 60px 0;
-  -webkit-transform: translate3d(70px, 60px, 0);
-  transform: translate3d(70px, 60px, 0);
-}
-
-figure.teaser figcaption::after {
-  top: 0;
-  left: 0;
-  border-width: 15px 0 0 15px;
-  -webkit-transform: translate3d(-15px, -15px, 0);
-  transform: translate3d(-15px, -15px, 0);
-}
-
-figure.teaser p a {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: 0.5s;
-}
-
-figure.teaser img {
-  opacity: 0.85;
+.teaser .image-container img {
   width: 100%;
 }
-
-figure.teaser h2 {
+.teaser .image-container .event-category:after {
+  content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  padding: 0.2em 5px;
-  width: 50%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(90%, 0, 0);
-  transform: translate3d(90%, 0, 0);
-}
-
-@media screen and (max-width: 920px) {
-  figure.teaser h2 {
-    padding: 0.5em 5px;
-    font-size: 120%;
-  }
-}
-figure.teaser p {
-  float: right;
-  clear: both;
-  text-align: left;
-  text-transform: none;
-  font-size: 111%;
-  right: 25px;
-  top: 0;
-  position: absolute;
-}
-
-figure.teaser p a {
-  display: block;
-  margin-bottom: 1em;
-  color: #fff;
-  opacity: 0;
-  -webkit-transform: translate3d(90px, 0, 0);
-  transform: translate3d(90px, 0, 0);
-}
-
-figure.teaser p a:hover,
-figure.teaser p a:focus {
-  color: #f3cf3f;
-}
-
-figure.teaser:hover figcaption::before,
-figure.teaser:hover figcaption::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-figure.teaser:hover img {
-  opacity: 0.6;
-}
-
-figure.teaser:hover h2,
-figure.teaser:hover p a {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-figure.teaser:hover p a {
-  opacity: 1;
-}
-
-figure.teaser:hover p a:first-child {
-  -webkit-transition-delay: 0.025s;
-  transition-delay: 0.025s;
-}
-
-figure.teaser:hover p a:nth-child(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.teaser:hover p a:nth-child(3) {
-  -webkit-transition-delay: 0.075s;
-  transition-delay: 0.075s;
-}
-
-figure.teaser:hover p a:nth-child(4) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+  width: 100%;
+  height: 40px;
+  background-color: yellow;
+  opacity: 0.5;
 }
 
 #map {

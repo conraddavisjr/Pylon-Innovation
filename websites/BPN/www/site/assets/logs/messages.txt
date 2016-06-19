@@ -2,3 +2,7 @@
 2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "subtitle" data in 1 row(s) from 1 page(s). [page-by-page]
 2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "details" data in 1 row(s) from 1 page(s). [page-by-page]
 2016-06-01 22:30:39	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "photos" data in 3 row(s) from 1 page(s). [page-by-page]
+2016-06-18 20:10:00	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "subtitle" data in 3 row(s) from 3 page(s). [page-by-page]
+2016-06-18 20:33:17	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "category_END" data in 0 row(s) from 0 page(s). [page-by-page]
+2016-06-18 20:34:04	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "category" data in 0 row(s) from 0 page(s). [page-by-page]
+2016-06-18 20:46:40	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "category" data in 0 row(s) from 0 page(s). [page-by-page]
