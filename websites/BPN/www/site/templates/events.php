@@ -81,16 +81,18 @@
         <!-- Ajax loaded content here -->
         <!-- article detailed view -->
         <article class="article-details">
-          <div class="close-content-btn"></div>
-          <div class="image-copy-container">
-            <img class="post-image" src="">
-            <div class="article-copy">
-              <h2 class="post-title"></h2>
-              <h3 class="post-subtitle"></h3>
-              <p class="post-details"></p>
+          <div class="bounding-container">
+            <div class="close-content-btn"></div>
+            <div class="image-copy-container">
+              <img class="post-image" src="">
+              <div class="article-copy">
+                <h2 class="post-title"></h2>
+                <p class="post-details"></p>
+                <p class="post-details"></p>
+              </div>
             </div>
+            <div id="map"></div>
           </div>
-          <div id="map"></div>
         </article>
       </div><!-- detailed content -->
     </div><!-- /events-container -->
