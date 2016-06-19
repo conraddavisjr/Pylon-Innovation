@@ -23,16 +23,19 @@
           foreach($posts as $post) { 
 
             $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
+            $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
+            $postDate = date("Y-m-d",$post->date);
 
             $postData =  "{";
             $postData .=   "id:'{$id}',";
             $postData .=   "thumbnail:'{$post->thumbnail->url}',";
             $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
             $postData .=   "title:'{$post->title}',";
-            $postData .=   "summary:'{$post->summary}',";
+            $postData .=   "summary:'{$postSummary}',";
             $postData .=   "details:'{$postDetails}',";
-            $postData .=   "date:'{$post->date}',";
+            $postData .=   "date:'{$postDate}',";
             $postData .=   "category:'{$post->category}',";
+            $postData .=   "eventPrice:'{$post->event_price}',";
             $postData .=   "photos:'{$post->photos->url}',";
             $postData .=   "mapAddress:'{$post->map->address}',";
             $postData .=   "mapLat:'{$post->map->lat}',";
@@ -116,13 +119,14 @@
           '<figure class="teaser" content-id="' + postData[i].id + '">' +
             '<div class="image-container">' + 
               '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
-              '<div class="event-category">' + '</div>' +
+              '<div class="event-category">' + postData[i].category + '</div>' +
             '</div>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +
-              '<p>' + postData[i].summary + '</p>' +
-              '<p>' + postData[i].date + '</p>' +
-              '<p>' + postData[i].mapAddress + '</p>' +
+              '<p class="summary">' + postData[i].summary + '</p>' +
+              '<p class="date">' + postData[i].date + '</p>' +
+              '<p class="address">' + postData[i].mapAddress + '</p>' +
+              '<p class="event-price">' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +
           '</figure>');
         }
