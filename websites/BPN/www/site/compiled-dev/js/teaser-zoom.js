@@ -24,12 +24,15 @@ $(function() {
       this.$photoGalleryTeaser = $('.photo-gallery-teaser .image');
       this.$postAddress = $('.address');
       this.$postDate = $('.date');
+
       // add to calendar elements
+      this.$atcb_item = $('.atcb-item a');
       this.$atc_date_start = $('.atc_date_start');
       this.$atc_date_end = $('.atc_date_end');
       this.$atc_title = $('.atc_title');
       this.$atc_description = $('.atc_description');
       this.$atc_location = $('.atc_location');
+      this.$atc_timezone = $('.atc_timezone')
       this.$atc_organizer_email = $('.atc_organizer_email');
     },
     eventListeners: function(){
@@ -100,12 +103,25 @@ $(function() {
       teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
 
       // update the add to calender details
-      teaserZoom.$atc_date_start.html(postData[teaserId].calendarDate);
-      teaserZoom.$atc_date_end.html(postData[teaserId].calendarDate);
-      teaserZoom.$atc_title.html(postData[teaserId].title);
-      teaserZoom.$atc_description.html(postData[teaserId].summary);
-      teaserZoom.$atc_location.html(postData[teaserId].mapAddress);
-      teaserZoom.$atc_organizer_email.html(postData[teaserId].mapAddress);
+      var addCalURL = 'http://addtocalendar.com/atc/ical?utz=-420&uln=en-US&vjs=1.5&e[0]' + 
+      '[date_start]=' + postData[teaserId].calendarDate + '[0]' +
+      '[date_end]=' + postData[teaserId].calendarDate + '[0]' + 
+      '[timezone]=' + 'Pacific%2Easter[0]' + 
+      '[title]=' + postData[teaserId].title + '[0]' + 
+      '[description]=Summary%20goes%20here&e[0]' + 
+      '[location]=San%20Fransisco&e[0]' + 
+      '[organizer]=&e[0]' + 
+      '[organizer_email]=conraddavisjr%40msn.com'
+
+      teaserZoom.$atcb_item.attr('href', addCalURL);
+
+      // teaserZoom.$atc_date_start.html(postData[teaserId].calendarDate);
+      // teaserZoom.$atc_date_end.html(postData[teaserId].calendarDate);
+      // teaserZoom.$atc_title.html(postData[teaserId].title);
+      // teaserZoom.$atc_description.html(postData[teaserId].summary);
+      // teaserZoom.$atc_location.html(postData[teaserId].mapAddress);
+      // teaserZoom.$atc_timezone.html('Europe/London');
+      // teaserZoom.$atc_organizer_email.html('conraddavisjr@msn.com');
 
       // 
       // /Add detailed content to the Overlay (END)
@@ -122,6 +138,8 @@ $(function() {
     },
 
     closeContent: function(){
+      // remove the addToCal reference
+      $('.addToCalendarScript').remove();
       // reverse the animation upon closing the detailed article
       teaserZoom.tl.reverse();
 
