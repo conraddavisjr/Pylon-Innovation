@@ -24,6 +24,13 @@ $(function() {
       this.$photoGalleryTeaser = $('.photo-gallery-teaser .image');
       this.$postAddress = $('.address');
       this.$postDate = $('.date');
+      // add to calendar elements
+      this.$atc_date_start = $('.atc_date_start');
+      this.$atc_date_end = $('.atc_date_end');
+      this.$atc_title = $('.atc_title');
+      this.$atc_description = $('.atc_description');
+      this.$atc_location = $('.atc_location');
+      this.$atc_organizer_email = $('.atc_organizer_email');
     },
     eventListeners: function(){
       this.$teaser.on('click', this.triggerZoom);
@@ -67,6 +74,9 @@ $(function() {
         teaserZoom.initMap();
       }
 
+      // 
+      // Add detailed content to the Overlay
+      // 
       teaserZoom.$postTitle.html(postData[teaserId].title);
       teaserZoom.$postSubtitle.html(postData[teaserId].subtitle);
       teaserZoom.$postDetails.html(postData[teaserId].details);
@@ -88,6 +98,18 @@ $(function() {
       teaserZoom.$postAddress.html(postData[teaserId].mapAddress);
       teaserZoom.$postDate.html(postData[teaserId].date);
       teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
+
+      // update the add to calender details
+      teaserZoom.$atc_date_start.html(postData[teaserId].calendarDate);
+      teaserZoom.$atc_date_end.html(postData[teaserId].calendarDate);
+      teaserZoom.$atc_title.html(postData[teaserId].title);
+      teaserZoom.$atc_description.html(postData[teaserId].summary);
+      teaserZoom.$atc_location.html(postData[teaserId].mapAddress);
+      teaserZoom.$atc_organizer_email.html(postData[teaserId].mapAddress);
+
+      // 
+      // /Add detailed content to the Overlay (END)
+      // 
 
       // hold off on article view animation until the image loads in
       teaserZoom.$articleImg.on('load', function() {

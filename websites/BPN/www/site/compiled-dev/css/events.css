@@ -207,6 +207,10 @@ Animation
   display: inline-block;
   width: 50%;
 }
+.article-details .post-logistics p {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
 .article-details .social-share {
   margin-top: 2em;
   width: 100%;

@@ -24,6 +24,7 @@
 
             $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
             $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
+            $calendarDate = date('Y-m-d h:i:s \G\M\T', $post->date);
             $postDate = date("Y-m-d",$post->date);
             $categoryId = $post->category;
             $postCategory = $pages->get($categoryId)->title;
@@ -41,6 +42,7 @@
             $postData .=   "title:'{$post->title}',";
             $postData .=   "summary:'{$postSummary}',";
             $postData .=   "details:'{$postDetails}',";
+            $postData .=   "calendarDate:'{$calendarDate}',";
             $postData .=   "date:'{$postDate}',";
             $postData .=   "category:'{$postCategory}',";
             $postData .=   "eventPrice:'{$post->event_price}',";
@@ -98,12 +100,26 @@
                 <p class="post-details"></p>
                 <div class="post-logistics">
                   <div class="post-date">
-                    <h4>Date</h4>
+                    <p>Date</p>
                     <div class="date"></div>
                   </div>
                   <div class="post-address">
-                    <h4>Address</h4>
+                    <p>Address</p>
                     <div class="address"></div>
+                  </div>
+                  <div class="add-to-cal">
+                    <span class="addtocalendar atc-style-blue">
+                      <var class="atc_event">
+                        <var class="atc_date_start"></var>
+                        <var class="atc_date_end"></var>
+                        <var class="atc_timezone"></var>
+                        <var class="atc_title"></var>
+                        <var class="atc_description">u</var>
+                        <var class="atc_location"></var>
+                        <var class="atc_organizer"></var>
+                        <var class="atc_organizer_email"></var>
+                      </var>
+                    </span>
                   </div>
                 </div>
                 <div class="photo-gallery-teaser">
@@ -160,6 +176,17 @@
         }
       }
     })();
+  </script>
+
+  <!-- Load the Add to Calendar Widget -->
+  <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">(function () {
+    if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+    if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+        s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+        s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+        var h = d[g]('body')[0];h.appendChild(s); }})();
   </script>
 </body>
 
