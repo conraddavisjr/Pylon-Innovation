@@ -16,6 +16,14 @@ $(function() {
     elements: function(){
       this.$teaser = $('.teaser');
       this.$closeContentBtn = $('.close-content-btn');
+
+      //post detail elements
+      this.$postTitle = $('.post-title');
+      this.$postSubtitle = $('.post-subtitle');
+      this.$postDetails = $('.post-details');
+      this.$photoGalleryTeaser = $('.photo-gallery-teaser .image');
+      this.$postAddress = $('.address');
+      this.$postDate = $('.date');
     },
     eventListeners: function(){
       this.$teaser.on('click', this.triggerZoom);
@@ -59,23 +67,26 @@ $(function() {
         teaserZoom.initMap();
       }
 
-      $('.post-title').html(postData[teaserId].title);
-      $('.post-subtitle').html(postData[teaserId].subtitle);
-      $('.post-details').html(postData[teaserId].details);
+      teaserZoom.$postTitle.html(postData[teaserId].title);
+      teaserZoom.$postSubtitle.html(postData[teaserId].subtitle);
+      teaserZoom.$postDetails.html(postData[teaserId].details);
 
       // check if theres a photo galery for this post
-      if (postData[teaserId].photos.length){
+      if (postData[teaserId].photos.length <= 0){
         // if theres no image, disable the image teaser to set it to upcoming
-        $('.photo-gallery-teaser .image').html('<img src="' + postData[teaserId].photos[0] + '">' +
+        $('.photo-gallery-teaser .image').html('<img src="/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/BPN-Logo.jpg">' +
           '<h4>' + 'There are no images here yet, check back soon or' + '</h4>' +
           '<p>' + '<div class="sign-up">Sign up</div>' + '</p>' +
           '<h4>' + 'to get an alert when this is posted!' + '</h4>'
         );
       }else{
-        $('.photo-gallery-teaser .image').html('<img src="' + postData[teaserId].photos[0] + '">' +
-          '<h4>' + 'See the pictures taken at this event!' + '</h4>'
+        // post the image and its gallery
+        teaserZoom.$photoGalleryTeaser.html('<img src="' + postData[teaserId].photos[0] + '">' +
+          '<h4>' + 'View the Photo Gallery for this event' + '</h4>'
         );
       }
+      teaserZoom.$postAddress.html(postData[teaserId].mapAddress);
+      teaserZoom.$postDate.html(postData[teaserId].date);
       teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
 
       // hold off on article view animation until the image loads in

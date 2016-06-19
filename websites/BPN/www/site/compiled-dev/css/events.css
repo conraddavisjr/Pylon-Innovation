@@ -182,7 +182,7 @@ Animation
 }
 .article-details .article-copy {
   width: 45%;
-  margin-left: 4%;
+  margin-left: 1.5em;
   float: left;
   display: inline-block;
   color: #333;
@@ -197,15 +197,29 @@ Animation
 }
 .article-details .photo-gallery-teaser {
   width: 160px;
+  float: right;
 }
 .article-details .photo-gallery-teaser img {
+  float: none;
   width: 100%;
+}
+.article-details .post-logistics {
+  display: inline-block;
+  width: 50%;
 }
 .article-details .social-share {
   margin-top: 2em;
   width: 100%;
   height: 50px;
   background-color: tan;
+}
+.article-details .close-details {
+  margin: 2em 0;
+  padding: 1em 0;
+  border-top: 1px solid #097ABB;
+  border-bottom: 1px solid #097ABB;
+  color: #097ABB;
+  text-align: center;
 }
 
 figure.open-up {

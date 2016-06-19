@@ -96,17 +96,26 @@
               <div class="article-copy">
                 <h2 class="post-title"></h2>
                 <p class="post-details"></p>
-                <div class="post-date-address">
-                  
+                <div class="post-logistics">
+                  <div class="post-date">
+                    <h4>Date</h4>
+                    <div class="date"></div>
+                  </div>
+                  <div class="post-address">
+                    <h4>Address</h4>
+                    <div class="address"></div>
+                  </div>
                 </div>
                 <div class="photo-gallery-teaser">
                   <div class="image"></div>
-                  <h4>View the Photo Gallery for this event</h4>
                 </div>
               </div>
             </div>
             <div id="map"></div>
             <div class="social-share"></div>
+            <div class="close-details">
+              Back to Events Listing
+            </div>
           </div>
         </article>
       </div><!-- detailed content -->
