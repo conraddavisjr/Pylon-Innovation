@@ -133,8 +133,11 @@
               Back to Events Listing
             </div>
           </div>
-        </article>
-      </div><!-- detailed content -->
+        </article> <!-- article-details -->
+        <div class="photo-gallery-overlay">
+          
+        </div>
+      </div><!-- content -->
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
 
