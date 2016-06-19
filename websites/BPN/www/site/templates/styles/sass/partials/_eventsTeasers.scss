@@ -41,7 +41,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: white;
   z-index: 100;
   overflow-y: scroll;
   float: left;
@@ -65,7 +65,7 @@
     margin-left: 4%;
     float: left;
     display: inline-block;
-    color: white;
+    color: $bpnParagraph;
     p{
       word-wrap: break-word;
     }
@@ -73,6 +73,12 @@
   .image-copy-container{
     margin-bottom: 1em;
     @include clearfix();
+  }
+  .social-share{
+    margin-top: 2em;
+    width: 100%;
+    height: 50px;
+    background-color: tan;
   }
 }
 

@@ -59,9 +59,11 @@ body{
   background-color: black;
   z-index: 100;
   overflow-y: scroll;
+  float: left;
   img{
-    position: fixed;
+    position: relative;
     width: 50%;
+    float: left;
   }
   .close-content-btn{
     position: absolute;
@@ -75,13 +77,17 @@ body{
   }
   .article-copy{
     width: 45%;
-    position: absolute;
-    right: 0;
+    margin-left: 4%;
+    float: left;
+    display: inline-block;
     color: white;
-    z-index: 2;
     p{
       word-wrap: break-word;
     }
+  }
+  .image-copy-container{
+    margin-bottom: 1em;
+    @include clearfix();
   }
 }
 

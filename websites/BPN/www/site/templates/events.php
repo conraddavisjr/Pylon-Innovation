@@ -25,7 +25,13 @@
             $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
             $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
             $postDate = date("Y-m-d",$post->date);
-            $postCategory = $pages->get($post->category->id)->title;
+            $categoryId = $post->category;
+            $postCategory = $pages->get($categoryId)->title;
+            // get each photo
+            foreach($post->photos as $photo) {
+              $photoCollection .= $photo->url;
+              $photoCollection .= ','
+            }
 
             $postData =  "{";
             $postData .=   "id:'{$id}',";
@@ -37,7 +43,7 @@
             $postData .=   "date:'{$postDate}',";
             $postData .=   "category:'{$postCategory}',";
             $postData .=   "eventPrice:'{$post->event_price}',";
-            $postData .=   "photos:'{$post->photos->url}',";
+            $postData .=   "photos:'{$photoCollection}',";
             $postData .=   "mapAddress:'{$post->map->address}',";
             $postData .=   "mapLat:'{$post->map->lat}',";
             $postData .=   "mapLng:'{$post->map->lng}',";
@@ -89,10 +95,11 @@
               <div class="article-copy">
                 <h2 class="post-title"></h2>
                 <p class="post-details"></p>
-                <p class="post-details"></p>
+                <div class="photo-gallery-teaser"></div>
               </div>
             </div>
             <div id="map"></div>
+            <div class="social-share"></div>
           </div>
         </article>
       </div><!-- detailed content -->
