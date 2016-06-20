@@ -16,3 +16,6 @@
     </div>
   </nav>
 </div> <!-- perspective -->
+
+<!-- load in global styles -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">

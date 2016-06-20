@@ -31,6 +31,10 @@
   position: relative;
   display: block;
   text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
 }
 
 .register:hover {
@@ -45,12 +49,10 @@
 
 .section-title {
   position: relative;
-  left: 0;
-  width: 300px;
-  height: 70px;
-  text-align: center;
-  background-color: #b4b6b7;
+  margin: 30px auto 0 auto;
+  font-size: 4em;
   color: white;
+  text-shadow: 0px 0px 14px white;
 }
 
 #welcome-frame video {
@@ -113,7 +115,7 @@
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/dinner-and-cocktail-parties.jpg");
 }
 #events-frame .hp-events-teaser--category3 .category {
-  background-color: #e98164;
+  background-color: #CC7722;
 }
 #events-frame .hp-events-teaser--category3 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/discussion-and-speaker-events.jpg");
@@ -125,7 +127,7 @@
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/film-screening.jpg");
 }
 #events-frame .hp-events-teaser--category5 .category {
-  background-color: #f5b0d3;
+  background-color: #CFB53B;
 }
 #events-frame .hp-events-teaser--category5 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/health.jpg");
@@ -137,13 +139,13 @@
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/travel.jpg");
 }
 #events-frame .hp-events-teaser--category7 .category {
-  background-color: #27b5dd;
+  background-color: #332125;
 }
 #events-frame .hp-events-teaser--category7 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/theatre-and-musical-performance.jpg");
 }
 #events-frame .hp-events-teaser--category8 .category {
-  background-color: #fff565;
+  background-color: #27b5dd;
 }
 #events-frame .hp-events-teaser--category8 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/outdoor.jpg");

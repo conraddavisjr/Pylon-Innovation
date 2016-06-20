@@ -1,9 +1,20 @@
 // colors
-$pageBG: #efefef;
-$navBG: #f7f7f7;
-$bpnBlue: #097ABB;
-$bpnDarkBlue: #383C3E;
-$bpnParagraph: #333;
+  //global colors
+  $pageBG: #efefef;
+  $navBG: #f7f7f7;
+  $bpnBlue: #097ABB;
+  $bpnDarkBlue: #383C3E;
+  $bpnParagraph: #333;
+  // events colors
+  $bpnTan: #b8a386;
+  $bpnGreen: #79c189;
+  $bpnOrange: #CC7722;
+  $bpnGray: #c1c1c1;
+  $bpnYellow: #CFB53B;
+  $bpnPurple: #7480c1;
+  $bpnDarkBrown: #332125; 
+  $bpnLightBlue: #27b5dd;
+
 
 // layout
 $bounding-container: 1300px;
@@ -11,11 +22,14 @@ $copy-container: 800px;
 
 
 // mixins
+@mixin bpn-sans($font-weight) {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: $font-weight;
+}
 @mixin flex() {
   display: -webkit-flex;
   display: flex;
 }
-
 @mixin clearfix() {
   overflow: auto;
   zoom: 1;

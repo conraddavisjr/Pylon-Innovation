@@ -31,6 +31,9 @@
   position: relative;
   display: block;
   text-align: center;
+  text-transform: uppercase;
+  color: white;
+  @include bpn-sans(100);
 }
 
 .register:hover{
@@ -45,12 +48,10 @@
 
 .section-title{
   position: relative;
-  left: 0;
-  width: 300px;
-  height: 70px;
-  text-align: center;
-  background-color: #b4b6b7;
+  margin: 30px auto 0 auto;
+  font-size: 4em;
   color: white;
+  text-shadow: 0px 0px 14px white;
 }
 
 #welcome-frame{
@@ -103,7 +104,7 @@
     // the varying catagories
     &--category1{
       .category{
-        background-color: #b8a386;
+        background-color: $bpnTan;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/art-and-culture-nights.jpg');
@@ -111,7 +112,7 @@
     }
     &--category2{
       .category{
-        background-color: #79c189;
+        background-color: $bpnGreen;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/dinner-and-cocktail-parties.jpg');
@@ -119,7 +120,7 @@
     }
     &--category3{
       .category{
-        background-color: #e98164;
+        background-color: $bpnOrange;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/discussion-and-speaker-events.jpg');
@@ -127,7 +128,7 @@
     }
     &--category4{
       .category{
-        background-color: #c1c1c1;
+        background-color: $bpnGray;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/film-screening.jpg');
@@ -135,7 +136,7 @@
     }
     &--category5{
       .category{
-        background-color: #f5b0d3;
+        background-color: $bpnYellow;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/health.jpg');
@@ -143,7 +144,7 @@
     }
     &--category6{
       .category{
-        background-color: #7480c1;
+        background-color: $bpnPurple;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/travel.jpg');
@@ -151,7 +152,7 @@
     }
     &--category7{
       .category{
-        background-color: #27b5dd;
+        background-color: $bpnDarkBrown;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/theatre-and-musical-performance.jpg');
@@ -159,7 +160,7 @@
     }
     &--category8{
       .category{
-        background-color: #fff565;
+        background-color: $bpnLightBlue;
       }
       .image-container{
         background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/outdoor.jpg');

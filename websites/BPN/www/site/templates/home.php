@@ -61,38 +61,38 @@
 					</div>
 				</section> -->
 				<section id="events-frame">
-					<div class="section-title"><span class="center-copy">EVENTS</span></div>
+					<div class="section-title"><span class="center-copy">BPN EVENTS</span></div>
 					<div class="bounding-container">
 						<div class="hp-events-teaser hp-events-teaser--category1">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Art & <br> culture nights</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category2">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Dinner & <br> cocktail parties</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category3">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Presentations & <br> speaker events</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category4">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Film screenings</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category5">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Health & Wellness</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category6">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Trips & Getaways</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category7">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Theatre & <br> musical performance</span></div>
 							<div class="image-container"></div>
 						</div>
 						<div class="hp-events-teaser hp-events-teaser--category8">
-							<div class="category"><span class="center-copy">Category 1</span></div>
+							<div class="category"><span class="center-copy">Outdoor Events</span></div>
 							<div class="image-container"></div>
 						</div>
 					</div> <!-- bounding-container -->
