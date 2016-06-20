@@ -51,7 +51,6 @@
   text-align: center;
   background-color: #b4b6b7;
   color: white;
-  margin: 40px 0;
 }
 
 #welcome-frame video {
@@ -62,7 +61,7 @@
   padding: 1em;
   background-color: white;
   position: relative;
-  top: -10px;
+  margin-top: -10px;
   box-shadow: 0px -6px 30px #4a4a4a;
 }
 #about-frame h2, #about-frame h3 {
@@ -73,68 +72,78 @@
 }
 
 #experience-frame {
-  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/lake-merrit.jpg");
+  background-image: url("site/assets/images/lake-merrit.jpg");
   background-size: cover;
 }
 
+#events-frame {
+  background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/eventsBg.jpg");
+  background-attachment: fixed;
+  padding-top: 40px;
+  overflow: auto;
+  zoom: 1;
+}
 #events-frame .hp-events-teaser {
   width: 22.7%;
   margin: 20px 1%;
   display: inline-block;
-  box-shadow: -2px 3px 14px #777777;
+  float: left;
+  box-shadow: -2px 3px 6px 0px #4a4a4a;
 }
 #events-frame .hp-events-teaser .category {
   width: 100%;
   height: 60px;
+  border-radius: 3px 3px 0px 0px;
 }
 #events-frame .hp-events-teaser .image-container {
   height: 250px;
   background-size: cover;
+  border-radius: 0px 0px 3px 3px;
 }
 #events-frame .hp-events-teaser--category1 .category {
-  background-color: #097ABB;
+  background-color: #b8a386;
 }
 #events-frame .hp-events-teaser--category1 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/art-and-culture-nights.jpg");
 }
 #events-frame .hp-events-teaser--category2 .category {
-  background-color: yellow;
+  background-color: #79c189;
 }
 #events-frame .hp-events-teaser--category2 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/dinner-and-cocktail-parties.jpg");
 }
 #events-frame .hp-events-teaser--category3 .category {
-  background-color: orange;
+  background-color: #e98164;
 }
 #events-frame .hp-events-teaser--category3 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/discussion-and-speaker-events.jpg");
 }
 #events-frame .hp-events-teaser--category4 .category {
-  background-color: gray;
+  background-color: #c1c1c1;
 }
 #events-frame .hp-events-teaser--category4 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/film-screening.jpg");
 }
 #events-frame .hp-events-teaser--category5 .category {
-  background-color: tan;
+  background-color: #f5b0d3;
 }
 #events-frame .hp-events-teaser--category5 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/health.jpg");
 }
 #events-frame .hp-events-teaser--category6 .category {
-  background-color: gold;
+  background-color: #7480c1;
 }
 #events-frame .hp-events-teaser--category6 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/travel.jpg");
 }
 #events-frame .hp-events-teaser--category7 .category {
-  background-color: green;
+  background-color: #27b5dd;
 }
 #events-frame .hp-events-teaser--category7 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/theatre-and-musical-performance.jpg");
 }
 #events-frame .hp-events-teaser--category8 .category {
-  background-color: purple;
+  background-color: #fff565;
 }
 #events-frame .hp-events-teaser--category8 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/outdoor.jpg");
