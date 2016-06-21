@@ -35,7 +35,7 @@
 					<!-- Logo Slogan -->
 					<div class="slogan">
 						<h2>BLACK PROFESSIONALS NETWORK</h2>
-						<h3>Slogan goes here :P</h3>
+						<h3>Slogan goes here</h3>
 						<div class="register">Register for membership</div>
 					</div>
 				</div>		

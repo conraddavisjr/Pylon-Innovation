@@ -1,5 +1,8 @@
 <section id="gallery-frame" class="section section--right section--portraits">
-  <div class="photo-gallery-title">Photo Gallery</div>
+  <div class="photo-gallery-info">
+    <div class="photo-gallery-title">Photo Gallery</div>
+    <div class="btn-cta">View our Gallery</div>
+  </div>
   <div class="isolayer home-gallery-grid">
     <ul class="grid">
       <li class="grid__item">

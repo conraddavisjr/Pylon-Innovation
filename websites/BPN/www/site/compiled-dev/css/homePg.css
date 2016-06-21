@@ -30,7 +30,7 @@
   margin: 2em auto 0 auto;
   text-transform: uppercase;
   display: table;
-  padding: 1em 2em;
+  padding: 0.6em 2em;
   outline: solid 3px white;
   outline-offset: 2px;
   color: white;
@@ -79,7 +79,7 @@
 }
 
 #about-frame {
-  padding: 1em;
+  padding: 4.5em 0;
   background-color: white;
   position: relative;
   margin-top: -10px;
@@ -87,6 +87,7 @@
 }
 #about-frame h2, #about-frame h3 {
   text-align: center;
+  margin: 0;
 }
 #about-frame h3 {
   color: #097ABB;
@@ -100,7 +101,7 @@
 #events-frame {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/eventsBg.jpg");
   background-attachment: fixed;
-  padding: 2.5em 0;
+  padding: 6em 0 6em 0;
   overflow: auto;
   zoom: 1;
 }
@@ -180,13 +181,15 @@
   position: relative;
   background: linear-gradient(20deg, #ffffff, #b5c6c5);
 }
-#gallery-frame .photo-gallery-title {
-  font-size: 4em;
+#gallery-frame .photo-gallery-info {
   display: block;
   position: relative;
   float: right;
   margin-right: 5%;
   top: 5%;
+}
+#gallery-frame .photo-gallery-title {
+  font-size: 4em;
 }
 
 /*# sourceMappingURL=homePg.css.map */

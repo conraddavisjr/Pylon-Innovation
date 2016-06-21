@@ -30,7 +30,7 @@
   margin: 2em auto 0 auto;
   text-transform: uppercase;
   display: table;
-  padding: 1em 2em;
+  padding: 0.6em 2em;
   outline: solid 3px white;
   outline-offset: 2px;
   color: white;
@@ -80,13 +80,14 @@
 }
 
 #about-frame{
-  padding: 1em;
+  padding: 4.5em 0;
   background-color: white;
   position: relative;
   margin-top: -10px;
   box-shadow: 0px -6px 30px #4a4a4a;
   h2,h3{
     text-align: center;
+    margin: 0;
   }
   h3{
     color: $bpnBlue;
@@ -101,7 +102,7 @@
 #events-frame{
   background-image: url('/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/eventsBg.jpg');
   background-attachment: fixed;
-  padding: 2.5em 0;
+  padding: 6em 0 6em 0;
   @include clearfix();
   .hp-events-teaser{
     width: 22.7%;
@@ -198,13 +199,15 @@
   overflow: hidden;
   position: relative;
   background: linear-gradient(20deg, #ffffff, #b5c6c5);
-  .photo-gallery-title{
-    font-size: 4em;
+  .photo-gallery-info{
     display: block;
     position: relative;
     float: right;
     margin-right: 5%;
     top: 5%;
+  }
+  .photo-gallery-title{
+    font-size: 4em;
   }
 }
 
