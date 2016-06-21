@@ -44,6 +44,14 @@
   }
 }
 
+h2,h3{
+  text-align: center;
+  margin: 0;
+}
+h3{
+  color: $bpnBlue;
+}
+
 .center-copy{
   top: 50%;
   transform: translateY(-50%);
@@ -73,6 +81,12 @@
   text-shadow: 0px 0px 14px white;
 }
 
+.slogan{
+  h3{
+    color: white;
+  }
+}
+
 #welcome-frame{
   video{
     width: 100%;
@@ -85,13 +99,6 @@
   position: relative;
   margin-top: -10px;
   box-shadow: 0px -6px 30px #4a4a4a;
-  h2,h3{
-    text-align: center;
-    margin: 0;
-  }
-  h3{
-    color: $bpnBlue;
-  }
 }
 
 #experience-frame{
@@ -209,5 +216,9 @@
   .photo-gallery-title{
     font-size: 4em;
   }
+}
+
+#contact-frame{
+  padding: 4.5em 0;
 }
 

@@ -35,6 +35,7 @@ $(function() {
         .to(this.$slogan, 1, {opacity:1})
         .fromTo(this.$navItems, 0.5, {opacity:0}, {opacity:1})
         .to(this.$introContentLoader, 0, {display:'none'})
+        .to(this.$intro, 0, {position:'absolute'})
     }
   }
 

@@ -33,6 +33,7 @@ nav#nav-menu {
     display: inline-block;
     text-decoration: none;
     margin: 10px 17px 0 0;
+    font-size: 1.1em;
 	  &:last-child{
 	  	margin-right: 1.5em;
 	  }
@@ -171,7 +172,7 @@ button#showMenu{
 }
 
 .outer-nav a:hover {
-	color: #ffdccd;
+	color: $bpnBlue;
 }
 
 .outer-nav.vertical a {
