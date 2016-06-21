@@ -1,4 +1,4 @@
-// white page loadin effect
+// white page loading effect
 body:before{
   content: "";
   display: block;
@@ -41,7 +41,8 @@ body.load-out:before{
 }
 .bounding-container{
   max-width: $bounding-container;
-  margin: 0 auto
+  margin: 0 auto;
+  @include clearfix();
 }
 
 .copy-container{

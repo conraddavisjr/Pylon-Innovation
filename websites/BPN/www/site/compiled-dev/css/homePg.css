@@ -25,6 +25,25 @@
   transition: 0.5s;
 }
 
+.btn-cta {
+  position: relative;
+  margin: 2em auto 0 auto;
+  text-transform: uppercase;
+  display: table;
+  padding: 1em 2em;
+  outline: solid 3px white;
+  outline-offset: 2px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.43);
+  cursor: pointer;
+}
+.btn-cta:hover {
+  background-color: #097ABB;
+}
+
 .center-copy {
   top: 50%;
   transform: translateY(-50%);
@@ -33,7 +52,7 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 100;
 }
 
@@ -81,13 +100,13 @@
 #events-frame {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/eventsBg.jpg");
   background-attachment: fixed;
-  padding-top: 40px;
+  padding: 2.5em 0;
   overflow: auto;
   zoom: 1;
 }
 #events-frame .hp-events-teaser {
   width: 22.7%;
-  margin: 20px 1%;
+  margin: 1em 1%;
   display: inline-block;
   float: left;
   box-shadow: -2px 3px 6px 0px #4a4a4a;
@@ -149,6 +168,10 @@
 }
 #events-frame .hp-events-teaser--category8 .image-container {
   background-image: url("/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/events/outdoor.jpg");
+}
+
+#news-frame {
+  padding: 2em 0;
 }
 
 /*# sourceMappingURL=homePg.css.map */

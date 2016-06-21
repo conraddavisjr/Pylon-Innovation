@@ -17,6 +17,7 @@ $(function() {
 
     elements: function(){
       this.$intro = $('.intro');
+      this.$introContentLoader = $('.intro__content__loader');
       this.$introCover = $('.intro-cover');
       this.$loadBar = $('.orbit, .rotate-loader');
       this.$slogan = $('.slogan');
@@ -33,6 +34,7 @@ $(function() {
         .from(this.$homePg, 1.2, {opacity:0, top:"100%", scale:4, ease:Power2.easeOut}, "-=1.5")
         .to(this.$slogan, 1, {opacity:1})
         .fromTo(this.$navItems, 0.5, {opacity:0}, {opacity:1})
+        .to(this.$introContentLoader, 0, {display:'none'})
     }
   }
 

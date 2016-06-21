@@ -20,10 +20,12 @@
 $bounding-container: 1300px;
 $copy-container: 800px;
 
+//fonts
+$bpnSans: 'Source Sans Pro', sans-serif;
 
 // mixins
 @mixin bpn-sans($font-weight) {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $bpnSans;
   font-weight: $font-weight;
 }
 @mixin flex() {
