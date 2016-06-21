@@ -174,4 +174,10 @@
   padding: 2em 0;
 }
 
+#gallery-frame {
+  height: 610px;
+  overflow: hidden;
+  position: relative;
+}
+
 /*# sourceMappingURL=homePg.css.map */

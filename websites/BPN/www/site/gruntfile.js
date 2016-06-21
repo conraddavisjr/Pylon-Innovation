@@ -38,7 +38,8 @@ module.exports = function(grunt) {
           'compiled-dev/css/base.css': 'templates/styles/sass/base.scss',
           'compiled-dev/css/homePg.css': 'templates/styles/sass/homePg.scss',
           'compiled-dev/css/events.css': 'templates/styles/sass/events.scss',
-          'compiled-dev/css/news.css': 'templates/styles/sass/news.scss'
+          'compiled-dev/css/news.css': 'templates/styles/sass/news.scss',
+          'compiled-dev/css/home-gallery-grid.css': 'templates/styles/home-gallery-grid.css'
         }
       }
     },
