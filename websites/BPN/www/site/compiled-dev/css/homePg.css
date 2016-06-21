@@ -199,7 +199,28 @@ h3 {
 }
 
 #contact-frame {
-  padding: 4.5em 0;
+  padding: 0;
+}
+#contact-frame .social-icons-grid {
+  display: table;
+}
+#contact-frame .social-icons-grid a {
+  display: inline-block;
+  width: 25%;
+  transition: 0.3s;
+}
+#contact-frame .social-icons-grid a:hover {
+  opacity: 0.5;
+}
+#contact-frame .social-icons-grid img {
+  width: 100%;
+}
+#contact-frame .copy-container {
+  margin-top: -70px;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  padding-top: 2em;
 }
 
 /*# sourceMappingURL=homePg.css.map */

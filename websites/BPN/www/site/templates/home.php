@@ -98,10 +98,10 @@
 
 				<section id="contact-frame">
 					<div class="social-icons-grid">
-						<div class="fb"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-						<div class="ig"><img src="<?php echo $config->urls->assets?>/images/social-icons-ig.jpg"></div>
-						<div class="in"><img src="<?php echo $config->urls->assets?>/images/social-icons-in.jpg"></div>
-						<div class="tw"><img src="<?php echo $config->urls->assets?>/images/social-icons-tw.jpg"></div>
+						<a class="fb"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></a>
+						<a class="ig"><img src="<?php echo $config->urls->assets?>/images/social-icons-ig.jpg"></a>
+						<a class="in"><img src="<?php echo $config->urls->assets?>/images/social-icons-in.jpg"></a>
+						<a class="tw"><img src="<?php echo $config->urls->assets?>/images/social-icons-tw.jpg"></a>
 					</div>
 					<div class="copy-container">
 						<h2>Contact</h2>

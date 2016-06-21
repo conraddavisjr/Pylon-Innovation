@@ -219,6 +219,27 @@ h3{
 }
 
 #contact-frame{
-  padding: 4.5em 0;
+  padding: 0;
+  .social-icons-grid{
+    display: table;
+    a{
+      display: inline-block;
+      width: 25%;
+      transition: 0.3s;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .copy-container{
+    margin-top: -70px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    padding-top: 2em;
+  }
 }
 
