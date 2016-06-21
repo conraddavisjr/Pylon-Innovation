@@ -156,6 +156,9 @@
 			});
 		}
 		self.options.onGridLoaded();
+		setTimeout(function(){
+			self.msnry.layout();
+		}, 1000)
 	};
 
 	/**
@@ -191,17 +194,6 @@
 			mouseleaveHandler = function(ev) {
 				self._collapseSubItems(ev.target);
 			};
-
-		if( this.options.type === 'scrollable' ) {
-			// update the transform (ty) on scroll
-			window.addEventListener('scroll', scrollHandler, false);
-			// on resize (layoutComplete for the masonry instance) recalculate height
-			this.msnry.on('layoutComplete', function( laidOutItems ) {
-				// reset the height of the pseudoScroller (grid´s height + additional space between the top of the rotated isolayerEl and the page)
-				self.pseudoScrollerEl.style.height = self.gridEl.offsetHeight + self.isolayerEl.offsetTop * Math.sqrt(2) + 'px';
-				self._scrollPage();
-			});
-		}
 
 		this.gridItems.forEach(function(item) {
 			item.addEventListener('mouseenter', mouseenterHandler);

@@ -33,6 +33,7 @@
   position: relative;
   z-index: 1;
   display: block;
+  cursor: default;
 }
 
 .grid__img {

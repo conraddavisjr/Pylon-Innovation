@@ -197,5 +197,14 @@
   height: 610px;
   overflow: hidden;
   position: relative;
+  background: linear-gradient(20deg, #ffffff, #b5c6c5);
+  .photo-gallery-title{
+    font-size: 4em;
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    top: 5%;
+  }
 }
 
