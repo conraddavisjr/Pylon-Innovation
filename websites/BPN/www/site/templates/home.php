@@ -106,9 +106,11 @@
 					<div class="copy-container">
 						<h2>Contact</h2>
 						<h3>Lets get in touch</h3>
-						<p>BPN or Black Professionals Network is a premier networking platform targeting Silicon Valley’s young top talent of diverse backgrounds, think of us as the Apollo for diverse professional talent. We highlight diverse professionals that are doing great work in Silicon Valley while also combating the negative imagery seen in mainstream media. BPN connects Entrepreneurs with Venture Capitalists, premier tech talent with primer tech companies, and community leaders with like minded individuals. Last year we partnered with leaders at Salesforce, Accenture, Uber, LinkedIn, Visa, Yahoo, Kapor Center, Buildup VC and New York Life to produce this event.</p>
+						
+						<!-- Import Contact Form -->
+						<?php echo $modules->get('SimpleContactForm')->render(); ?>
 					</div>
-				</section><!-- /news-frame -->
+				</section><!-- /contact-frame -->
 			</div><!-- /home-pg -->
 		<?php include('includes/page-wrapper-bottom.php');?>
 	</body>
