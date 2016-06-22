@@ -40,12 +40,12 @@
           $postData .=   "thumbnail:'{$post->thumbnail->url}',";
           $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
           $postData .=   "title:'{$post->title}',";
-          // $postData .=   "summary:'{$postSummary}',";
-          // $postData .=   "details:'{$postDetails}',";
-          // $postData .=   "calendarDate:'{$calendarDate}',";
-          // $postData .=   "date:'{$postDate}',";
+          $postData .=   "summary:'{$postSummary}',";
+          $postData .=   "details:'{$postDetails}',";
+          $postData .=   "calendarDate:'{$calendarDate}',";
+          $postData .=   "date:'{$postDate}',";
           // // $postData .=   "category:'{$postCategory}',";
-          // $postData .=   "eventPrice:'{$post->event_price}',";
+          $postData .=   "eventPrice:'{$post->event_price}',";
           $postData .=   "photos:{$photoCollection}";
           $postData .=   "mapAddress:'{$post->map->address}',";
           $postData .=   "mapLat:'{$post->map->lat}',";
@@ -166,7 +166,7 @@
           '<figure class="teaser" content-id="' + postData[i].id + '">' +
             '<div class="image-container">' + 
               '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
-              '<div class="event-category">' + postData[i].category + '</div>' +
+              // '<div class="event-category">' + postData[i].category + '</div>' +
             '</div>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +

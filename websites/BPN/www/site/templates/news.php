@@ -34,10 +34,10 @@
             $postData .=   "photos:'{$post->photos->url}'";
             $postData .= "},";
 
-            $jsonData .= $postData;
+            echo $postData;
+
             $id ++;
           }
-          echo $jsonData;
       ?>
     ]; 
 
