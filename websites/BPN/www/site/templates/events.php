@@ -18,45 +18,45 @@
   <script type="text/javascript">
     var postData = [ 
       <?php $posts = $page->children();
-          // convert the posted event data to a JSON format 
-          $id = 0;
-          foreach($posts as $post) { 
+        // convert the posted event data to a JSON format 
+        $id = 0;
+        foreach($posts as $post) { 
 
-            $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
-            $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
-            $calendarDate = date('Y-m-d h:i:s \G\M\T', $post->date);
-            $postDate = date("Y-m-d",$post->date);
-            $categoryId = $post->category;
-            $postCategory = $pages->get($categoryId)->title;
-            // get each photo
-            $photoCollection = "[";
-            foreach($post->photos as $photo) {
-              $photoCollection .= "'{$photo->url}',";
-            }
-            $photoCollection .= "],";
-
-            $postData =  "{";
-            $postData .=   "id:'{$id}',";
-            $postData .=   "thumbnail:'{$post->thumbnail->url}',";
-            $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
-            $postData .=   "title:'{$post->title}',";
-            $postData .=   "summary:'{$postSummary}',";
-            $postData .=   "details:'{$postDetails}',";
-            $postData .=   "calendarDate:'{$calendarDate}',";
-            $postData .=   "date:'{$postDate}',";
-            $postData .=   "category:'{$postCategory}',";
-            $postData .=   "eventPrice:'{$post->event_price}',";
-            $postData .=   "photos:{$photoCollection}";
-            $postData .=   "mapAddress:'{$post->map->address}',";
-            $postData .=   "mapLat:'{$post->map->lat}',";
-            $postData .=   "mapLng:'{$post->map->lng}',";
-            $postData .=   "mapZoom:'{$post->map->zoom}'";
-            $postData .= "},";
-
-            $jsonData .= $postData;
-            $id ++;
+          $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
+          $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
+          $calendarDate = date('Y-m-d h:i:s \G\M\T', $post->date);
+          $postDate = date("Y-m-d",$post->date);
+          // $categoryId = $post->category;
+          // $postCategory = $pages->get($categoryId)->title;
+          // get each photo
+          $photoCollection = "[";
+          foreach($post->photos as $photo) {
+            $photoCollection .= "'{$photo->url}',";
           }
-          echo $jsonData;
+          $photoCollection .= "],";
+
+          $postData =  "{";
+          $postData .=   "id:'{$id}',";
+          $postData .=   "thumbnail:'{$post->thumbnail->url}',";
+          $postData .=   "thumbnailAlt:'{$post->thumbnail}',";
+          $postData .=   "title:'{$post->title}',";
+          // $postData .=   "summary:'{$postSummary}',";
+          // $postData .=   "details:'{$postDetails}',";
+          // $postData .=   "calendarDate:'{$calendarDate}',";
+          // $postData .=   "date:'{$postDate}',";
+          // // $postData .=   "category:'{$postCategory}',";
+          // $postData .=   "eventPrice:'{$post->event_price}',";
+          $postData .=   "photos:{$photoCollection}";
+          $postData .=   "mapAddress:'{$post->map->address}',";
+          $postData .=   "mapLat:'{$post->map->lat}',";
+          $postData .=   "mapLng:'{$post->map->lng}',";
+          $postData .=   "mapZoom:'{$post->map->zoom}'";
+          $postData .= "},";
+
+          echo $postData;
+          $id ++;
+        }
+        // echo $jsonData;
       ?>
     ]; 
 
