@@ -250,6 +250,7 @@ h3 {
   padding: 0.5em;
   width: 100%;
   border: 1px solid #efefef;
+  background-color: #efefef;
   transition: 0.3s;
 }
 .contact-form ul li input:focus,

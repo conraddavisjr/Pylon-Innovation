@@ -127,6 +127,11 @@ Animation
   box-shadow: 0px 0px 20px -9px;
   background-color: white;
   cursor: pointer;
+  transition: 0.3s;
+}
+.teaser:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px #efefef;
 }
 .teaser .image-container {
   position: relative;
@@ -152,6 +157,14 @@ Animation
 }
 .teaser figcaption h2 {
   margin-bottom: 0;
+}
+.teaser i {
+  margin-right: 0.4em;
+  color: #333;
+}
+.teaser .event-price {
+  display: inline-block;
+  float: right;
 }
 
 .article-details {

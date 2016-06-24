@@ -24,7 +24,7 @@
 
           $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
           $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
-          $calendarDate = date('Y-m-d h:i:s \G\M\T', $post->date);
+          $calendarDate = date('lMjY', $post->date);
           $postDate = date("Y-m-d",$post->date);
           // $categoryId = $post->category;
           // $postCategory = $pages->get($categoryId)->title;
@@ -142,7 +142,6 @@
   <?php include('includes/page-wrapper-bottom.php');?>
 
   <!-- /Main container -->
-
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -155,7 +154,7 @@
   <script>
     (function() {
 
-      // load the content
+      // load the Teaser content
 
       loadPostData();
 
@@ -171,8 +170,8 @@
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +
               '<p class="summary">' + postData[i].summary + '</p>' +
-              '<p class="date">' + postData[i].date + '</p>' +
-              '<p class="address">' + postData[i].mapAddress + '</p>' +
+              '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + '</p>' +
+              '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
               '<p class="event-price">' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +
           '</figure>');
