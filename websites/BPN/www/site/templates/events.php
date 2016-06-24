@@ -92,7 +92,7 @@
         <!-- article detailed view -->
         <article class="article-details">
           <div class="bounding-container">
-            <div class="close-content-btn"></div>
+            <div class="close-content-btn">X</div>
             <div class="image-copy-container">
               <img class="post-image" src="">
               <div class="article-copy">

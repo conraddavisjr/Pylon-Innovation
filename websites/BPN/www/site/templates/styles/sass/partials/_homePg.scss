@@ -104,6 +104,7 @@ h3{
 #events-frame{
   background-image: url('../../assets/images/eventsBg.jpg');
   background-attachment: fixed;
+  background-size: cover;
   padding: 6em 0 6em 0;
   @include clearfix();
   .hp-events-teaser{
@@ -236,6 +237,7 @@ h3{
   }
   .copy-container{
     margin-top: -70px;
+    padding-bottom: 3em;
     background-color: white;
     z-index: 2;
     position: relative;
