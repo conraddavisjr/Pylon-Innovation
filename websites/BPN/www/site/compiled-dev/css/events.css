@@ -131,7 +131,7 @@ Animation
 }
 .teaser:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 10px #efefef;
+  box-shadow: 0px 0px 10px #d6d6d6;
 }
 .teaser .image-container {
   position: relative;
