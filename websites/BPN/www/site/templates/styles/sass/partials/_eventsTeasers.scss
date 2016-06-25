@@ -46,13 +46,18 @@
   }
   figcaption{
     padding: 1em;
+    color: $bpnBlue;
     h2{
-      margin-bottom: 0;
+      margin-bottom: 0;  
     }
-  }
-  i{
-    margin-right: 0.4em;
-    color: $bpnParagraph;
+    p{
+      margin-top: 0em;
+      color: $bpnParagraph;
+    }
+    i{
+      margin-right: 0.4em;
+      color: $bpnBlue;
+    }
   }
   .event-price{
     display: inline-block;
@@ -140,6 +145,7 @@
     border-bottom: 1px solid $bpnBlue;
     color: $bpnBlue;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 

@@ -129,7 +129,7 @@
             </div>
             <div id="map"></div>
             <div class="social-share"></div>
-            <div class="close-details"></div>
+            <div class="close-details">Back events listing</div>
           </div>
         </article> <!-- article-details -->
         <div class="photo-gallery-overlay">

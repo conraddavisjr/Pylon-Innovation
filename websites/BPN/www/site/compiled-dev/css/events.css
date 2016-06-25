@@ -168,13 +168,18 @@ Animation
 }
 .teaser figcaption {
   padding: 1em;
+  color: #097ABB;
 }
 .teaser figcaption h2 {
   margin-bottom: 0;
 }
-.teaser i {
-  margin-right: 0.4em;
+.teaser figcaption p {
+  margin-top: 0em;
   color: #333;
+}
+.teaser figcaption i {
+  margin-right: 0.4em;
+  color: #097ABB;
 }
 .teaser .event-price {
   display: inline-block;
@@ -256,6 +261,7 @@ Animation
   border-bottom: 1px solid #097ABB;
   color: #097ABB;
   text-align: center;
+  text-transform: uppercase;
 }
 
 figure.open-up {
