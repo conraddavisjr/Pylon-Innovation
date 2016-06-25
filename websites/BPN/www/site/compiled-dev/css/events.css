@@ -207,8 +207,6 @@ Animation
 }
 .article-details .image-copy-container {
   margin-bottom: 1em;
-  overflow: auto;
-  zoom: 1;
 }
 .article-details .photo-gallery-teaser {
   width: 160px;
