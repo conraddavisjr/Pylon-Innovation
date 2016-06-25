@@ -15,15 +15,16 @@ $(function() {
 
     elements: function(){
       this.$teaser = $('.teaser');
+      this.$articleDetails = $('.article-details');
       this.$closeContentBtn = $('.close-content-btn');
 
       //post detail elements
-      this.$postTitle = $('.post-title');
-      this.$postSubtitle = $('.post-subtitle');
-      this.$postDetails = $('.post-details');
-      this.$photoGalleryTeaser = $('.photo-gallery-teaser .image');
-      this.$postAddress = $('.address');
-      this.$postDate = $('.date');
+      this.$postTitle = $('.post-title', this.$articleDetails);
+      this.$postSubtitle = $('.post-subtitle', this.$articleDetails);
+      this.$postDetails = $('.post-details', this.$articleDetails);
+      this.$photoGalleryTeaser = $('.photo-gallery-teaser .image', this.$articleDetails);
+      this.$postAddress = $('.address', this.$articleDetails);
+      this.$postDate = $('.date', this.$articleDetails);
 
       // add to calendar elements
       this.$atcb_item = $('.atcb-item a');
@@ -51,6 +52,8 @@ $(function() {
       var $article = $('.article-details');
       
       teaserZoom.teaserProperties = teaser.getBoundingClientRect();
+      teaserZoom.innerHeight = $(teaser).innerHeight();
+      console.log('teaserZoom.innerHeight: ', teaserZoom.innerHeight);
 
       teaserZoom.$teaser.css({
           'display': 'none',
@@ -62,10 +65,11 @@ $(function() {
       // Run GSAP animation for teaser zoom feature
       // first fade the navigation menu out
       $('#nav-menu').fadeOut(500);
+      console.log('teaserZoom.teaserProperties.height: ', teaserZoom.teaserProperties.height)
       teaserZoom.tl = new TimelineLite;
       teaserZoom.tl
         .to($('img', teaser), 0.8, {left:'200%'})
-        .fromTo(teaser, 1, {left: teaserZoom.teaserProperties.left, top: teaserZoom.teaserProperties.top, width:'30%', height:'100%', scale:1}, {left: 0, top: 0, width:'100vw', height:'100%', scale:2, ease: Power1.easeOut}, "-=0.8")
+        .fromTo(teaser, 1, {left: teaserZoom.teaserProperties.left, top: teaserZoom.teaserProperties.top, width:'30%', height: teaserZoom.teaserProperties.height, scale:1}, {left: 0, top: 0, width:'100vw', height:'100%', scale:2, ease: Power1.easeOut}, "-=0.8")
         .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.5")
         .to(teaser, 0, {visibility: 'hidden', display: 'none !important', position: 'fixed'})
 
@@ -153,7 +157,7 @@ $(function() {
       // animate the other teasers in after the article is closed
       tl = new TimelineLite;
       tl.fromTo($('.teaser'), 1, {opacity: 0, display: 'block', left: 0}, {opacity: 1, left: 0, delay: 1.1})
-        .to($(teaserZoom.currentTeaser), 0.3, {top: 0}, "-=2");
+        .to($(teaserZoom.currentTeaser), 0.3, {top: 0, height: teaserZoom.innerHeight}, "-=2");
 
 
       $(teaserZoom.currentTeaser).css({'left': 0, 'top': 0});

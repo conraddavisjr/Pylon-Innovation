@@ -92,7 +92,7 @@
         <!-- article detailed view -->
         <article class="article-details">
           <div class="bounding-container">
-            <div class="close-content-btn">X</div>
+            <div class="close-content-btn fa fa-times"></div>
             <div class="image-copy-container">
               <img class="post-image" src="">
               <div class="article-copy">
@@ -129,9 +129,7 @@
             </div>
             <div id="map"></div>
             <div class="social-share"></div>
-            <div class="close-details">
-              Back to Events Listing
-            </div>
+            <div class="close-details"></div>
           </div>
         </article> <!-- article-details -->
         <div class="photo-gallery-overlay">

@@ -122,6 +122,7 @@ Animation
 .teaser {
   width: 30%;
   height: 510px;
+  position: relative;
   float: left;
   margin: 20px 1.66%;
   box-shadow: 0px 0px 20px -9px;
@@ -129,9 +130,22 @@ Animation
   cursor: pointer;
   transition: 0.3s;
 }
+.teaser:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  z-index: 2;
+  bottom: 0;
+  background-color: #097ABB;
+  width: 0%;
+  transition: 0.3s;
+}
 .teaser:hover {
-  transform: scale(1.05);
+  transform: scale(1.02) !important;
   box-shadow: 0px 0px 10px #d6d6d6;
+}
+.teaser:hover:after {
+  width: 100%;
 }
 .teaser .image-container {
   position: relative;
@@ -194,6 +208,11 @@ Animation
   background-color: white;
   z-index: 10;
   cursor: pointer;
+}
+.article-details .close-content-btn:before {
+  transform: translate(-50%, 50%);
+  position: absolute;
+  left: 50%;
 }
 .article-details .article-copy {
   width: 45%;
