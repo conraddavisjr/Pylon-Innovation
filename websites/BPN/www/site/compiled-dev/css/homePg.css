@@ -247,11 +247,13 @@ h3 {
 }
 .contact-form ul li input,
 .contact-form ul li textarea {
-  padding: 0.5em;
-  width: 100%;
+  padding: 0.5em 3%;
+  width: 94%;
   border: 1px solid #efefef;
+  border-bottom: 2px solid #efefef;
   background-color: #efefef;
   transition: 0.3s;
+  resize: none;
 }
 .contact-form ul li input:focus,
 .contact-form ul li textarea:focus {
@@ -260,6 +262,14 @@ h3 {
 }
 .contact-form .InputfieldHidden {
   display: none;
+}
+.contact-form button {
+  padding: 0.6em 6%;
+  width: 100%;
+  font-size: 1.1em;
+  background-color: #d0d7dc;
+  border: 0;
+  color: #333;
 }
 
 /*# sourceMappingURL=homePg.css.map */
