@@ -400,6 +400,7 @@ figure.open-up figcaption {
   height: 100%;
   z-index: 3;
   cursor: pointer;
+  visibility: hidden;
 }
 .photo-gallery-container .click-fields .left-field {
   position: absolute;
@@ -407,6 +408,7 @@ figure.open-up figcaption {
   width: 50%;
   height: 100%;
   background-color: yellow;
+  opacity: 0.5;
 }
 .photo-gallery-container .click-fields .right-field {
   position: absolute;
@@ -414,6 +416,7 @@ figure.open-up figcaption {
   width: 50%;
   height: 100%;
   background-color: purple;
+  opacity: 0.5;
 }
 .photo-gallery-container .fade-in {
   opacity: 1;
