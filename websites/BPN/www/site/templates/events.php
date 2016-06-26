@@ -26,6 +26,12 @@
           $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
           $calendarDate = date('lMjY', $post->date);
           $postDate = date("Y-m-d",$post->date);
+          // determine if the rate is free or charge
+          $eventPrice = $post->event_price;
+          if($eventPrice == ''){
+            $eventPrice = 'FREE';
+          }
+
           // $categoryId = $post->category;
           // $postCategory = $pages->get($categoryId)->title;
           // get each photo
@@ -44,8 +50,8 @@
           $postData .=   "details:'{$postDetails}',";
           $postData .=   "calendarDate:'{$calendarDate}',";
           $postData .=   "date:'{$postDate}',";
-          // // $postData .=   "category:'{$postCategory}',";
-          $postData .=   "eventPrice:'{$post->event_price}',";
+          // $postData .=   "category:'{$postCategory}',";
+          $postData .=   "eventPrice:'{$eventPrice}',";
           $postData .=   "photos:{$photoCollection}";
           $postData .=   "mapAddress:'{$post->map->address}',";
           $postData .=   "mapLat:'{$post->map->lat}',";
@@ -82,9 +88,9 @@
       </div>  
       <div class="figure-container">
         <div class="bounding-container">
-          <div class="filter">
+          <!-- <div class="filter">
             <i>Filter Icon</i>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="content">

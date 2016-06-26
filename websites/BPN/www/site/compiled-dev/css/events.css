@@ -183,7 +183,14 @@ Animation
 }
 .teaser .event-price {
   display: inline-block;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.4em;
   float: right;
+  color: #097ABB;
+  bottom: 0.5em;
+  right: 1em;
+  margin: 0;
 }
 
 .article-details {
