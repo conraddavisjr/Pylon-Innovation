@@ -150,20 +150,20 @@
     <div class="grid-icon">GRID</div>
     <div class="close-btn">CLOSE</div>
     <div class="thumbnails-group">
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
-      <div class="thumbnail"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
+      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
     </div>
-    <div class="main-image"></div>
+    <div class="main-image"><img src=""></div>
   </div>
 
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
