@@ -206,7 +206,7 @@ Animation
 }
 .article-details img {
   position: relative;
-  width: 50%;
+  max-width: 50%;
   float: left;
 }
 .article-details .post-logistics p {
@@ -325,7 +325,7 @@ figure.open-up figcaption {
 .photo-gallery-container {
   position: fixed;
   width: calc(100%);
-  height: calc(100% - 3em);
+  height: calc(100% - 2em);
   padding: 2em 0em 0em 0em;
   background-color: #000000;
   top: 0;
