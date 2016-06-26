@@ -24,8 +24,8 @@
 
           $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
           $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
-          $calendarDate = date('lMjY', $post->date);
-          $postDate = date("Y-m-d",$post->date);
+          $calendarDate = date('l, M j, Y', $post->date);
+
           // determine if the rate is free or charge
           $eventPrice = $post->event_price;
           if($eventPrice == ''){
@@ -48,8 +48,7 @@
           $postData .=   "title:'{$post->title}',";
           $postData .=   "summary:'{$postSummary}',";
           $postData .=   "details:'{$postDetails}',";
-          $postData .=   "calendarDate:'{$calendarDate}',";
-          $postData .=   "date:'{$postDate}',";
+          $postData .=   "date:'{$calendarDate}',";
           // $postData .=   "category:'{$postCategory}',";
           $postData .=   "eventPrice:'{$eventPrice}',";
           $postData .=   "photos:{$photoCollection}";
@@ -107,13 +106,13 @@
                 <div class="post-logistics">
                   <div class="post-date">
                     <p>Date</p>
-                    <div class="date"></div>
+                    <div class="date"><i class="fa fa-calendar"></i><span class="info"></span></div>
                   </div>
                   <div class="post-address">
                     <p>Address</p>
-                    <div class="address"></div>
+                    <div class="address"><i class="fa fa-map-marker"></i><span class="info"></span></div>
                   </div>
-                  <div class="add-to-cal">
+                  <!-- <div class="add-to-cal">
                     <span class="addtocalendar atc-style-blue">
                       <var class="atc_event">
                         <var class="atc_date_start"></var>
@@ -126,7 +125,7 @@
                         <var class="atc_organizer_email"></var>
                       </var>
                     </span>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="photo-gallery-teaser">
                   <div class="image"></div>

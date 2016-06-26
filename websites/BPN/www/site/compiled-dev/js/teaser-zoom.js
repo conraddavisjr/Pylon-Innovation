@@ -23,8 +23,8 @@ $(function() {
       this.$postSubtitle = $('.post-subtitle', this.$articleDetails);
       this.$postDetails = $('.post-details', this.$articleDetails);
       this.$photoGalleryTeaser = $('.photo-gallery-teaser .image', this.$articleDetails);
-      this.$postAddress = $('.address', this.$articleDetails);
-      this.$postDate = $('.date', this.$articleDetails);
+      this.$postAddress = $('.address .info', this.$articleDetails);
+      this.$postDate = $('.date .info', this.$articleDetails);
 
       // add to calendar elements
       this.$atcb_item = $('.atcb-item a');

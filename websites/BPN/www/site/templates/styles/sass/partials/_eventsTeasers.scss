@@ -46,9 +46,9 @@
   }
   figcaption{
     padding: 1em;
-    color: $bpnBlue;
     h2{
       margin-bottom: 0;  
+      color: $bpnBlue;
     }
     p{
       margin-top: 0em;
@@ -89,6 +89,17 @@
     width: 50%;
     float: left;
   }
+  .post-logistics{
+    p{
+      margin: 1em 0 0.2em 0;
+      font-weight: bold;
+      color: $bpnBlue;
+    }
+    i{
+      margin-right: 0.4em;
+      color: $bpnBlue;
+    }
+  }
   .close-content-btn{
     position: fixed;
     top: 30px;
@@ -98,6 +109,26 @@
     background-color: white;
     z-index: 10;
     cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid $bpnParagraph;
+    &:hover{
+      &:after{
+        opacity: 1;
+        right: 2.1em;
+      }
+    }
+    &:after{
+      content: "Close";
+      position: absolute;
+      right: 0;
+      top: 0.4em;
+      font-weight: bold;
+      opacity: 0;
+      border-radius: 3px;
+      transition: 0.3s;
+      padding: 0 0.5em;
+      background-color: rgba(255, 255, 255, 0.49);   
+    }
     &:before{
       transform: translate(-50%, 50%);
       position: absolute;
@@ -116,6 +147,7 @@
   }
   .image-copy-container{
     margin-bottom: 1em;
+    overflow: auto;
   }
   .photo-gallery-teaser{
     width: 160px;
