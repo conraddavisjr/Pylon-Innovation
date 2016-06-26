@@ -9,6 +9,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: 20;
+  transition: 0.5s;
   .thumbnails-group{
     position: absolute;
     width: 100%;
@@ -64,8 +65,8 @@
     visibility: hidden;
     text-align: center;
   }
-  .fade-in{
-    opacity: 1;
-    visibility: visible;
-  }
+}
+.fade-in{
+  opacity: 1;
+  visibility: visible;
 }

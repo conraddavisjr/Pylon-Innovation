@@ -333,6 +333,7 @@ figure.open-up figcaption {
   opacity: 0;
   visibility: hidden;
   z-index: 20;
+  transition: 0.5s;
 }
 .photo-gallery-container .thumbnails-group {
   position: absolute;
@@ -389,7 +390,8 @@ figure.open-up figcaption {
   visibility: hidden;
   text-align: center;
 }
-.photo-gallery-container .fade-in {
+
+.fade-in {
   opacity: 1;
   visibility: visible;
 }
