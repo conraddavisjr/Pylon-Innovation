@@ -148,7 +148,7 @@
   <!-- Photo Gallery container -->
   <div class="photo-gallery-container">
     <div class="grid-icon">GRID</div>
-    <div class="close-btn">CLOSE</div>
+    <div class="photo-gallery-close-btn">CLOSE</div>
     <div class="thumbnails-group"></div>
     <div class="main-image"><img src=""></div>
   </div>

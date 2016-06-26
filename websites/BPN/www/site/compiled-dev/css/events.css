@@ -390,10 +390,29 @@ figure.open-up figcaption {
   visibility: hidden;
   text-align: center;
 }
+.photo-gallery-container .main-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.photo-gallery-container .fade-in {
+  opacity: 1;
+  visibility: visible;
+}
 
 .fade-in {
   opacity: 1;
   visibility: visible;
+}
+
+.photo-gallery-close-btn {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5em 1em;
+  background-color: #252525;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=events.css.map */

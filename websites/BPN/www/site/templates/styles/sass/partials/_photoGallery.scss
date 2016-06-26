@@ -64,9 +64,27 @@
     z-index: 2;
     visibility: hidden;
     text-align: center;
+    img{
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .fade-in{
+    opacity: 1;
+    visibility: visible;
   }
 }
 .fade-in{
   opacity: 1;
   visibility: visible;
+}
+.photo-gallery-close-btn{
+  display: inline-block;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5em 1em;
+  background-color: #252525;
+  cursor: pointer;
 }
