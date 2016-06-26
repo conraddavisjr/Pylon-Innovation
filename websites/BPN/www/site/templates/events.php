@@ -134,7 +134,7 @@
             </div>
             <div id="map"></div>
             <div class="social-share"></div>
-            <div class="close-details">Back events listing</div>
+            <div class="close-details">Back to events listing</div>
           </div>
         </article> <!-- article-details -->
         <div class="photo-gallery-overlay">
@@ -143,13 +143,35 @@
       </div><!-- content -->
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
-
   <!-- /Main container -->
+
+  <!-- Photo Gallery container -->
+  <div class="photo-gallery-container">
+    <div class="grid-icon">GRID</div>
+    <div class="close-btn">CLOSE</div>
+    <div class="thumbnails-group">
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+      <div class="thumbnail"></div>
+    </div>
+    <div class="main-image"></div>
+  </div>
+
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
+  <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>

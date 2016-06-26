@@ -16,7 +16,7 @@ $(function() {
     elements: function(){
       this.$teaser = $('.teaser');
       this.$articleDetails = $('.article-details');
-      this.$closeContentBtn = $('.close-content-btn');
+      this.$closeContentBtn = $('.close-content-btn, .close-details');
 
       //post detail elements
       this.$postTitle = $('.post-title', this.$articleDetails);
@@ -65,7 +65,6 @@ $(function() {
       // Run GSAP animation for teaser zoom feature
       // first fade the navigation menu out
       $('#nav-menu').fadeOut(500);
-      console.log('teaserZoom.teaserProperties.height: ', teaserZoom.teaserProperties.height)
       teaserZoom.tl = new TimelineLite;
       teaserZoom.tl
         .to($('img', teaser), 0.8, {left:'200%'})
@@ -143,7 +142,8 @@ $(function() {
 
     closeContent: function(){
       // remove the addToCal reference
-      $('.addToCalendarScript').remove();
+      // $('.addToCalendarScript').remove();
+
       // reverse the animation upon closing the detailed article
       teaserZoom.tl.reverse();
 
@@ -158,7 +158,6 @@ $(function() {
       tl = new TimelineLite;
       tl.fromTo($('.teaser'), 1, {opacity: 0, display: 'block', left: 0}, {opacity: 1, left: 0, delay: 1.1})
         .to($(teaserZoom.currentTeaser), 0.3, {top: 0, height: teaserZoom.innerHeight}, "-=2");
-
 
       $(teaserZoom.currentTeaser).css({'left': 0, 'top': 0});
       teaserZoom.$teaser.css({

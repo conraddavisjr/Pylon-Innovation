@@ -1,7 +1,49 @@
-.photo-gallery-overlay{
+.photo-gallery-container{
   position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 15;
-  background-color: black;
+  width: calc(100%);
+  height: calc(100% - 3em);
+  padding: 2em 0em 0em 0em;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  .thumbnails-group{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    .thumbnail{
+      background-color: gray;
+      height: 9em;
+      width: 10.1%;
+      top: 0%;
+      display: inline-block;
+      float: left;
+      margin: 0.5%;
+      transition: 0.5s;
+      position: relative;
+      cursor: pointer;
+    }
+    .fade-out{
+      opacity: 0;
+      top: -10%;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+    .go-to-center{
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      position: absolute;
+      visibility: visible;
+    }
+    .remove-front{
+      opacity: 0;
+      transition: 0.1s;
+    }
+    .grid-icon{
+      color: white;
+    }
+  }
 }
