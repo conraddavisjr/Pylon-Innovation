@@ -407,16 +407,12 @@ figure.open-up figcaption {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: yellow;
-  opacity: 0.5;
 }
 .photo-gallery-container .click-fields .right-field {
   position: absolute;
   right: 0;
   width: 50%;
   height: 100%;
-  background-color: purple;
-  opacity: 0.5;
 }
 .photo-gallery-container .fade-in {
   opacity: 1;
