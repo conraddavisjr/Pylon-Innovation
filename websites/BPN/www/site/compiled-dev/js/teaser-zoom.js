@@ -35,6 +35,30 @@ $(function() {
       this.$atc_location = $('.atc_location');
       this.$atc_timezone = $('.atc_timezone')
       this.$atc_organizer_email = $('.atc_organizer_email');
+
+      // var
+      this.styles = [
+        {
+          featureType: "all",
+          stylers: [
+            { hue: "#097ABB" },
+            { saturation: 0 }
+          ]
+        },{
+          featureType: "road.arterial",
+          elementType: "geometry",
+          stylers: [
+            { hue: "#00ffee" },
+            { saturation: 50 }
+          ]
+        },{
+          featureType: "poi.business",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+      ];
     },
     eventListeners: function(){
       this.$teaser.on('click', this.triggerZoom);
@@ -175,6 +199,7 @@ $(function() {
         zoom: 8,
         scrollwheel: false
       });
+      map.setOptions({styles: teaserZoom.styles});
     }
   }// teaserZoom Module (END)
   

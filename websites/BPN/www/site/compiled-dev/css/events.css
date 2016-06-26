@@ -262,8 +262,9 @@ Animation
   word-wrap: break-word;
 }
 .article-details .image-copy-container {
-  margin-bottom: 1em;
+  margin: 1em 0;
   overflow: auto;
+  box-shadow: 0px 0px 10px #c3c3c3;
 }
 .article-details .photo-gallery-teaser {
   width: 160px;
@@ -320,6 +321,7 @@ figure.open-up figcaption {
   clear: both;
   height: 400px;
   width: 100%;
+  box-shadow: 0px 0px 10px #c3c3c3;
 }
 
 .photo-gallery-container {

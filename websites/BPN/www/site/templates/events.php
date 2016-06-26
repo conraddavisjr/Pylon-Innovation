@@ -189,7 +189,7 @@
               '<p class="summary">' + postData[i].summary + '</p>' +
               '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + '</p>' +
               '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
-              '<p class="event-price">' + postData[i].eventPrice + '</p>' +
+              '<p class="event-price">' + '$' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +
           '</figure>');
         }
