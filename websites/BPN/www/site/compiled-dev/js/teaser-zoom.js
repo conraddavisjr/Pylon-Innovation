@@ -22,7 +22,7 @@ $(function() {
       this.$postTitle = $('.post-title', this.$articleDetails);
       this.$postSubtitle = $('.post-subtitle', this.$articleDetails);
       this.$postDetails = $('.post-details', this.$articleDetails);
-      this.$photoGalleryTeaser = $('.photo-gallery-teaser .image', this.$articleDetails);
+      this.$photoGalleryTeaserImage = $('.photo-gallery-teaser .image', this.$articleDetails);
       this.$postAddress = $('.address .info', this.$articleDetails);
       this.$postDate = $('.date .info', this.$articleDetails);
 
@@ -96,10 +96,12 @@ $(function() {
           '<h4>' + 'to get an alert when this is posted!' + '</h4>'
         );
       }else{
-        // post the image and its gallery
-        teaserZoom.$photoGalleryTeaser.html('<img src="' + postData[teaserId].photos[0] + '">' +
+        // post the image and its gallery with an id
+        teaserZoom.$photoGalleryTeaserImage.html('<img src="' + postData[teaserId].photos[0] + '">' +
           '<h4>' + 'View the Photo Gallery for this event' + '</h4>'
         );
+        var $photoGalleryTeaser = $('.photo-gallery-teaser', teaserZoom.$articleDetails);
+        $photoGalleryTeaser.attr('id', postData[teaserId].id);
       }
       teaserZoom.$postAddress.html(postData[teaserId].mapAddress);
       teaserZoom.$postDate.html(postData[teaserId].date);

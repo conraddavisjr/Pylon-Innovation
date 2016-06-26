@@ -330,6 +330,8 @@ figure.open-up figcaption {
   background-color: #000000;
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
   z-index: 20;
 }
 .photo-gallery-container .thumbnails-group {
@@ -377,7 +379,7 @@ figure.open-up figcaption {
 .photo-gallery-container .main-image {
   width: 100%;
   height: 100%;
-  background-color: tan;
+  background-color: black;
   position: relative;
   top: 0;
   left: 0;
@@ -385,6 +387,7 @@ figure.open-up figcaption {
   transition: 1s;
   z-index: 2;
   visibility: hidden;
+  text-align: center;
 }
 .photo-gallery-container .fade-in {
   opacity: 1;

@@ -149,22 +149,10 @@
   <div class="photo-gallery-container">
     <div class="grid-icon">GRID</div>
     <div class="close-btn">CLOSE</div>
-    <div class="thumbnails-group">
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-      <div class="thumbnail"><img src="<?php echo $config->urls->assets?>/images/social-icons-fb.jpg"></div>
-    </div>
+    <div class="thumbnails-group"></div>
     <div class="main-image"><img src=""></div>
   </div>
+  <!-- /Photo Gallery container -->
 
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
