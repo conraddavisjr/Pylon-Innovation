@@ -159,9 +159,14 @@
     padding: 0.6em 0;
     border-top: 3px solid $bpnLightGray;
     cursor: pointer;
+    transition: 0.3s;
     &:hover{
+      transform: scale(1.05);
       h3{
         color: $bpnBlue;
+      }
+      img{
+        @include filter(brightness(1.1));
       }
     }
     h3{
@@ -178,6 +183,7 @@
         float: none;
         padding-bottom: 0.5em;
         border-bottom: 9px solid $bpnBlue;
+        transition: 0.3s;
       }
     }
   }
@@ -188,11 +194,14 @@
       margin-bottom: 0.5em;
       font-weight: bold;
     }
-    .post-date{
+    .post-date,
+    .post-address{
       margin-bottom: 1.5em;
     }
-    .post-address{
-
+    .price{
+      color: $bpnBlue;
+      font-size: 1.5em;
+      font-weight: bold;
     }
   }
   .social-share{
@@ -209,6 +218,12 @@
     color: $bpnBlue;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      color: white;
+      background-color: $bpnBlue;
+    }
   }
 }
 

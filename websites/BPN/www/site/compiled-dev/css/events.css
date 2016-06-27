@@ -276,9 +276,19 @@ Animation
   padding: 0.6em 0;
   border-top: 3px solid #d6d6d6;
   cursor: pointer;
+  transition: 0.3s;
+}
+.article-details .photo-gallery-teaser:hover {
+  transform: scale(1.05);
 }
 .article-details .photo-gallery-teaser:hover h3 {
   color: #097ABB;
+}
+.article-details .photo-gallery-teaser:hover img {
+  -ie-filter: brightness(1.1);
+  -moz-filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
 }
 .article-details .photo-gallery-teaser h3 {
   margin: 0 0 0.5em 0;
@@ -295,6 +305,7 @@ Animation
   float: none;
   padding-bottom: 0.5em;
   border-bottom: 9px solid #097ABB;
+  transition: 0.3s;
 }
 .article-details .post-logistics {
   display: inline-block;
@@ -304,8 +315,14 @@ Animation
   margin-bottom: 0.5em;
   font-weight: bold;
 }
-.article-details .post-logistics .post-date {
+.article-details .post-logistics .post-date,
+.article-details .post-logistics .post-address {
   margin-bottom: 1.5em;
+}
+.article-details .post-logistics .price {
+  color: #097ABB;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .article-details .social-share {
   margin-top: 2em;
@@ -321,6 +338,12 @@ Animation
   color: #097ABB;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.article-details .close-details:hover {
+  color: white;
+  background-color: #097ABB;
 }
 
 figure.open-up {

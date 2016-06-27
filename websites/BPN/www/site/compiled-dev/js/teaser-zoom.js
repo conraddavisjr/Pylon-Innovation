@@ -25,6 +25,7 @@ $(function() {
       this.$photoGalleryTeaserImage = $('.photo-gallery-teaser .image', this.$articleDetails);
       this.$postAddress = $('.address .info', this.$articleDetails);
       this.$postDate = $('.date .info', this.$articleDetails);
+      this.$postPrice = $('.price .info', this.$articleDetails);
 
       // add to calendar elements
       this.$atcb_item = $('.atcb-item a');
@@ -123,12 +124,14 @@ $(function() {
         // post the image and its gallery with an id
         teaserZoom.$photoGalleryTeaserImage.html('<h3>' + 'Photo Gallery' + '</h4>' + 
           '<img src="' + postData[teaserId].photos[0] + '">'
+          //'<h4>' + 'View the Photos for this event' + '</h4>'
         );
         var $photoGalleryTeaser = $('.photo-gallery-teaser', teaserZoom.$articleDetails);
         $photoGalleryTeaser.attr('id', postData[teaserId].id);
       }
-      teaserZoom.$postAddress.html(postData[teaserId].mapAddress);
       teaserZoom.$postDate.html(postData[teaserId].date);
+      teaserZoom.$postAddress.html(postData[teaserId].mapAddress);
+      teaserZoom.$postPrice.html(postData[teaserId].eventPrice);
       teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
 
       // update the add to calender details

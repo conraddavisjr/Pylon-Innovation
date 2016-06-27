@@ -112,6 +112,9 @@
                     <p>Address</p>
                     <div class="address"><i class="fa fa-map-marker"></i><span class="info"></span></div>
                   </div>
+                  <div class="post-price">
+                    <div class="price">$<span class="info"></span></div>
+                  </div>
                   <!-- <div class="add-to-cal">
                     <span class="addtocalendar atc-style-blue">
                       <var class="atc_event">
