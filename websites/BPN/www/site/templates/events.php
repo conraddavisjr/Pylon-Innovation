@@ -149,15 +149,17 @@
   <!-- /Main container -->
 
   <!-- Photo Gallery container -->
-  <div class="photo-gallery-container">
-    <div class="grid-icon">GRID</div>
-    <div class="photo-gallery-close-btn">CLOSE</div>
-    <div class="click-fields">
-      <div class="left-field"></div>
-      <div class="right-field"></div>
+  <div class="photo-gallery-perspective">
+    <div class="photo-gallery-container">
+      <div class="grid-icon">GRID</div>
+      <div class="photo-gallery-close-btn">CLOSE</div>
+      <div class="click-fields">
+        <div class="left-field"></div>
+        <div class="right-field"></div>
+      </div>
+      <div class="thumbnails-group"></div>
+      <div class="main-image"><img src=""></div>
     </div>
-    <div class="thumbnails-group"></div>
-    <div class="main-image"><img src=""></div>
   </div>
   <!-- /Photo Gallery container -->
 

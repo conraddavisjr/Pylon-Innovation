@@ -1,14 +1,22 @@
+.photo-gallery-perspective{
+  perspective: 1000px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  z-index: 20;
+}
 .photo-gallery-container{
   position: fixed;
   width: calc(100%);
   height: calc(100% - 2em);
   padding: 2em 0em 0em 0em;
-  background-color: #000000;
-  top: 0;
+  background-color: black;
+  top: 30%;
   left: 0;
   opacity: 0;
-  visibility: hidden;
-  z-index: 20;
+  transform: rotateX(-40deg);
   transition: 0.5s;
   .thumbnails-group{
     position: absolute;
@@ -56,7 +64,9 @@
     }
   } // /thumbnail-group
   .grid-icon{
+    position: relative;
     color: white;
+    z-index: 21;
   }
   .main-image{
     width: 100%;
@@ -103,6 +113,8 @@
 .fade-in{
   opacity: 1;
   visibility: visible;
+  top: 0;
+  transform: rotateX(0deg);
 }
 .photo-gallery-close-btn{
   display: inline-block;
@@ -113,4 +125,5 @@
   padding: 0.5em 1em;
   background-color: #252525;
   cursor: pointer;
+  z-index: 21;
 }
