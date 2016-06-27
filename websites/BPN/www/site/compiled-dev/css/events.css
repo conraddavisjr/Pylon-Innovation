@@ -117,6 +117,10 @@ Animation
   color: white;
 }
 
+.bounding-container {
+  padding: 0 1%;
+}
+
 .teaser {
   width: 30%;
   height: 510px;
@@ -269,10 +273,28 @@ Animation
 .article-details .photo-gallery-teaser {
   width: 160px;
   float: right;
+  padding: 0.6em 0;
+  border-top: 3px solid #d6d6d6;
+  cursor: pointer;
 }
-.article-details .photo-gallery-teaser img {
+.article-details .photo-gallery-teaser:hover h3 {
+  color: #097ABB;
+}
+.article-details .photo-gallery-teaser h3 {
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.article-details .photo-gallery-teaser .image {
   float: none;
   width: 100%;
+}
+.article-details .photo-gallery-teaser .image img {
+  max-width: none;
+  width: 100%;
+  float: none;
+  padding-bottom: 0.5em;
+  border-bottom: 9px solid #097ABB;
 }
 .article-details .post-logistics {
   display: inline-block;
@@ -357,6 +379,15 @@ figure.open-up figcaption {
 }
 .photo-gallery-container .thumbnails-group .thumbnail img {
   height: 100%;
+}
+.photo-gallery-container .thumbnails-group .thumbnail:hover {
+  transform: scale(1.1);
+}
+.photo-gallery-container .thumbnails-group .thumbnail:hover img {
+  -ie-filter: brightness(1.2);
+  -moz-filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 .photo-gallery-container .thumbnails-group .fade-out {
   opacity: 0;

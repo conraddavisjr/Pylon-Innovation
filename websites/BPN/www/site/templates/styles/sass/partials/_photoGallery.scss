@@ -29,6 +29,12 @@
       img{
         height: 100%;
       }
+      &:hover{
+        transform: scale(1.1);
+        img{        
+          @include filter(brightness(1.2));
+        }
+      }
     }
     .fade-out{
       opacity: 0;

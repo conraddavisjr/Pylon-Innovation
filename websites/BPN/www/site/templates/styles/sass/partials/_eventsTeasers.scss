@@ -1,3 +1,6 @@
+.bounding-container{
+  padding: 0 1%;
+}
 .teaser{
   width: 30%;
   height: 510px;
@@ -153,9 +156,29 @@
   .photo-gallery-teaser{
     width: 160px;
     float: right;
-    img{
+    padding: 0.6em 0;
+    border-top: 3px solid $bpnLightGray;
+    cursor: pointer;
+    &:hover{
+      h3{
+        color: $bpnBlue;
+      }
+    }
+    h3{
+      margin: 0 0 0.5em 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .image{
       float: none;
       width: 100%;
+      img{
+        max-width: none;
+        width: 100%;
+        float: none;
+        padding-bottom: 0.5em;
+        border-bottom: 9px solid $bpnBlue;
+      }
     }
   }
   .post-logistics{

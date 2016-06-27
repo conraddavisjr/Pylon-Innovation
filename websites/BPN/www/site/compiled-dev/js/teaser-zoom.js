@@ -121,8 +121,8 @@ $(function() {
         );
       }else{
         // post the image and its gallery with an id
-        teaserZoom.$photoGalleryTeaserImage.html('<img src="' + postData[teaserId].photos[0] + '">' +
-          '<h4>' + 'View the Photo Gallery for this event' + '</h4>'
+        teaserZoom.$photoGalleryTeaserImage.html('<h3>' + 'Photo Gallery' + '</h4>' + 
+          '<img src="' + postData[teaserId].photos[0] + '">'
         );
         var $photoGalleryTeaser = $('.photo-gallery-teaser', teaserZoom.$articleDetails);
         $photoGalleryTeaser.attr('id', postData[teaserId].id);

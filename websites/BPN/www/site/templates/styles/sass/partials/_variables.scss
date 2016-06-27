@@ -40,3 +40,9 @@ $bpnSans: 'Source Sans Pro', sans-serif;
   overflow: auto;
   zoom: 1;
 }
+@mixin filter($value){
+  -ie-filter: $value;
+  -moz-filter: $value;
+  -webkit-filter: $value;
+  filter: $value;
+}
