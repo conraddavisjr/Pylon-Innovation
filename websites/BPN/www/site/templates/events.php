@@ -24,13 +24,18 @@
 
           $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
           $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
-          $calendarDate = date('l, M j, Y', $post->date);
+          $calendarStartDate = date('D, M j, Y', $post->date);
+          $calendarFinishDate = $post->finishdate;
+          if($calendarFinishDate != ""){
+            $calendarStartDate = date('M j', $post->date);
+            $calendarFinishDate = "";
+            $calendarFinishDate .= ' - ';
+            $calendarFinishDate .= date('M j, Y', $post->finshdate);
+          }
 
           // convert lng/lat to int
           $lngNum = $post->map->lng;
           $latNum = $post->map->lat;
-          $lngInt = (int)$lngNum;
-          $latInt = (int)$latNum;
 
           // determine if the rate is free or charge
           $eventPrice = $post->event_price;
@@ -54,7 +59,8 @@
           $postData .=   "title:'{$post->title}',";
           $postData .=   "summary:'{$postSummary}',";
           $postData .=   "details:'{$postDetails}',";
-          $postData .=   "date:'{$calendarDate}',";
+          $postData .=   "date:'{$calendarStartDate}',";
+          $postData .=   "finishDate:'{$calendarFinishDate}',";
           // $postData .=   "category:'{$postCategory}',";
           $postData .=   "eventPrice:'{$eventPrice}',";
           $postData .=   "photos:{$photoCollection}";
@@ -198,7 +204,7 @@
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +
               '<p class="summary">' + postData[i].summary + '</p>' +
-              '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + '</p>' +
+              '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + postData[i].finishDate + '</p>' +
               '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
               '<p class="event-price">' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +

@@ -17,3 +17,4 @@
 2016-06-26 04:54:24	guest	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Error: Failed login for 'shaveela' - Invalid password
 2016-06-26 04:54:41	shaveela	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'shaveela'
 2016-06-26 19:18:22	?	?	User 'shaveela' - Error: Session fingerprint changed (IP address or useragent) (IP: 127.0.0.1)
+2016-06-27 23:00:04	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
