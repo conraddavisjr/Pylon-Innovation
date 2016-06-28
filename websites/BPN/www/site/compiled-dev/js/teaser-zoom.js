@@ -98,7 +98,7 @@ $(function() {
         .to(teaser, 0, {visibility: 'hidden', display: 'none !important', position: 'fixed'})
 
       // // populate the detailed article
-      var teaserId = $(teaser).attr('content-id');
+      teaserZoom.teaserId = $(teaser).attr('content-id');
 
       // populate the map if we're on the events page
       if ($('body').hasClass('eventsPg')){
@@ -108,12 +108,12 @@ $(function() {
       // 
       // Add detailed content to the Overlay
       // 
-      teaserZoom.$postTitle.html(postData[teaserId].title);
-      teaserZoom.$postSubtitle.html(postData[teaserId].subtitle);
-      teaserZoom.$postDetails.html(postData[teaserId].details);
+      teaserZoom.$postTitle.html(postData[teaserZoom.teaserId].title);
+      teaserZoom.$postSubtitle.html(postData[teaserZoom.teaserId].subtitle);
+      teaserZoom.$postDetails.html(postData[teaserZoom.teaserId].details);
 
       // check if theres a photo galery for this post
-      if (postData[teaserId].photos.length <= 0){
+      if (postData[teaserZoom.teaserId].photos.length <= 0){
         // if theres no image, disable the image teaser to set it to upcoming
         $('.photo-gallery-teaser .image').html('<img src="/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/BPN-Logo.jpg">' +
           '<h4>' + 'There are no images here yet, check back soon or' + '</h4>' +
@@ -123,23 +123,23 @@ $(function() {
       }else{
         // post the image and its gallery with an id
         teaserZoom.$photoGalleryTeaserImage.html('<h3>' + 'Photo Gallery' + '</h4>' + 
-          '<img src="' + postData[teaserId].photos[0] + '">'
+          '<img src="' + postData[teaserZoom.teaserId].photos[0] + '">'
           //'<h4>' + 'View the Photos for this event' + '</h4>'
         );
         var $photoGalleryTeaser = $('.photo-gallery-teaser', teaserZoom.$articleDetails);
-        $photoGalleryTeaser.attr('id', postData[teaserId].id);
+        $photoGalleryTeaser.attr('id', postData[teaserZoom.teaserId].id);
       }
-      teaserZoom.$postDate.html(postData[teaserId].date);
-      teaserZoom.$postAddress.html(postData[teaserId].mapAddress);
-      teaserZoom.$postPrice.html(postData[teaserId].eventPrice);
-      teaserZoom.$articleImg.attr('src', postData[teaserId].thumbnail)
+      teaserZoom.$postDate.html(postData[teaserZoom.teaserId].date);
+      teaserZoom.$postAddress.html(postData[teaserZoom.teaserId].mapAddress);
+      teaserZoom.$postPrice.html(postData[teaserZoom.teaserId].eventPrice);
+      teaserZoom.$articleImg.attr('src', postData[teaserZoom.teaserId].thumbnail)
 
       // update the add to calender details
       var addCalURL = 'http://addtocalendar.com/atc/ical?utz=-420&uln=en-US&vjs=1.5&e[0]' + 
-      '[date_start]=' + postData[teaserId].calendarDate + '[0]' +
-      '[date_end]=' + postData[teaserId].calendarDate + '[0]' + 
+      '[date_start]=' + postData[teaserZoom.teaserId].calendarDate + '[0]' +
+      '[date_end]=' + postData[teaserZoom.teaserId].calendarDate + '[0]' + 
       '[timezone]=' + 'Pacific%2Easter[0]' + 
-      '[title]=' + postData[teaserId].title + '[0]' + 
+      '[title]=' + postData[teaserZoom.teaserId].title + '[0]' + 
       '[description]=Summary%20goes%20here&e[0]' + 
       '[location]=San%20Fransisco&e[0]' + 
       '[organizer]=&e[0]' + 
@@ -147,11 +147,11 @@ $(function() {
 
       teaserZoom.$atcb_item.attr('href', addCalURL);
 
-      // teaserZoom.$atc_date_start.html(postData[teaserId].calendarDate);
-      // teaserZoom.$atc_date_end.html(postData[teaserId].calendarDate);
-      // teaserZoom.$atc_title.html(postData[teaserId].title);
-      // teaserZoom.$atc_description.html(postData[teaserId].summary);
-      // teaserZoom.$atc_location.html(postData[teaserId].mapAddress);
+      // teaserZoom.$atc_date_start.html(postData[teaserZoom.teaserId].calendarDate);
+      // teaserZoom.$atc_date_end.html(postData[teaserZoom.teaserId].calendarDate);
+      // teaserZoom.$atc_title.html(postData[teaserZoom.teaserId].title);
+      // teaserZoom.$atc_description.html(postData[teaserZoom.teaserId].summary);
+      // teaserZoom.$atc_location.html(postData[teaserZoom.teaserId].mapAddress);
       // teaserZoom.$atc_timezone.html('Europe/London');
       // teaserZoom.$atc_organizer_email.html('conraddavisjr@msn.com');
 
@@ -196,11 +196,22 @@ $(function() {
     },
 
     initMap: function(){
+      // convert the coords to integers
+      var lat = parseFloat(postData[teaserZoom.teaserId].mapLat);
+      var lng = parseFloat(postData[teaserZoom.teaserId].mapLng);
+      var myLatLng = {lat: lat, lng: lng};
+
       var map;
       map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8,
+        center: myLatLng,
+        zoom: 16,
         scrollwheel: false
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
       });
       map.setOptions({styles: teaserZoom.styles});
     }

@@ -190,6 +190,60 @@
       </li>
       <li class="grid__item">
         <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/3.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/5.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/8.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/5.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/9.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/3.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/7.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/3.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/7.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/8.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/10.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/8.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/9.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/1.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/9.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
           <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
           <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
           <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/10.jpg" alt="01" />
@@ -211,6 +265,48 @@
           <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
           <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
           <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/10.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/8.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/5.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/10.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/8.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/9.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/1.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/9.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/5.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/2.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/11.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/10.jpg" alt="01" />
+        </a>
+      </li>
+      <li class="grid__item">
+        <a class="grid__link">
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/7.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/6.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/4.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/3.jpg" alt="01" />
+          <img class="grid__img layer" src="<?php echo $config->urls->assets?>/images/homeGalleryImgs/7.jpg" alt="01" />
         </a>
       </li>
     </ul>

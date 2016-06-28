@@ -26,6 +26,12 @@
           $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
           $calendarDate = date('l, M j, Y', $post->date);
 
+          // convert lng/lat to int
+          $lngNum = $post->map->lng;
+          $latNum = $post->map->lat;
+          $lngInt = (int)$lngNum;
+          $latInt = (int)$latNum;
+
           // determine if the rate is free or charge
           $eventPrice = $post->event_price;
           if($eventPrice == ''){
@@ -113,7 +119,7 @@
                     <div class="address"><i class="fa fa-map-marker"></i><span class="info"></span></div>
                   </div>
                   <div class="post-price">
-                    <div class="price">$<span class="info"></span></div>
+                    <div class="price"><span class="info"></span></div>
                   </div>
                   <!-- <div class="add-to-cal">
                     <span class="addtocalendar atc-style-blue">
@@ -194,7 +200,7 @@
               '<p class="summary">' + postData[i].summary + '</p>' +
               '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + '</p>' +
               '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
-              '<p class="event-price">' + '$' + postData[i].eventPrice + '</p>' +
+              '<p class="event-price">' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +
           '</figure>');
         }

@@ -1,3 +1,6 @@
+.bounding-container{
+  @include clearfix();
+}
 .register{
   padding: 1em;
   display: table;
@@ -27,7 +30,7 @@
 
 .btn-cta{
   position: relative;
-  margin: 2em auto 0 auto;
+  margin: 3em auto 0 auto;
   text-transform: uppercase;
   display: table;
   padding: 0.6em 2em;
