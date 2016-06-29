@@ -24,8 +24,14 @@
 
           $postDetails = preg_replace( "/\r|\n/", "<br>", $post->details );
           $postSummary = preg_replace( "/\r|\n/", "<br>", $post->summary );
+          // Handle calendar dates and times
+
           $calendarStartDate = date('D, M j, Y', $post->date);
+          $calendarStartTime = date('T', $post->date);
           $calendarFinishDate = $post->finishdate;
+          $calendarFinishTime = $post->finishdate;
+
+          // If there is a finish date, then update the layout
           if($calendarFinishDate != ""){
             $calendarStartDate = date('M j', $post->date);
             $calendarFinishDate = "";
