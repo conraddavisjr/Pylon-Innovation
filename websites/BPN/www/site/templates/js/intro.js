@@ -33,7 +33,7 @@ $(function() {
         .to(this.$loadBar, 0.1, {scale:5, opacity:0, ease:Power4.easeOut}, "-=1.2")
         .from(this.$homePg, 1.2, {opacity:0, top:"100%", scale:4, ease:Power2.easeOut}, "-=1.5")
         .to(this.$slogan, 1, {opacity:1})
-        .fromTo(this.$navItems, 0.5, {opacity:0}, {opacity:1})
+        .fromTo(this.$navItems, 0.5, {opacity:0, visibility:'hidden'}, {opacity:1, visibility:'visible'}, "-=1")
         .to(this.$introContentLoader, 0, {display:'none'})
         .to(this.$intro, 0, {position:'absolute'})
     }

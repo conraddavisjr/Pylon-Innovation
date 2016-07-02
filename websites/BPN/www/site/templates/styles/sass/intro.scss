@@ -50,6 +50,11 @@
   position: relative;
 }
 
+#nav-menu{
+  opacity: 0;
+  visibility: hidden;
+}
+
 .bar, .orbit{
   position: absolute;
   margin: 0 auto;
