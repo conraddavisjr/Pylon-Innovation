@@ -120,13 +120,16 @@ $(function() {
           '<h4>' + 'There are no images here yet, check back soon or' + '</h4>' +
           '<p>' + '<div class="sign-up">Sign up</div>' + '</p>' +
           '<h4>' + 'to get an alert when this is posted!' + '</h4>'
-        );
+        )
+        $('.photo-gallery-teaser').attr('has-gallery', 'false');
       }else{
         // post the image and its gallery with an id
         teaserZoom.$photoGalleryTeaserImage.html('<h3>' + 'Photo Gallery' + '</h4>' + 
           '<img src="' + postData[teaserZoom.teaserId].photos[0] + '">'
           //'<h4>' + 'View the Photos for this event' + '</h4>'
-        );
+        )
+        $('.photo-gallery-teaser').attr('has-gallery', 'true');
+
         var $photoGalleryTeaser = $('.photo-gallery-teaser', teaserZoom.$articleDetails);
         $photoGalleryTeaser.attr('id', postData[teaserZoom.teaserId].id);
       }

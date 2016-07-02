@@ -42,29 +42,36 @@ $(function() {
 
     // events
     openPhotoGallery: function(e){
-      // reveal the photo gallery
-      Events.$photoGalleryContainer.addClass('fade-in');
+      // if there are no images for this gallery, do nothing
+      console.log('this: ', this);
+      console.log('e.target: ', e.target);
+      if($(this).attr('has-gallery') == 'false'){
+        return false;
+      }else{
+        // reveal the photo gallery
+        Events.$photoGalleryContainer.addClass('fade-in');
 
-      // get the gallery id
-      var galleryId = Events.$photoGalleryTeaser.attr('id');
+        // get the gallery id
+        var galleryId = Events.$photoGalleryTeaser.attr('id');
 
-      // set array to all images before posting them to the DOM
-      Events.galleryArray = [];
-      Events.galleryImgSrcArray = [];
+        // set array to all images before posting them to the DOM
+        Events.galleryArray = [];
+        Events.galleryImgSrcArray = [];
 
-      // generate the thumbnails per the PostData JSON
-      for (var i = 0; i < postData[galleryId].photos.length; i++) {
-        Events.galleryArray.push('<div class="thumbnail" data-thumbnail-id="' + i + '"><img src="' + postData[galleryId].photos[i] + '"></div>');
-        Events.galleryImgSrcArray.push(postData[galleryId].photos[i]);
+        // generate the thumbnails per the PostData JSON
+        for (var i = 0; i < postData[galleryId].photos.length; i++) {
+          Events.galleryArray.push('<div class="thumbnail" data-thumbnail-id="' + i + '"><img src="' + postData[galleryId].photos[i] + '"></div>');
+          Events.galleryImgSrcArray.push(postData[galleryId].photos[i]);
+        }
+
+        // create a reference to the thumbnail
+        Events.$thumbnail = $('.thumbnail');
+
+        // post the html to the DOM
+        Events.$thumbnailsGroup.html(
+          Events.galleryArray.join(" ")
+        );  
       }
-
-      // create a reference to the thumbnail
-      Events.$thumbnail = $('.thumbnail');
-
-      // post the html to the DOM
-      Events.$thumbnailsGroup.html(
-        Events.galleryArray.join(" ")
-      );
     },
 
     viewDetailedPic: function(e){
