@@ -1,7 +1,7 @@
 <section id="gallery-frame" class="section section--right section--portraits">
   <div class="photo-gallery-info">
     <div class="photo-gallery-title">Photo Gallery</div>
-    <div class="btn-cta">View our Gallery</div>
+    <a href="<?php //echo $pages->get("/photo-gallery")->url; ?>"><div class="btn-cta">View our Gallery</div></a>
   </div>
   <div class="isolayer home-gallery-grid">
     <ul class="grid">

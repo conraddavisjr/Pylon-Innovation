@@ -194,10 +194,13 @@
     p{
       margin-bottom: 0.5em;
       font-weight: bold;
+      color: $bpnParagraph;
     }
-    .post-date,
+    .post-date{
+      margin-bottom: 0.3em;
+    }
     .post-address{
-      margin-bottom: 1.5em;
+      margin: 1.5em 0 2.5em 0;
     }
     .price{
       color: $bpnBlue;

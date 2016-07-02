@@ -25,7 +25,7 @@ $(function() {
       this.$mainImageSrc = $('.main-image img');
       this.$photoGalleryCloseBtn = $('.photo-gallery-close-btn');
       this.$clickFieldsContainer = $('.click-fields');
-      this.$clickFields = $('.left-field, .right-field');
+      this.$clickFields = $('#left-field, #right-field');
 
       // var
       this.galleryArrayValue = 0;
@@ -101,7 +101,7 @@ $(function() {
 
     galleryNavigation: function(e){
       // determine which direction was clicked
-      var fieldClicked = $(this).attr('class');
+      var fieldClicked = $(this).attr('id');
       var pointedImage = '';
 
       console.log('thumbnailId: ', Events.thumbnailId);

@@ -10,3 +10,5 @@
 2016-06-16 18:57:59	?	?	SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (in /wire/core/ProcessWire.php line 216)
 2016-06-16 19:00:55	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2006] MySQL server has gone away (in /wire/core/WireDatabasePDO.php line 112)
 2016-06-16 19:00:55	?	?	SQLSTATE[HY000] [2006] MySQL server has gone away (in /wire/core/ProcessWire.php line 216)
+2016-07-01 20:28:35	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/	Unknown Selector operator: '' -- was your selector value properly escaped? field='events', value='', selector: 'parent_id=1, events, limit=1, start=0, sort=sort' (in /wire/core/Selectors.php line 283)
+2016-07-01 20:28:49	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/	Unknown Selector operator: '' -- was your selector value properly escaped? field='events', value='', selector: 'parent_id=1, events, limit=1, start=0, sort=sort' (in /wire/core/Selectors.php line 283)

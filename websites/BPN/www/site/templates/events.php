@@ -27,7 +27,7 @@
           // Handle calendar dates and times
 
           $calendarStartDate = date('D, M j, Y', $post->date);
-          $calendarStartTime = date('T', $post->date);
+          $calendarStartTime = date('g a', $post->date);
           $calendarFinishDate = $post->finishdate;
           $calendarFinishTime = $post->finishdate;
 
@@ -37,6 +37,7 @@
             $calendarFinishDate = "";
             $calendarFinishDate .= ' - ';
             $calendarFinishDate .= date('M j, Y', $post->finshdate);
+            $calendarFinishTime = date(' - g a', $post->finishdate);
           }
 
           // convert lng/lat to int
@@ -67,6 +68,8 @@
           $postData .=   "details:'{$postDetails}',";
           $postData .=   "date:'{$calendarStartDate}',";
           $postData .=   "finishDate:'{$calendarFinishDate}',";
+          $postData .=   "startTime:'{$calendarStartTime}',";
+          $postData .=   "finishTime:'{$calendarFinishTime}',";
           // $postData .=   "category:'{$postCategory}',";
           $postData .=   "eventPrice:'{$eventPrice}',";
           $postData .=   "photos:{$photoCollection}";
@@ -126,6 +129,9 @@
                     <p>Date</p>
                     <div class="date"><i class="fa fa-calendar"></i><span class="info"></span></div>
                   </div>
+                  <div class="post-time">
+                    <div class="time"><i class="fa fa-clock-o"></i><span class="info"></span></div>
+                  </div>
                   <div class="post-address">
                     <p>Address</p>
                     <div class="address"><i class="fa fa-map-marker"></i><span class="info"></span></div>
@@ -158,9 +164,6 @@
             <div class="close-details">Back to events listing</div>
           </div>
         </article> <!-- article-details -->
-        <div class="photo-gallery-overlay">
-          
-        </div>
       </div><!-- content -->
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
@@ -172,8 +175,8 @@
       <div class="grid-icon">GRID</div>
       <div class="photo-gallery-close-btn">CLOSE</div>
       <div class="click-fields">
-        <div class="left-field"></div>
-        <div class="right-field"></div>
+        <div id="left-field" class="fa fa-chevron-left"></div>
+        <div id="right-field" class="fa fa-chevron-right"></div>
       </div>
       <div class="thumbnails-group"></div>
       <div class="main-image"><img src=""></div>
@@ -211,6 +214,7 @@
               '<h2>' + postData[i].title + '</h2>' +
               '<p class="summary">' + postData[i].summary + '</p>' +
               '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + postData[i].finishDate + '</p>' +
+              '<p class="time">' + '<i class="fa fa-clock-o"></i>' + postData[i].startTime + postData[i].finishTime + '</p>' +
               '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
               '<p class="event-price">' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +

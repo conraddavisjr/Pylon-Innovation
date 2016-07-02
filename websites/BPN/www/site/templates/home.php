@@ -36,7 +36,7 @@
 					<div class="slogan">
 						<h2>BLACK PROFESSIONALS NETWORK</h2>
 						<h3>Slogan goes here</h3>
-						<div class="register">Register for membership</div>
+						<a href="#<?php //echo $pages->get("/events")->url; ?>"><div class="register">Register for membership</div></a>
 					</div>
 				</div>		
 			</div>
@@ -89,7 +89,7 @@
 							<div class="image-container"></div>
 						</div>
 					</div> <!-- bounding-container -->
-					<div class="btn-cta">See our events</div>
+					<a href="<?php echo $pages->get("/events")->url; ?>"><div class="btn-cta">See our events</div></a>
 				</section> <!-- events-frame -->
 
 				<!-- photo gallery Frame -->

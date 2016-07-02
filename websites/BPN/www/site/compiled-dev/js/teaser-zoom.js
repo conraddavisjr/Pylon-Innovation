@@ -25,6 +25,7 @@ $(function() {
       this.$photoGalleryTeaserImage = $('.photo-gallery-teaser .image', this.$articleDetails);
       this.$postAddress = $('.address .info', this.$articleDetails);
       this.$postDate = $('.date .info', this.$articleDetails);
+      this.$postTime = $('.time .info', this.$articleDetails);
       this.$postPrice = $('.price .info', this.$articleDetails);
 
       // add to calendar elements
@@ -129,7 +130,8 @@ $(function() {
         var $photoGalleryTeaser = $('.photo-gallery-teaser', teaserZoom.$articleDetails);
         $photoGalleryTeaser.attr('id', postData[teaserZoom.teaserId].id);
       }
-      teaserZoom.$postDate.html(postData[teaserZoom.teaserId].date);
+      teaserZoom.$postDate.html(postData[teaserZoom.teaserId].date + postData[teaserZoom.teaserId].finishDate);
+      teaserZoom.$postTime.html(postData[teaserZoom.teaserId].startTime + postData[teaserZoom.teaserId].finishTime);
       teaserZoom.$postAddress.html(postData[teaserZoom.teaserId].mapAddress);
       teaserZoom.$postPrice.html(postData[teaserZoom.teaserId].eventPrice);
       teaserZoom.$articleImg.attr('src', postData[teaserZoom.teaserId].thumbnail)

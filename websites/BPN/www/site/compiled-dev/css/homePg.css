@@ -12,6 +12,7 @@
   cursor: pointer;
   color: #097ABB;
   text-shadow: none;
+  text-decoration: none;
 }
 .register:after {
   content: " ";
@@ -28,6 +29,10 @@
   z-index: -1;
   transform: translateY(-50%);
   transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn-cta {
@@ -102,6 +107,16 @@ h3 {
   position: relative;
   margin-top: -10px;
   box-shadow: 0px -6px 30px #4a4a4a;
+}
+#about-frame h2 {
+  text-transform: uppercase;
+  font-size: 2.2em;
+}
+#about-frame h3 {
+  font-size: 1.3em;
+}
+#about-frame p {
+  line-height: 1.5;
 }
 
 #events-frame {

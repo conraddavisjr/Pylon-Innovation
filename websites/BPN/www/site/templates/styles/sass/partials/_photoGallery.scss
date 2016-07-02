@@ -92,17 +92,41 @@
     z-index: 3;
     cursor: pointer;
     visibility: hidden;
-    .left-field{
+    .fa-chevron-left:before, 
+    .fa-chevron-right:before {
       position: absolute;
-      left: 0;
-      width: 50%;
-      height: 100%;
+      top: 50%;
+      color: white;
+      box-shadow: 0.5px 0.5px 5px #333;
+      font-size: 1em;
     }
-    .right-field{
+    .fa-chevron-left:before {
+      left: 23.33%;;
+    }
+    .fa-chevron-right:before {
+      right: 10%;
+    }
+    #left-field{
+      position: absolute;
+      left: 0%;
+      width: 30%;
+      height: 100%;
+      opacity: 0.5;
+      color: white;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    #right-field{
       position: absolute;
       right: 0;
-      width: 50%;
+      width: 70%;
       height: 100%;
+      opacity: 0.5;
+      color: white;
+      &:hover{
+        opacity: 1;
+      }
     }
   }
   .fade-in{

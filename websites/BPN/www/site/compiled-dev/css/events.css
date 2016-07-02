@@ -314,10 +314,13 @@ Animation
 .article-details .post-logistics p {
   margin-bottom: 0.5em;
   font-weight: bold;
+  color: #333;
 }
-.article-details .post-logistics .post-date,
+.article-details .post-logistics .post-date {
+  margin-bottom: 0.3em;
+}
 .article-details .post-logistics .post-address {
-  margin-bottom: 1.5em;
+  margin: 1.5em 0 2.5em 0;
 }
 .article-details .post-logistics .price {
   color: #097ABB;
@@ -469,17 +472,41 @@ figure.open-up figcaption {
   cursor: pointer;
   visibility: hidden;
 }
-.photo-gallery-container .click-fields .left-field {
+.photo-gallery-container .click-fields .fa-chevron-left:before,
+.photo-gallery-container .click-fields .fa-chevron-right:before {
   position: absolute;
-  left: 0;
-  width: 50%;
-  height: 100%;
+  top: 50%;
+  color: white;
+  box-shadow: 0.5px 0.5px 5px #333;
+  font-size: 1em;
 }
-.photo-gallery-container .click-fields .right-field {
+.photo-gallery-container .click-fields .fa-chevron-left:before {
+  left: 23.33%;
+}
+.photo-gallery-container .click-fields .fa-chevron-right:before {
+  right: 10%;
+}
+.photo-gallery-container .click-fields #left-field {
+  position: absolute;
+  left: 0%;
+  width: 30%;
+  height: 100%;
+  opacity: 0.5;
+  color: white;
+}
+.photo-gallery-container .click-fields #left-field:hover {
+  opacity: 1;
+}
+.photo-gallery-container .click-fields #right-field {
   position: absolute;
   right: 0;
-  width: 50%;
+  width: 70%;
   height: 100%;
+  opacity: 0.5;
+  color: white;
+}
+.photo-gallery-container .click-fields #right-field:hover {
+  opacity: 1;
 }
 .photo-gallery-container .fade-in {
   opacity: 1;
