@@ -172,7 +172,7 @@
   <!-- Photo Gallery container -->
   <div class="photo-gallery-perspective">
     <div class="photo-gallery-container">
-      <div class="grid-icon">GRID</div>
+      <div class="grid-icon"><i class="fa fa-file-image-o"></i>Thumbnail view</div>
       <div class="photo-gallery-close-btn">CLOSE</div>
       <div class="click-fields">
         <div id="left-field" class="fa fa-chevron-left"></div>

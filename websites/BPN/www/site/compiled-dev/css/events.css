@@ -443,9 +443,17 @@ figure.open-up figcaption {
   transition: 0s;
 }
 .photo-gallery-container .grid-icon {
-  position: relative;
+  position: absolute;
+  top: 0;
   color: white;
+  cursor: pointer;
   z-index: 21;
+}
+.photo-gallery-container .grid-icon:hover {
+  color: #097ABB;
+}
+.photo-gallery-container .grid-icon i {
+  margin-right: 0.3em;
 }
 .photo-gallery-container .main-image {
   width: 100%;
@@ -530,6 +538,9 @@ figure.open-up figcaption {
   background-color: #252525;
   cursor: pointer;
   z-index: 21;
+}
+.photo-gallery-close-btn:hover {
+  background-color: #097ABB;
 }
 
 /*# sourceMappingURL=events.css.map */
