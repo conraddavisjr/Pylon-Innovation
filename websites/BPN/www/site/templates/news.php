@@ -104,7 +104,7 @@
   </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.min.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.css" />  
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/news.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/social-sharing.js"></script>
   <script>
     // $("#sharing").jsSocials({
     //     logo: "fa fa-twitter",

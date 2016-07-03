@@ -160,7 +160,7 @@
               </div>
             </div>
             <div id="map"></div>
-            <div class="social-share"></div>
+            <div class="social-sharing"></div>
             <div class="close-details">Back to events listing</div>
           </div>
         </article> <!-- article-details -->
@@ -223,6 +223,11 @@
       }
     })();
   </script>
+
+  <!-- Social sharing -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.css" />  
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/social-sharing.js"></script>
 
   <!-- Load the Add to Calendar Widget -->
   <!-- <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">

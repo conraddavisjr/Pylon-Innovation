@@ -106,6 +106,10 @@ body {
   background-color: black;
 }
 
+.bounding-container {
+  max-width: 1200px;
+}
+
 .events-container {
   position: relative;
   height: calc(100% - 90px);
@@ -116,7 +120,7 @@ body {
   overflow: hidden;
   margin: 10px 1%;
   min-width: 270px;
-  max-width: 340px;
+  max-width: 360px;
   max-height: 240px;
   width: 30%;
   height: auto;
