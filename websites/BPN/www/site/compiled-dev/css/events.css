@@ -108,7 +108,7 @@ Animation
   display: block;
   height: 40px;
   width: 100%;
-  background-color: #097ABB;
+  background-color: #f4f6f5;
 }
 #filter-nav li {
   display: inline-block;
@@ -223,15 +223,14 @@ Animation
   color: #097ABB;
 }
 .article-details .close-content-btn {
-  position: fixed;
-  top: 30px;
+  position: absolute;
+  top: 0px;
   right: 0;
   width: 30px;
   height: 30px;
   background-color: white;
   z-index: 10;
   cursor: pointer;
-  border-radius: 50%;
   border: 3px solid #333;
 }
 .article-details .close-content-btn:hover:after {
@@ -266,7 +265,9 @@ Animation
   word-wrap: break-word;
 }
 .article-details .image-copy-container {
+  position: relative;
   margin: 1em 0;
+  padding-bottom: 1em;
   overflow: auto;
   box-shadow: 0px 0px 10px #c3c3c3;
 }
@@ -275,8 +276,8 @@ Animation
   float: right;
   padding: 0.6em 0;
   border-top: 3px solid #d6d6d6;
-  cursor: pointer;
   transition: 0.3s;
+  cursor: pointer;
 }
 .article-details .photo-gallery-teaser:hover {
   transform: scale(1.05);
@@ -290,10 +291,25 @@ Animation
   -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
 }
+.article-details .photo-gallery-teaser[has-gallery="false"] {
+  cursor: default;
+}
+.article-details .photo-gallery-teaser[has-gallery="false"] img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.article-details .photo-gallery-teaser[has-gallery="false"]:hover {
+  transform: scale(1);
+}
 .article-details .photo-gallery-teaser h3 {
   margin: 0 0 0.5em 0;
   text-align: center;
   text-transform: uppercase;
+}
+.article-details .photo-gallery-teaser h4 {
+  font-weight: 100;
+  padding: 0 0.3em;
+  margin: 0em;
 }
 .article-details .photo-gallery-teaser .image {
   float: none;
@@ -307,8 +323,24 @@ Animation
   border-bottom: 9px solid #097ABB;
   transition: 0.3s;
 }
+.article-details .photo-gallery-teaser .sign-up {
+  margin: 0;
+  padding: 0.3em 0;
+  border-top: 1px solid #097ABB;
+  border-bottom: 1px solid #097ABB;
+  color: #097ABB;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.article-details .photo-gallery-teaser .sign-up:hover {
+  background-color: #097ABB;
+  color: white;
+}
 .article-details .post-logistics {
   display: inline-block;
+  padding-left: 2px;
   width: 50%;
 }
 .article-details .post-logistics p {
@@ -457,11 +489,12 @@ figure.open-up figcaption {
 }
 .photo-gallery-container .main-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: black;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: 1s;
   z-index: 2;
@@ -489,9 +522,11 @@ figure.open-up figcaption {
   font-size: 1em;
 }
 .photo-gallery-container .click-fields .fa-chevron-left:before {
+  box-shadow: none;
   left: 23.33%;
 }
 .photo-gallery-container .click-fields .fa-chevron-right:before {
+  box-shadow: none;
   right: 10%;
 }
 .photo-gallery-container .click-fields #left-field {

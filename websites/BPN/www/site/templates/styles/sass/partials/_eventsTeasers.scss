@@ -104,15 +104,14 @@
     }
   }
   .close-content-btn{
-    position: fixed;
-    top: 30px;
+    position: absolute;
+    top: 0px;
     right: 0;
     width: 30px;
     height: 30px;
     background-color: white;
     z-index: 10;
     cursor: pointer;
-    border-radius: 50%;
     border: 3px solid $bpnParagraph;
     &:hover{
       &:after{
@@ -149,7 +148,9 @@
     }
   }
   .image-copy-container{
+    position: relative;
     margin: 1em 0;
+    padding-bottom: 1em;
     overflow: auto;
     box-shadow: 0px 0px 10px $eventsElementShadow;
   }
@@ -159,8 +160,8 @@
     float: right;
     padding: 0.6em 0;
     border-top: 3px solid $bpnLightGray;
-    cursor: pointer;
     transition: 0.3s;
+    cursor: pointer;
     &:hover{
       transform: scale(1.05);
       h3{
@@ -170,10 +171,25 @@
         @include filter(brightness(1.1));
       }
     }
+    &[has-gallery="false"]{
+      img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      cursor: default;
+      &:hover{
+        transform: scale(1);  
+      }
+    }
     h3{
       margin: 0 0 0.5em 0;
       text-align: center;
       text-transform: uppercase;
+    }
+    h4{
+      font-weight: 100;
+      padding: 0 0.3em;
+      margin: 0em;
     }
     .image{
       float: none;
@@ -187,9 +203,25 @@
         transition: 0.3s;
       }
     }
+    .sign-up{
+      margin: 0;
+      padding: 0.3em 0;
+      border-top: 1px solid $bpnBlue;
+      border-bottom: 1px solid $bpnBlue;
+      color: $bpnBlue;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover{
+        background-color: $bpnBlue;
+        color: white;
+      }
+    }
   }
   .post-logistics{
     display: inline-block;
+    padding-left: 2px;
     width: 50%;
     p{
       margin-bottom: 0.5em;

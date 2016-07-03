@@ -251,7 +251,7 @@ figure.teaser figcaption::after {
   transform: translate3d(-15px, -15px, 0);
 }
 
-figure.teaser p a {
+figure.teaser .social-sharing a {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: 0.5s;
 }
@@ -279,18 +279,23 @@ figure.teaser h2 {
     font-size: 120%;
   }
 }
-figure.teaser p {
+figure.teaser .social-sharing {
   float: right;
   clear: both;
   text-align: left;
   text-transform: none;
-  font-size: 111%;
-  right: 25px;
-  top: 0;
+  font-size: 96%;
+  right: 20px;
+  top: 15px;
   position: absolute;
+  z-index: 2;
+  transition: 0.3s;
+}
+figure.teaser .social-sharing .jssocials-share {
+  display: block;
 }
 
-figure.teaser p a {
+figure.teaser .social-sharing a {
   display: block;
   margin-bottom: 1em;
   color: #fff;
@@ -299,8 +304,8 @@ figure.teaser p a {
   transform: translate3d(90px, 0, 0);
 }
 
-figure.teaser p a:hover,
-figure.teaser p a:focus {
+figure.teaser .social-sharing a:hover,
+figure.teaser .social-sharing a:focus {
   color: #f3cf3f;
 }
 
@@ -315,31 +320,31 @@ figure.teaser:hover img {
 }
 
 figure.teaser:hover h2,
-figure.teaser:hover p a {
+figure.teaser:hover .social-sharing a {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-figure.teaser:hover p a {
+figure.teaser:hover .social-sharing a {
   opacity: 1;
 }
 
-figure.teaser:hover p a:first-child {
+figure.teaser:hover .social-sharing div:first-child {
   -webkit-transition-delay: 0.025s;
   transition-delay: 0.025s;
 }
 
-figure.teaser:hover p a:nth-child(2) {
+figure.teaser:hover .social-sharing div:nth-child(2) {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
-figure.teaser:hover p a:nth-child(3) {
+figure.teaser:hover .social-sharing div:nth-child(3) {
   -webkit-transition-delay: 0.075s;
   transition-delay: 0.075s;
 }
 
-figure.teaser:hover p a:nth-child(4) {
+figure.teaser:hover .social-sharing div:nth-child(4) {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }

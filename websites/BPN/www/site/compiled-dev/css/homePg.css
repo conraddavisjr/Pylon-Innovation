@@ -3,6 +3,10 @@
   zoom: 1;
 }
 
+.container {
+  padding-top: 0em;
+}
+
 .register {
   padding: 1em;
   display: table;

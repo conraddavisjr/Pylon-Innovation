@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blueprint: Multi-Level Menu</title>
-  <meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
-  <meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
-  <meta name="author" content="Codrops" />
+  <title>BPN - NEWS</title>
+  <meta name="description" content="BPN NEWs" />
+  <meta name="keywords" content="BPN NEWs, stories, local news, black professionals network" />
   <link rel="shortcut icon" href="favicon.ico">
   <!-- base styles -->
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
@@ -44,7 +43,7 @@
   </script>
 </head>
 
-<body>
+<body id="news-page">
   <?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
   <!-- Main container -->
@@ -52,7 +51,7 @@
     <button id="showMenu">Show Menu</button> <!-- Nav Button -->
 
     <div class="events-container"> 
-      <div class="figure-container"></div>
+      <div class="figure-container bounding-container"></div>
       <div class="content">
         <!-- Ajax loaded content here -->
         <!-- article detailed view -->
@@ -96,17 +95,27 @@
             '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' + 
-              '<p>' + 
-                '<a href="#"><i class="fa fa-fw fa-download"></i></a>' + 
-                '<a href="#"><i class="fa fa-fw fa-heart"></i></a>' +
-                '<a href="#"><i class="fa fa-fw fa-share"></i></a>' +
-                '<a href="#"><i class="fa fa-fw fa-tags"></i></a>' +
-              '</p>' +
+              '<div class="social-sharing"></div>' +
             '</figcaption>' +
           '</figure>');
         }
       }
     })();
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.css" />  
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/news.js"></script>
+  <script>
+    // $("#sharing").jsSocials({
+    //     logo: "fa fa-twitter",
+    //     shareIn: "popup",
+    //     shareUrl: "https://twitter.com/share?url={url}&text={HELLO THERE}&via={via}&hashtags={hashtags}",
+    //     countUrl: "https://cdn.api.twitter.com/1/urls/count.json?url={url}&callback=?",
+    //     shares: ["twitter"],
+    //     getCount: function(data) {
+    //         return data.count;
+    //     }
+    // });
   </script>
 </body>
 

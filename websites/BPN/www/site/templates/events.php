@@ -101,11 +101,11 @@
     <button id="showMenu">Show Menu</button> <!-- Nav Button -->
 
     <div class="events-container">
-      <div id="filter-nav">
+      <!-- <div id="filter-nav">
         <li>All</li>
         <li>Volunteer Oportunities</li>
         <li>Socials</li>
-      </div>  
+      </div>   -->
       <div class="figure-container">
         <div class="bounding-container">
           <!-- <div class="filter">
@@ -118,8 +118,8 @@
         <!-- article detailed view -->
         <article class="article-details">
           <div class="bounding-container">
-            <div class="close-content-btn fa fa-times"></div>
             <div class="image-copy-container">
+              <div class="close-content-btn fa fa-times"></div>
               <img class="post-image" src="">
               <div class="article-copy">
                 <h2 class="post-title"></h2>
@@ -225,8 +225,8 @@
   </script>
 
   <!-- Load the Add to Calendar Widget -->
-  <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" charset="UTF-8" async="" src="http://addtocalendar.com/atc/1.5/atc.min.js"></script>
+  <!-- <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" charset="UTF-8" async="" src="http://addtocalendar.com/atc/1.5/atc.min.js"></script> -->
   
 </body>
 
