@@ -7,3 +7,11 @@
 2016-06-18 20:34:04	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "category" data in 0 row(s) from 0 page(s). [page-by-page]
 2016-06-18 20:46:40	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/setup/template/removeFields	Deleted field "category" data in 0 row(s) from 0 page(s). [page-by-page]
 2016-06-26 05:15:30	shaveela	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/edit/?id=1017&s=1	Removed 'photos' temp file(s) for page /events/test-post/ - social-icons-grouped.jpg, eventsbg.jpg, golden-gate.jpg (Pageimages)
+2016-07-02 17:53:42	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 3 pages (ProcessPageSort)
+2016-07-02 17:53:52	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 3 pages (ProcessPageSort)
+2016-07-02 17:53:57	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 2 pages (ProcessPageSort)
+2016-07-02 17:54:03	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 2 pages (ProcessPageSort)
+2016-07-02 17:54:11	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 2 pages (ProcessPageSort)
+2016-07-02 17:54:15	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 2 pages (ProcessPageSort)
+2016-07-02 17:54:20	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 2 pages (ProcessPageSort)
+2016-07-02 17:54:26	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/page/sort/	Updated sort for 2 pages (ProcessPageSort)

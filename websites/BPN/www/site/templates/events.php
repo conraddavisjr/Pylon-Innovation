@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blueprint: Multi-Level Menu</title>
-  <meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
-  <meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
-  <meta name="author" content="Codrops" />
+  <meta name="description" content="BPN EVENTs" />
+  <meta name="keywords" content="black professionals network, Events, BPN Events, bay area, Oakland, San Francisco" />
   <link rel="shortcut icon" href="favicon.ico">
   <!-- base styles -->
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
@@ -160,8 +159,8 @@
               </div>
             </div>
             <div id="map"></div>
-            <div class="social-sharing"></div>
-            <div class="close-details">Back to events listing</div>
+            <div class="social-sharing-container"><span>SHARE:</span><div class="social-sharing"></div></div>
+            <div class="close-details"><i class="fa fa-arrow-left"></i>Back to events listing</div>
           </div>
         </article> <!-- article-details -->
       </div><!-- content -->

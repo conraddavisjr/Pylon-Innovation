@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BPN - HOME</title>
-		<meta name="description" content="A simple grid layout with an initial fullscreen intro" />
-		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="BPN Home Page" />
+  	<meta name="keywords" content="black professionals network, by area, Oakland, San Francisco" />
+		<meta name="author" content="Conrad Davis Jr" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/base.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/intro.css" />

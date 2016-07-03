@@ -116,7 +116,7 @@ $(function() {
       // check if theres a photo galery for this post
       if (postData[teaserZoom.teaserId].photos.length <= 0){
         // if theres no image, disable the image teaser to set it to upcoming
-        $('.photo-gallery-teaser .image').html('<img src="/lab/Pylon-Innovation/websites/BPN/www/site/assets/images/BPN-Logo.jpg">' +
+        $('.photo-gallery-teaser .image').html('<img src="/site/assets/images/BPN-Logo.jpg">' +
           '<h4>' + 'There are no images here yet, check back soon or' + '</h4>' +
           '<p>' + '<div class="sign-up">Sign up</div>' + '</p>' +
           '<h4>' + 'to get an alert when this is posted!' + '</h4>'
