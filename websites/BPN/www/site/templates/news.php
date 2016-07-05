@@ -48,8 +48,6 @@
 
   <!-- Main container -->
   <?php include('includes/page-wrapper-top.php');?>
-    <button id="showMenu">Show Menu</button> <!-- Nav Button -->
-
     <div class="events-container"> 
       <div class="figure-container bounding-container"></div>
       <div class="content">

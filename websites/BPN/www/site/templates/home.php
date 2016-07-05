@@ -17,8 +17,6 @@
 	</head>
 	<body class="wipe-off">
 		<?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
-
-		<div id="showMenu"><i class="fa fa-bars"></i></div> <!-- Nav Button -->
 		<?php include('includes/page-wrapper-top.php');?>
 
 			<!-- Intro container -->
@@ -43,7 +41,7 @@
 
 			<div id="home-pg">
 				<section id="welcome-frame">
-					<video autoplay loop type="video/mp4" poster="<?php echo $config->urls->assets?>/images/golden-gate-mobile.jpg" src="<?php echo $config->urls->assets?>/videos/SF-bridge.mp4">Your browser does not support the video tag.</video>
+					<video autoplay loop type="video/mp4" poster="<?php echo $config->urls->assets?>/images/golden-gate-mobile2.jpg" src="<?php echo $config->urls->assets?>/videos/SF-bridge.mp4">Your browser does not support the video tag.</video>
 				</section>
 				<section id="about-frame">
 					<div class="copy-container">

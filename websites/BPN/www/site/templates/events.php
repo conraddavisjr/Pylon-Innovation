@@ -97,8 +97,6 @@
 
   <!-- Main container -->
   <?php include('includes/page-wrapper-top.php');?>
-    <button id="showMenu">Show Menu</button> <!-- Nav Button -->
-
     <div class="events-container">
       <!-- <div id="filter-nav">
         <li>All</li>

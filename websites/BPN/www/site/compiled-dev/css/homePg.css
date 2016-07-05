@@ -272,23 +272,9 @@ h3 {
     background-size: 208%;
   }
 
-  #showMenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 12;
-  }
-  #showMenu i {
-    position: relative;
-    top: 0.3em;
-    left: 0.5em;
-    font-size: 2em;
-    text-shadow: 0px 0px 2px white, 0px 0px 1px white, 0px 0px 1px white;
-    cursor: pointer;
-  }
-
   #welcome-frame {
     height: 38em;
+    overflow: hidden;
   }
   #welcome-frame video {
     width: auto;
