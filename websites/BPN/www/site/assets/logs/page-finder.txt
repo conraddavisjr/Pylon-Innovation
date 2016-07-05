@@ -1,0 +1,1 @@
+2016-07-02 13:36:57	cdj	http://localhost:8888//lab/pylon-innovation/websites/bpn/www/site/assets/files/1039/housewarming_party_postcard-re33d41d369e54f859b9f9e957722ed76_vgbaq_8byvr_324-1.jpg	SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
