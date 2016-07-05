@@ -147,42 +147,14 @@ nav#nav-menu a {
 nav#nav-menu a::before {
   display: none;
 }
-nav#nav-menu a i {
-  margin-right: 0.5em;
-}
-nav#nav-menu a i .fa:before {
-  display: none;
+nav#nav-menu a i::before {
+  opacity: 0;
 }
 
 #showMenu {
   display: none;
 }
 
-@media (max-width: 960px) {
-  nav#nav-menu {
-    right: 25%;
-    top: 40%;
-    font-size: 1em;
-    height: auto;
-    width: auto;
-    background-color: transparent;
-    transform: translateY(-50%);
-    z-index: 0;
-  }
-  nav#nav-menu a {
-    display: block;
-  }
-  nav#nav-menu a::before {
-    display: inline-block;
-  }
-  nav#nav-menu .nav-menu__logo {
-    position: relative;
-  }
-
-  button#showMenu {
-    display: block;
-  }
-}
 .perspective {
   background: #aaa;
   position: relative;
@@ -458,12 +430,33 @@ nav#nav-menu a i .fa:before {
     margin-bottom: 20px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
+  nav#nav-menu {
+    right: 25%;
+    top: 40%;
+    font-size: 1em;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  nav#nav-menu a {
+    display: block;
+  }
+  nav#nav-menu a::before {
+    display: inline-block;
+  }
+  nav#nav-menu .nav-menu__logo {
+    position: relative;
+  }
+
   #showMenu {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 12;
+    display: block;
   }
   #showMenu i {
     position: relative;
@@ -474,8 +467,9 @@ nav#nav-menu a i .fa:before {
     cursor: pointer;
   }
 
-  #nav-menu a i .fa:before {
-    display: none;
+  nav#nav-menu a i:before {
+    opacity: 1;
+    margin-right: 0.5em;
   }
 }
 * {

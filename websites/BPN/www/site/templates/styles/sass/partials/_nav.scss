@@ -39,43 +39,14 @@ nav#nav-menu {
 	  &::before{
 	  	display: none;
 	  }
-	  i{
-	  	margin-right: 0.5em;
-	  	.fa:before{
-	  		display: none;
-	  	}
+	  i::before{
+  		opacity: 0;
 	  }
   }
 }
 
 #showMenu{
 	display: none;
-}
-
-@media (max-width:960px){
-	nav#nav-menu {
-		right: 25%;
-		top: 40%;
-		font-size: 1em;
-	  height: auto;
-	  width: auto;
-	  background-color: transparent;
-	  transform: translateY(-50%);
-	  z-index: 0;
-	  a{
-	    display: block;
-	    &::before{
-		  	display: inline-block;
-		  }
-	  }
-	  .nav-menu__logo{
-		 	position: relative;
-	  }
-	}
-  button#showMenu{
-  	display: block;
-  }
-
 }
 
 .perspective {
@@ -335,12 +306,36 @@ nav#nav-menu {
 	}
 }
 
-@include MQ(S){
-  #showMenu{
+
+@include MQ(L){
+}
+
+@include MQ(M){
+	nav#nav-menu {
+		right: 25%;
+		top: 40%;
+		font-size: 1em;
+	  height: auto;
+	  width: auto;
+	  background-color: transparent;
+	  transform: translateY(-50%);
+	  z-index: 0;
+	  a{
+	    display: block;
+	    &::before{
+		  	display: inline-block;
+		  }
+	  }
+	  .nav-menu__logo{
+		 	position: relative;
+	  }
+	}
+	#showMenu{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 12;
+    display: block;
     i{
       position: relative;
       top: 0.3em;
@@ -350,12 +345,11 @@ nav#nav-menu {
       cursor: pointer;
     }
   }
-  #nav-menu{
+  nav#nav-menu{
   	a{
-  		i{
-		  	.fa:before{
-		  		display: none;
-		  	}
+  		i:before{
+		    opacity: 1;
+		    margin-right: 0.5em;
 		  }
   	}
   }
