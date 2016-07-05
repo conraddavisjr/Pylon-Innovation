@@ -277,3 +277,78 @@ h3{
   }
 }
 
+// Breakpoints
+@include MQ(S){
+  body{
+    background-image: url('../../assets/images/eventsBg.jpg');
+    background-size: 208%;
+  }
+  #showMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    i{
+      position: relative;
+      top: 0.3em;
+      left: 0.5em;
+      font-size: 2em;
+      text-shadow: 0px 0px 2px white, 0px 0px 1px white, 0px 0px 1px white;
+      cursor: pointer;
+    }
+  }
+  #welcome-frame {
+    height: 38em;
+    video{
+      width: auto;
+      height: 100%;
+    }
+  }
+  #about-frame {
+    padding: 4.5em 1em;
+  }
+  #events-frame{
+    padding: 6em 0.5em;
+    background-image: none;
+    background-size: contain;
+    .hp-events-teaser{
+      width: 100%;
+      margin: 1em 0;
+      .center-copy{
+        font-weight: 700;
+        font-size: 1.4em;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  #gallery-frame{
+    .home-gallery-grid{
+      top: 30%;
+      width: 190vw;
+    }
+  }
+  #contact-frame{
+    .copy-container {
+      margin-top: -10px;
+      h2{
+        padding: 0.5em 0em;
+      }
+    }
+    .contact-form{
+      ul{
+        width: 85%;
+        li{
+          input{
+            padding: 0.8em 3%;
+          }
+          button{
+            padding: 1em 6%;
+          }
+        }
+      }
+    }
+  }
+}
+

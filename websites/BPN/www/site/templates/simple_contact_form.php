@@ -5,13 +5,13 @@
 <form id="InputfieldForm33" class="contact-form InputfieldForm" method="post" action="./" data-colspacing="0">
 	<ul class='Inputfields'>
 		<li class='Inputfield InputfieldText Inputfield_fullName InputfieldStateRequired' id='wrap_Inputfield_fullName'>
-			<label class='InputfieldHeader' for='Inputfield_fullName'><!--fullName--><i class='toggle-icon fa fa-angle-down' data-to='fa-angle-down fa-angle-right'></i></label>
+			<label class='InputfieldHeader' for='Inputfield_fullName'><!--fullName--></label>
 			<div class='InputfieldContent'>
 				<input id="Inputfield_fullName" class=" required InputfieldMaxWidth" name="fullName" value="<?= $input->fullName; ?>" type="text" maxlength="2048" placeholder="fullName" />
 			</div>
 		</li>
 		<li class='Inputfield InputfieldText Inputfield_email InputfieldStateRequired' id='wrap_Inputfield_email'>
-			<label class='InputfieldHeader' for='Inputfield_email'><!--email--><i class='toggle-icon fa fa-angle-down' data-to='fa-angle-down fa-angle-right'></i></label>
+			<label class='InputfieldHeader' for='Inputfield_email'><!--email--></label>
 			<div class='InputfieldContent'>
 				<input id="Inputfield_email" class=" required InputfieldMaxWidth" name="email" value="<?= $input->email; ?>" type="text" maxlength="2048" placeholder="email" />
 			</div>
@@ -23,7 +23,7 @@
 		<input id="Inputfield_submitted" name="submitted" value="1" type="hidden" />
 
 		<li class='Inputfield InputfieldHidden Inputfield_scf-date' id='wrap_Inputfield_scf-date'>
-			<label class='InputfieldHeader' for='Inputfield_scf-date'><i class='toggle-icon fa fa-angle-down' data-to='fa-angle-down fa-angle-right'></i></label>
+			<label class='InputfieldHeader' for='Inputfield_scf-date'></label>
 			<div class='InputfieldContent'>
 				<input id="Inputfield_scf-date" name="scf-date" value="<?= time(); ?>" type="hidden" />
 			</div>
