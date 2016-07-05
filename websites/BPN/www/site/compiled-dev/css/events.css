@@ -1,3 +1,9 @@
+/*-------------------------
+Responsive Media Queries
+-------------------------*/
+/*-----------------------------
+Responsive Media Queries (END)
+-----------------------------*/
 body:before {
   content: "";
   display: block;
@@ -418,6 +424,30 @@ figure.open-up figcaption {
   opacity: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .bounding-container {
+    padding: 0 0.5em;
+  }
+  .bounding-container .teaser {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .article-details img {
+    max-width: 100%;
+  }
+  .article-details .article-copy {
+    width: 92%;
+    margin-left: 0;
+    padding: 0 4%;
+  }
+  .article-details #map {
+    height: 200px;
+  }
+  .article-details .close-details {
+    margin: 2em 0 0 0;
+  }
+}
 #map {
   margin-top: 1em;
   clear: both;

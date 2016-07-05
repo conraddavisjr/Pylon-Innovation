@@ -300,3 +300,29 @@ figure.open-up {
     opacity: 0;
   }
 }
+
+@include MQ(S){
+  .bounding-container {
+    padding: 0 0.5em;
+    .teaser{
+      width: 100%;
+      margin: 0.5em 0;
+    }
+  } 
+  .article-details{
+    img{
+      max-width: 100%;
+    }
+    .article-copy{
+      width: 92%;
+      margin-left: 0;
+      padding: 0 4%;
+    }
+    #map{
+      height: 200px;
+    }
+    .close-details{
+      margin: 2em 0 0 0;
+    }
+  } 
+}
