@@ -34,11 +34,8 @@ nav#nav-menu {
     opacity: 1;
     display: inline-block;
     text-decoration: none;
-    margin: 10px 17px 0 0;
+    margin: 1em 0;
     font-size: 1.1em;
-	  &:last-child{
-	  	margin-right: 1.5em;
-	  }
 	  &::before{
 	  	display: none;
 	  }
