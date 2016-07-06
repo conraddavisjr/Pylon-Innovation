@@ -301,6 +301,16 @@ figure.open-up {
   }
 }
 
+@include MQ(M){
+  .article-details{
+    .social-sharing-container{
+      span{
+        top: 0.8em;
+      }
+    }
+  }
+}
+
 @include MQ(S){
   .bounding-container {
     padding: 0 0.5em;

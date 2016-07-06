@@ -266,7 +266,7 @@ h3 {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   body {
     background-image: url("../../assets/images/eventsBg.jpg");
     background-size: 208%;
@@ -302,11 +302,6 @@ h3 {
     display: none;
   }
 
-  #gallery-frame .home-gallery-grid {
-    top: 30%;
-    width: 190vw;
-  }
-
   #contact-frame .copy-container {
     margin-top: -10px;
   }
@@ -321,6 +316,12 @@ h3 {
   }
   #contact-frame .contact-form ul li button {
     padding: 1em 6%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #gallery-frame .home-gallery-grid {
+    top: 30%;
+    width: 190vw;
   }
 }
 .contact-form ul {

@@ -424,6 +424,11 @@ figure.open-up figcaption {
   opacity: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .article-details .social-sharing-container span {
+    top: 0.8em;
+  }
+}
 @media only screen and (max-width: 480px) {
   .bounding-container {
     padding: 0 0.5em;

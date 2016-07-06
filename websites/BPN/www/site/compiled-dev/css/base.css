@@ -124,8 +124,9 @@ html, body, .perspective {
 nav#nav-menu {
   left: 0;
   top: 0;
-  width: 100%;
-  height: 40px;
+  width: calc(100% - 1.3em);
+  padding-right: 1.3em;
+  height: auto;
   font-size: 1em;
   text-align: right;
   opacity: 1;
@@ -162,7 +163,7 @@ nav#nav-menu a i::before {
 
 .container {
   background: #efefef;
-  padding-top: 2.5em;
+  padding-top: 4.5em;
   height: 100%;
   min-height: 100%;
   position: relative;

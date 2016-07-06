@@ -54,8 +54,8 @@
         <!-- Ajax loaded content here -->
         <!-- article detailed view -->
         <article class="article-details">
-          <img class="post-image" src="">
-          <div class="close-content-btn"></div>
+          <div class="image-container"><img class="post-image" src=""></div>
+          <div class="close-content-btn fa fa-times"></div>
           <div class="article-copy">
             <h2 class="post-title"></h2>
             <h3 class="post-subtitle"></h3>

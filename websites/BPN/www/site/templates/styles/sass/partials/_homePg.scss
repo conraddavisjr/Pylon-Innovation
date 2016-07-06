@@ -278,7 +278,7 @@ h3{
 }
 
 // Breakpoints
-@include MQ(S){
+@include MQ(M){
   body{
     background-image: url('../../assets/images/eventsBg.jpg');
     background-size: 208%;
@@ -310,12 +310,6 @@ h3{
       }
     }
   }
-  #gallery-frame{
-    .home-gallery-grid{
-      top: 30%;
-      width: 190vw;
-    }
-  }
   #contact-frame{
     .copy-container {
       margin-top: -10px;
@@ -335,6 +329,15 @@ h3{
           }
         }
       }
+    }
+  }
+}
+
+@include MQ(S){
+  #gallery-frame{
+    .home-gallery-grid{
+      top: 30%;
+      width: 190vw;
     }
   }
 }

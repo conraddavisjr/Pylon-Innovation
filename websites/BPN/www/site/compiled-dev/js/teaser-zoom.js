@@ -77,9 +77,10 @@ $(function() {
       var teaser = e.currentTarget;
       var $article = $('.article-details');
       
+      // teaser dimensions
       teaserZoom.teaserProperties = teaser.getBoundingClientRect();
       teaserZoom.innerHeight = $(teaser).innerHeight();
-      console.log('teaserZoom.innerHeight: ', teaserZoom.innerHeight);
+      teaserZoom.innerWidth = $(teaser).innerWidth();
 
       teaserZoom.$teaser.css({
           'display': 'none',
@@ -94,7 +95,7 @@ $(function() {
       teaserZoom.tl = new TimelineLite;
       teaserZoom.tl
         .to($('img', teaser), 0.8, {left:'200%'})
-        .fromTo(teaser, 1, {left: teaserZoom.teaserProperties.left, top: teaserZoom.teaserProperties.top, width:'30%', height: teaserZoom.teaserProperties.height, scale:1}, {left: 0, top: 0, width:'100vw', height:'100%', scale:2, ease: Power1.easeOut}, "-=0.8")
+        .fromTo(teaser, 1, {left: teaserZoom.teaserProperties.left, top: teaserZoom.teaserProperties.top, width:teaserZoom.innerWidth, height: teaserZoom.teaserProperties.height, scale:1}, {left: 0, top: 0, width:'100vw', height:'100%', scale:2, ease: Power1.easeOut}, "-=0.8")
         .to($article, 0.5, {opacity: 1, visibility: 'visible'}, "-=0.5")
         .to(teaser, 0, {visibility: 'hidden', display: 'none !important', position: 'fixed'})
 
