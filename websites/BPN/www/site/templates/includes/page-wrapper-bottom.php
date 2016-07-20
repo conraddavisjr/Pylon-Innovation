@@ -16,8 +16,15 @@
         // then output the other links
         $children = $root->children();
         foreach($children as $child) {
-          echo "<a href='{$child->url}' class=\"navigation-link\"><i class=\"fa {$menuIcons[$child->title]}\"></i>{$child->title}</a>";
+          // don't output the About page
+          if($child->title == "About" || $child->title == "Contact"){
+
+          }else{
+            echo "<a href='{$child->url}' class=\"navigation-link\"><i class=\"fa {$menuIcons[$child->title]}\"></i>{$child->title}</a>";
+          }
         }
+        // output the contact link seperately as its not going to be a page
+        echo "<a href='#contact' class=\"contactBtn\"><i class=\"fa {$menuIcons[$child->title]}\"></i>{$pages->get("/contact")->title}</a>";
       ?>
     </div>
   </nav>

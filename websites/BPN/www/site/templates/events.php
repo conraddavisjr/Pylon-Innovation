@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blueprint: Multi-Level Menu</title>
+  <title>BPN - EVENTS</title>
   <meta name="description" content="BPN EVENTs" />
   <meta name="keywords" content="black professionals network, Events, BPN Events, bay area, Oakland, San Francisco" />
   <link rel="shortcut icon" href="favicon.ico">
@@ -35,7 +35,7 @@
             $calendarStartDate = date('M j', $post->date);
             $calendarFinishDate = "";
             $calendarFinishDate .= ' - ';
-            $calendarFinishDate .= date('M j, Y', $post->finshdate);
+            $calendarFinishDate .= date('M j', $post->finshdate);
             $calendarFinishTime = date(' - g a', $post->finishdate);
           }
 
