@@ -34,6 +34,7 @@
 						<h2><?php echo $page->homePgTitle ?></h2>
 						<h3><?php echo $page->subtitle ?></h3>
 						<a href="#<?php //echo $pages->get("/events")->url; ?>"><div class="register">Register for membership</div></a>
+						<?php include('register.php') ?>
 					</div>
 				</div>		
 			</div>

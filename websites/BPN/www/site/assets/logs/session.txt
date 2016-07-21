@@ -22,3 +22,8 @@
 2016-07-08 19:42:47	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
 2016-07-08 20:02:53	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
 2016-07-13 14:37:01	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
+2016-07-20 14:46:48	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
+2016-07-20 15:55:45	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/logout/	Logout for 'cdj'
+2016-07-20 15:55:56	anotherone	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'anotherone'
+2016-07-20 15:56:55	anotherone	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/logout/	Logout for 'anotherone'
+2016-07-20 15:58:07	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
