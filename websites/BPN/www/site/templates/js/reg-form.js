@@ -1,10 +1,9 @@
 $(document).ready(function() {
 
   $('.register').on('click', function(){
-    console.log('register clicked');
     $(this).addClass('register-open');
   }); 
-  
+
   // process the form
   $('#reg-form').submit(function(event) {
 
@@ -31,7 +30,10 @@ $(document).ready(function() {
         encode      : true
     })
     .success(function() {
-      console.log('SUCCESS!')
+      console.log('SUCCESS!');
+      $('#reg-form')[0].reset();
+      $('#reg-form').fadeOut(500);
+      $('.register span').html('Thanks for registering! Your submission has been sent for review.')
     });
 
   });

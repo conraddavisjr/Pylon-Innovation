@@ -31,6 +31,7 @@
     $email_content .= "Email: $email\n\n";
     $email_content .= "Facebook Name: $facebook_name\n\n";
     $email_content .= "LinkedIn Name: $linkedin_name\n\n";
+    $email_content .= "Check out their credentials and log in to make them a member!";
     // Build the email headers.
     $email_headers = "From: $first_name <$email>";
     // Send the email.

@@ -35,6 +35,7 @@
 						<h3><?php echo $page->subtitle ?></h3>
 						<div class="register">
 							Register for membership
+							<span></span>
 							<?php include('register.php') ?>
 						</div>
 					</div>
@@ -124,7 +125,7 @@
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/homePg.css" />
-	<link rel="stylesheet" type="text/css" href="/site/compiled-dev/css/home-gallery-grid.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/home-gallery-grid.css" />
 
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
