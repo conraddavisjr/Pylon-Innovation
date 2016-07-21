@@ -33,8 +33,10 @@
 					<div class="slogan">
 						<h2><?php echo $page->homePgTitle ?></h2>
 						<h3><?php echo $page->subtitle ?></h3>
-						<a href="#<?php //echo $pages->get("/events")->url; ?>"><div class="register">Register for membership</div></a>
-						<?php include('register.php') ?>
+						<div class="register">
+							Register for membership
+							<?php include('register.php') ?>
+						</div>
 					</div>
 				</div>		
 			</div>
@@ -122,12 +124,10 @@
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/homePg.css" />
+	<link rel="stylesheet" type="text/css" href="/site/compiled-dev/css/home-gallery-grid.css" />
 
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
-	<script type="text/javascript">
-		var registerScript = "<?php echo $config->paths->templates . 'register.php';?>"
-	</script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/reg-form.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
 </html>

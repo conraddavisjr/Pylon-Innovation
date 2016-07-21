@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+  $('.register').on('click', function(){
+    console.log('register clicked');
+    $(this).addClass('register-open');
+  }); 
+  
   // process the form
   $('#reg-form').submit(function(event) {
 

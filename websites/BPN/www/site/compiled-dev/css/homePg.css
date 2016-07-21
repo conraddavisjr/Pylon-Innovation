@@ -28,6 +28,22 @@ Responsive Media Queries (END)
   z-index: 2;
   transition: 1s;
 }
+.register input {
+  padding: 0.5em;
+  width: 90%;
+  text-align: center;
+  margin: 1px 0;
+  border: 0;
+  background-color: #f4f6f5;
+}
+.register input[type="submit"] {
+  background-color: rgba(0, 122, 185, 0);
+  border: 2px solid #90c3e0;
+  color: #90c3e0;
+  width: 96.5%;
+  position: relative;
+  font-weight: bold;
+}
 .register:after {
   content: " ";
   width: 100%;
@@ -45,10 +61,26 @@ Responsive Media Queries (END)
   transition: 0.5s;
 }
 
+#reg-form {
+  opacity: 0;
+  top: 0.3em;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
 .register-open {
-  height: 15em;
+  height: 25em;
   width: 250px;
-  top: -270px;
+  top: -360px;
+}
+.register-open #reg-form {
+  opacity: 1;
+  visibility: visible;
+}
+.register-open:hover:after {
+  border: 5px solid #90c3e0;
+  background-color: white;
+  outline: solid #007ab9 5px;
 }
 
 a {

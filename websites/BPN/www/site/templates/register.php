@@ -41,21 +41,13 @@
 ?>
 
 <form action="./" method="post" id="reg-form">
-  <label >First Name</label>
   <input name="first_name" placeholder="first Name"></input>
-  <label >Last Name</label>
-  <input name="last_name"></input>
-  <label >Username Name</label>
-  <input name="user_name"></input>
-  <label >Facebook Name</label>
-  <input name="facebook_name"></input>
-  <label >LinkedIn Name</label>
-  <input name="linkedin_name"></input>
-  <label >Email</label>
-  <input name="email"></input>
-  <label >Password</label>
-  <input name="password" type="password"></input>
-  <label >Password Confirmation</label>
-  <input name="password_confirmation" type="password"></input>
+  <input name="last_name" placeholder="Last Name"></input>
+  <input name="user_name" placeholder="User Name"></input>
+  <input name="facebook_name" placeholder="Facebook Name"></input>
+  <input name="linkedin_name" placeholder="LinkedIn Name"></input>
+  <input name="email" placeholder="Email"></input>
+  <input name="password" type="password" placeholder="Password"></input>
+  <input name="password_confirmation" type="password" placeholder="Password Confirmation"></input>
   <input type="submit" value="Submit" name="register_submit"></input>
 </form>

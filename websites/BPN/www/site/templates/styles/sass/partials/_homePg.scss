@@ -18,6 +18,22 @@
   text-decoration: none;
   z-index: 2;
   transition: 1s;
+  input{
+    padding: 0.5em;
+    width: 90%;
+    text-align: center;
+    margin: 1px 0;
+    border: 0;
+    background-color: $navBG;
+  }
+  input[type="submit"]{
+    background-color: rgba(0, 122, 185, 0);
+    border: 2px solid #90c3e0;
+    color: #90c3e0;
+    width: 96.5%;
+    position: relative;
+    font-weight: bold; 
+  }
   &:after{
     content: " ";
     width: 100%;
@@ -36,11 +52,30 @@
   }
 }
 
-.register-open{
-  height: 15em;
-  width: 250px;
-  top: -270px;
+#reg-form{
+  opacity: 0;
+  top: 0.3em;
+  visibility: hidden;
+  transition: 0.5s;
 }
+
+.register-open{
+  height: 25em;
+  width: 250px;
+  top: -360px;
+  #reg-form{
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover{
+    &:after{
+      border: 5px solid #90c3e0;
+      background-color: white;
+      outline: solid #007ab9 5px;
+    }   
+  }   
+}
+
 
 a{
   text-decoration: none;
