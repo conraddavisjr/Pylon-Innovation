@@ -1,45 +1,41 @@
 <?php
-  $headline = "Registration form";
-  // include "./register.inc";
   
   $errorMessage = "";
-  // if($input->post->register_submit) {
-  //   // process submitted register form
-  //   $first_name = $sanitizer->text($input->post->first_name);
-  //   $last_name = $sanitizer->text($input->post->last_name);
-  //   $user_name = $sanitizer->username($input->post->user_name);
-  //   $facebook_name = $sanitizer->username($input->post->facebook_name);
-  //   $linkedin_name = $sanitizer->username($input->post->linkedin_name);
-  //   $email = $sanitizer->email($input->post->email);
-  //   $password = $input->post->password;
-  //   $password_confirmation = $input->post->password_confirmation;
     if(isset($_POST['user_name'])){ $user_name = $_POST['user_name']; }else{$user_name='';}
     if(isset($_POST['first_name'])){ $first_name = $_POST['first_name']; }else{$first_name='';}
     if(isset($_POST['last_name'])){ $last_name = $_POST['last_name']; }else{$last_name='';}
+    if(isset($_POST['email'])){ $email = $_POST['email']; }else{$email='';}
     if(isset($_POST['password'])){ $password = $_POST['password']; }else{$password='';}
     if(isset($_POST['facebook_name'])){ $facebook_name = $_POST['facebook_name']; }else{$facebook_name='';}
     if(isset($_POST['linkedin_name'])){ $linkedin_name = $_POST['linkedin_name']; }else{$linkedin_name='';}
 
-    $data = array(); // array to pass back data
-
-    // return a response ===========================================================
+    // Add a new user ===========================================================
 
     $u = $users->add($user_name);
     $u->set('first_name', $first_name);
     $u->set('last_name', $last_name);
+
     $u->pass = $password;
     $u->set('facebookName', $facebook_name);
     $u->set('linkedinName', $linkedin_name);
     $u->addRole("pending-approval");
     $u->save();
 
-    // show a message of success and provide a true success variable
-    $data['success'] = true;
-    $data['message'] = 'Success!';
+    // Notify the Admin of a new user request via email =========================
+    // Set the recipient email address.
+    $recipient = "c.pridgen87@gmail.com, cdj@pyloninnovation.com";
+    // Set the email subject.
+    $subject = "New request for BPN membership from $first_name $last_name";
+    // Build the email content.
+    $email_content = "Username: $user_name\n";
+    $email_content .= "Email: $email\n\n";
+    $email_content .= "Facebook Name: $facebook_name\n\n";
+    $email_content .= "LinkedIn Name: $linkedin_name\n\n";
+    // Build the email headers.
+    $email_headers = "From: $first_name <$email>";
+    // Send the email.
+    mail($recipient, $subject, $email_content, $email_headers);
 
-    // return all our data to an AJAX call
-    echo json_encode($data);
-    echo 'user_name: ' . $user_name;
 
   // }
 ?>

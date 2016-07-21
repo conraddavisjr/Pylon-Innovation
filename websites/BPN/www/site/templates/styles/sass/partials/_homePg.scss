@@ -6,14 +6,18 @@
 }
 .register{
   padding: 1em;
-  display: table;
+  width: 190px;
+  top: 0;
+  height: 1.25em;
   margin: 40px auto 0 auto;
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
-  color: $bpnBlue;
+  color: #097ABB;
   text-shadow: none;
   text-decoration: none;
+  z-index: 2;
+  transition: 1s;
   &:after{
     content: " ";
     width: 100%;
@@ -27,9 +31,15 @@
     outline: solid #007ab9 5px;
     outline-offset: 0px;
     z-index: -1;
-    transform: translateY(-50%);
+    transform: translate(0%, -50%);
     transition: 0.5s;
   }
+}
+
+.register-open{
+  height: 15em;
+  width: 250px;
+  top: -270px;
 }
 
 a{

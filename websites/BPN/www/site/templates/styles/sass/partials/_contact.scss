@@ -55,7 +55,8 @@
   width: 300px;
   transform: translate(-50%,10%) rotateX(30deg);
   padding: 10px;
-  background-color: #80bcdc;
+  background-color: $bpnMedDarkBlue;
+  border-radius: 8px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
