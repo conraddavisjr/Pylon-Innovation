@@ -17,7 +17,8 @@ module.exports = function(grunt) {
       dist: {
         files: {   // 'destination': 'source'
           'compiled-dev/js/intro.min.js': ['templates/js/intro.js'],
-          'compiled-dev/js/filter-nav.min.js': ['templates/js/filter-nav.js']
+          'compiled-dev/js/filter-nav.min.js': ['templates/js/filter-nav.js'],
+          'compiled-dev/js/reg-form.min.js': ['templates/js/reg-form.js']
           // 'compiled-dev/js/item-zoom.min.js': ['templates/js/item-zoom.js']
         }
       }

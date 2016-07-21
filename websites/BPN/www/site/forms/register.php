@@ -39,7 +39,6 @@
 
     // return all our data to an AJAX call
     echo json_encode($data);
-    echo 'user_name: ' . $user_name;
 
   // }
 ?>

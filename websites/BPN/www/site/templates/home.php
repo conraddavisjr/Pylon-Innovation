@@ -125,5 +125,9 @@
 
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
+	<script type="text/javascript">
+		var registerScript = "<?php echo $config->paths->templates . 'register.php';?>"
+	</script>
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/reg-form.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
 </html>
