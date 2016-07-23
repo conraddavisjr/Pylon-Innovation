@@ -92,70 +92,12 @@
   <!-- Main container -->
   <?php include('includes/page-wrapper-top.php');?>
     <div class="events-container">
-      <!-- <div id="filter-nav">
-        <li>All</li>
-        <li>Volunteer Oportunities</li>
-        <li>Socials</li>
-      </div>   -->
       <div class="figure-container">
         <div class="bounding-container">
-          <!-- <div class="filter">
-            <i>Filter Icon</i>
-          </div> -->
+          <!-- Ajax loaded content here -->
+          
         </div>
       </div>
-      <div class="content">
-        <!-- Ajax loaded content here -->
-        <!-- article detailed view -->
-        <article class="article-details">
-          <div class="bounding-container">
-            <div class="image-copy-container">
-              <div class="close-content-btn fa fa-times"></div>
-              <img class="post-image" src="">
-              <div class="article-copy">
-                <h2 class="post-title"></h2>
-                <p class="post-details"></p>
-                <div class="post-logistics">
-                  <div class="post-date">
-                    <p>Date</p>
-                    <div class="date"><i class="fa fa-calendar"></i><span class="info"></span></div>
-                  </div>
-                  <div class="post-time">
-                    <div class="time"><i class="fa fa-clock-o"></i><span class="info"></span></div>
-                  </div>
-                  <div class="post-address">
-                    <p>Address</p>
-                    <div class="address"><i class="fa fa-map-marker"></i><span class="info"></span></div>
-                  </div>
-                  <div class="post-price">
-                    <div class="price"><span class="info"></span></div>
-                  </div>
-                  <!-- <div class="add-to-cal">
-                    <span class="addtocalendar atc-style-blue">
-                      <var class="atc_event">
-                        <var class="atc_date_start"></var>
-                        <var class="atc_date_end"></var>
-                        <var class="atc_timezone"></var>
-                        <var class="atc_title"></var>
-                        <var class="atc_description">u</var>
-                        <var class="atc_location"></var>
-                        <var class="atc_organizer"></var>
-                        <var class="atc_organizer_email"></var>
-                      </var>
-                    </span>
-                  </div> -->
-                </div>
-                <div class="photo-gallery-teaser">
-                  <div class="image"></div>
-                </div>
-              </div>
-            </div>
-            <div id="map"></div>
-            <div class="social-sharing-container"><span>SHARE:</span><div class="social-sharing"></div></div>
-            <div class="close-details"><i class="fa fa-arrow-left"></i>Back to events listing</div>
-          </div>
-        </article> <!-- article-details -->
-      </div><!-- content -->
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
   <!-- /Main container -->
@@ -178,10 +120,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-  <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
 
@@ -203,11 +142,9 @@
             '</div>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +
-              '<p class="summary">' + postData[i].summary + '</p>' +
               '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + postData[i].finishDate + '</p>' +
               '<p class="time">' + '<i class="fa fa-clock-o"></i>' + postData[i].startTime + postData[i].finishTime + '</p>' +
               '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
-              '<p class="event-price">' + postData[i].eventPrice + '</p>' +
             '</figcaption>' +
           '</figure>');
         }
@@ -215,15 +152,6 @@
     })();
   </script>
 
-  <!-- Social sharing -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.css" />  
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/social-sharing.js"></script>
-
-  <!-- Load the Add to Calendar Widget -->
-  <!-- <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" charset="UTF-8" async="" src="http://addtocalendar.com/atc/1.5/atc.min.js"></script> -->
-  
 </body>
 
 </html>
