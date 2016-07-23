@@ -1,3 +1,9 @@
+/*-------------------------
+Responsive Media Queries
+-------------------------*/
+/*-----------------------------
+Responsive Media Queries (END)
+-----------------------------*/
 .isolayer {
   position: absolute;
   top: 0;
@@ -72,6 +78,12 @@
 .js .grid {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+
+@media only screen and (max-width: 480px) {
+  .grid__link img:nth-child(n+1) {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=home-gallery-grid.css.map */

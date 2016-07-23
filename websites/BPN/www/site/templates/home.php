@@ -35,7 +35,9 @@
 						<h3><?php echo $page->subtitle ?></h3>
 						<div class="register">
 							Register for membership
-							<span></span>
+							<span>Thanks for registering! <br>
+							Your submission has been <br>
+							sent for review.</span>
 							<?php include('register.php') ?>
 						</div>
 					</div>

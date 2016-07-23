@@ -6,9 +6,12 @@ $(document).ready(function() {
 
   // process the form
   $('#reg-form').submit(function(event) {
-
     // stop the form from submitting the normal way and refreshing the page
     event.preventDefault();
+
+    // prevent the form from submitting multiple times
+    $('#reg-form').disabled=true;
+    $('input[name=register_submit]').val('Submitting...');
 
     // get the form data
     // there are 
@@ -32,8 +35,13 @@ $(document).ready(function() {
     .success(function() {
       console.log('SUCCESS!');
       $('#reg-form')[0].reset();
-      $('#reg-form').fadeOut(500);
-      $('.register span').html('Thanks for registering! Your submission has been sent for review.')
+      $('.register').addClass('registration-form-success');
+
+      setTimeout(function(){
+        $('.register').attr('class', 'register')
+        $('#reg-form').disabled=false;
+        $('input[name=register_submit]').val('Submit');
+      },4000)
     });
 
   });

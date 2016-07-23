@@ -44,6 +44,16 @@ Responsive Media Queries (END)
   position: relative;
   font-weight: bold;
 }
+.register span {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 35%;
+  text-align: center;
+  display: none;
+  color: #00b94d;
+  transition: 0.5s;
+}
 .register:after {
   content: " ";
   width: 100%;
@@ -81,6 +91,16 @@ Responsive Media Queries (END)
   border: 5px solid #90c3e0;
   background-color: white;
   outline: solid #007ab9 5px;
+}
+
+.registration-form-success #reg-form {
+  opacity: 0;
+  visibility: hidden;
+}
+.registration-form-success span {
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 
 a {

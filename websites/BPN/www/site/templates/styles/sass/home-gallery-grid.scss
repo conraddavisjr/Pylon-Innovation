@@ -1,3 +1,4 @@
+@import "partials/breakpoints.scss";
 
 .isolayer {
 	position: absolute;
@@ -74,3 +75,16 @@
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
+
+
+
+// Responsive
+
+@include MQ(S){
+  .grid__link{
+    img:nth-child(n+1){
+    	display: none;
+    }
+  }
+}
+

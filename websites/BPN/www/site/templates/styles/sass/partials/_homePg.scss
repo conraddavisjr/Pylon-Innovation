@@ -34,6 +34,16 @@
     position: relative;
     font-weight: bold; 
   }
+  span{
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: 35%;
+    text-align: center;
+    display: none;
+    color: $successGreen;
+    transition: 0.5s;
+  }
   &:after{
     content: " ";
     width: 100%;
@@ -74,6 +84,18 @@
       outline: solid #007ab9 5px;
     }   
   }   
+}
+
+.registration-form-success{
+  #reg-form{
+    opacity: 0;
+    visibility: hidden;
+  }
+  span{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
 }
 
 
