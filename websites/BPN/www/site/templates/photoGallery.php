@@ -18,7 +18,6 @@
   <!-- 
     Gather Data from the server and build it into JSON data 
   -->
-
   <script type="text/javascript">
     var postData = [ 
       <?php $posts = $page->children();

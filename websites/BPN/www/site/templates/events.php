@@ -187,7 +187,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
 
