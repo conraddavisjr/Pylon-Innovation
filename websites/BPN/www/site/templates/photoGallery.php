@@ -25,7 +25,7 @@
         $id = 0;
         foreach($posts as $post) { 
 
-          // gather location info
+          // gather Time info
           $calendarStartDate = date('D, M j, Y', $post->date);
           $calendarStartTime = date('g a', $post->date);
           $calendarFinishDate = $post->finishdate;
@@ -86,6 +86,7 @@
 </head>
 
 <body class="photoGalleryPg">
+  <!-- Page edit link -->
   <?php if($page->editable()) echo "<a class=\"admin-edit\" href='$page->editURL'>Edit</a>"; ?>
 
   <!-- Main container -->
@@ -94,7 +95,6 @@
       <div class="figure-container">
         <div class="bounding-container">
           <!-- Ajax loaded content here -->
-          
         </div>
       </div>
     </div><!-- /events-container -->
@@ -126,10 +126,6 @@
   <script>
     (function() {
 
-      // load the Teaser content
-
-      loadPostData();
-
       function loadPostData() {
         // output the teasers
         for (var i = 0; i < postData.length; i++) {
@@ -148,6 +144,9 @@
           '</figure>');
         }
       }
+
+      // load the Teaser content
+      loadPostData();
     })();
   </script>
 
