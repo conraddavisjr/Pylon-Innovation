@@ -20,7 +20,7 @@
   -->
   <script type="text/javascript">
     var postData = [ 
-      <?php $posts = $page->children();
+      <?php $posts = $pages->get("/events/")->find("sort=-publish_date");
         // convert the posted event data to a JSON format 
         $id = 0;
         foreach($posts as $post) { 

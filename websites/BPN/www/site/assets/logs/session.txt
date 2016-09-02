@@ -28,3 +28,4 @@
 2016-07-20 15:56:55	anotherone	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/logout/	Logout for 'anotherone'
 2016-07-20 15:58:07	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
 2016-07-23 10:42:15	?	?	User 'cdj' - Session timed out (session older than 86400 seconds) (IP: 0.0.0.0)
+2016-09-02 16:07:46	cdj	http://localhost:8888/lab/Pylon-Innovation/websites/BPN/www/processwire/login/	Successful login for 'cdj'
