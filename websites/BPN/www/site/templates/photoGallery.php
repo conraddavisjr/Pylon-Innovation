@@ -39,7 +39,8 @@
           foreach($post->photos as $photo) {
             $cycledPhoto = "['{$photo->url}',";
             $photoCollection .= $cycledPhoto;
-            $photoCollection .= "'{$photo->size(150, 0)->url}'],";
+            $photoCollection .= "'{$photo->size(150, 0)->url}',";
+            $photoCollection .= "'{$photo->size(450, 0)->url}'],";
           }
           $photoCollection .= "],";
 
@@ -129,8 +130,7 @@
           $('.figure-container .bounding-container').append(
           '<figure class="teaser photo-gallery-teaser" content-id="' + postData[i].id + '" id="' + postData[i].id + '">' +
             '<div class="image-container">' + 
-              '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
-              // '<div class="event-category">' + postData[i].category + '</div>' +
+              '<img src="' + postData[i].photos[i][2] + '" alt="' + postData[i].thumbnailAlt + '"/>' +
             '</div>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +

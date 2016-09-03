@@ -3,10 +3,14 @@
     width: 24%;
     margin: 0.5em 0.5%;
     height: auto;
+    display: inline-block;
+    float: none;
     .image-container {
       img{
         height: 100%;
         width: auto;
+        min-width: 100%;
+        max-height: 300px;
       }
     }
     figcaption{
@@ -57,6 +61,7 @@
     width: calc(100% + 15px);
     height: 100%;
     right: -15px;
+    overflow: scroll;
     z-index: 2;
     .thumbnail{
       height: 9em;
@@ -202,10 +207,18 @@
 }
 
 // Mobile Breakpoints
-@include MQ(L){
+@include MQ(XL){
   .bounding-container{
     .teaser{
       width: 24%;
+    }
+  }
+}
+
+@include MQ(L){
+  .bounding-container{
+    .teaser{
+      width: 32.3%;
     }
   }
 }
@@ -219,6 +232,11 @@
 }
 
 @include MQ(S){
+  .bounding-container{
+    .teaser{
+      width: 99%;
+    }
+  }
   .photo-gallery-container{
     .thumbnails-group{
       .thumbnail{
