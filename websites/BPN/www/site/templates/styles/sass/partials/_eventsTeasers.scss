@@ -301,12 +301,28 @@ figure.open-up {
   }
 }
 
+@include MQ(L){
+  .bounding-container {
+    padding: 0 0.5em;
+    .teaser{
+      width: 48%;
+      margin: 0.5em 1%;
+    }
+  }
+}
+
 @include MQ(M){
   .article-details{
     .social-sharing-container{
       span{
         top: 0.8em;
       }
+    }
+  }
+  figcaption{
+    h2{
+      font-size: 1.1em;
+      margin-bottom: 0.5em;
     }
   }
 }

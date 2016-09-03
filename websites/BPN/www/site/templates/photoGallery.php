@@ -26,26 +26,13 @@
         foreach($posts as $post) { 
 
           // gather Time info
-          $calendarStartDate = date('D, M j, Y', $post->date);
-          $calendarStartTime = date('g a', $post->date);
+          $calendarStartDate = date('D, M j');
           $calendarFinishDate = $post->finishdate;
           $calendarFinishTime = $post->finishdate;
-
-          // If there is a finish date, then update the layout
-          if($calendarFinishDate != ""){
-            $calendarStartDate = date('M j', $post->date);
-            $calendarFinishDate = "";
-            $calendarFinishDate .= ' - ';
-            $calendarFinishDate .= date('M j', $post->finshdate);
-            $calendarFinishTime = date(' - g a', $post->finishdate);
-          }
 
           // convert lng/lat to int
           $lngNum = $post->map->lng;
           $latNum = $post->map->lat;
-
-          // $categoryId = $post->category;
-          // $postCategory = $pages->get($categoryId)->title;
 
           // get each photo
           $photoCollection = "[";
@@ -61,9 +48,7 @@
           $postData .=   "title:'{$post->title}',";
           $postData .=   "date:'{$calendarStartDate}',";
           $postData .=   "finishDate:'{$calendarFinishDate}',";
-          $postData .=   "startTime:'{$calendarStartTime}',";
           $postData .=   "finishTime:'{$calendarFinishTime}',";
-          // $postData .=   "category:'{$postCategory}',";
           $postData .=   "photos:{$photoCollection}";
           $postData .=   "mapAddress:'{$post->map->address}',";
           $postData .=   "mapLat:'{$post->map->lat}',";
@@ -130,16 +115,14 @@
         // output the teasers
         for (var i = 0; i < postData.length; i++) {
           $('.figure-container .bounding-container').append(
-          '<figure class="teaser" content-id="' + postData[i].id + '">' +
+          '<figure class="teaser photo-gallery-teaser" content-id="' + postData[i].id + '" id="' + postData[i].id + '">' +
             '<div class="image-container">' + 
               '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
               // '<div class="event-category">' + postData[i].category + '</div>' +
             '</div>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +
-              '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + postData[i].finishDate + '</p>' +
-              '<p class="time">' + '<i class="fa fa-clock-o"></i>' + postData[i].startTime + postData[i].finishTime + '</p>' +
-              '<p class="address">' + '<i class="fa fa-map-marker"></i>' + postData[i].mapAddress + '</p>' +
+              '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + '</p>' +
             '</figcaption>' +
           '</figure>');
         }

@@ -1,3 +1,27 @@
+.bounding-container{
+  .teaser{
+    width: 19%;
+    min-width: 220px;
+    margin: 0.5em 0.5%;
+    height: 260px;
+    .image-container {
+      height: 210px
+    }
+    figcaption{
+      padding: 0em 4%;
+      width: 92%;
+      display: inline-block;
+      h2{
+        margin: 0;
+        width: 100%;
+        font-size: 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
 .photo-gallery-perspective{
   perspective: 1000px;
   position: fixed;
