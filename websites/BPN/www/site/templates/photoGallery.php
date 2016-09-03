@@ -106,6 +106,12 @@
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    // set fadeIn to global 
+    function fadeIn(obj) {
+      $(obj).fadeIn(1000);
+    }
+  </script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>

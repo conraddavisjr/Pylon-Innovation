@@ -8,6 +8,7 @@
         $menuIcons = array(
           "Events" => "fa-users",
           "News" => "fa-newspaper-o",
+          "Gallery" => "fa-file-image-o",
           "Contact" => "fa-phone-square"
         );
 

@@ -60,8 +60,10 @@ $(function() {
 
         // generate the thumbnails per the PostData JSON
         for (var i = 0; i < postData[galleryId].photos.length; i++) {
-          Events.galleryArray.push('<div class="thumbnail" data-thumbnail-id="' + i + '"><img src="' + postData[galleryId].photos[i] + '"></div>');
-          Events.galleryImgSrcArray.push(postData[galleryId].photos[i]);
+          Events.galleryArray.push('<div class="thumbnail" data-thumbnail-id="' + i + '"><img src="' 
+                                                                + postData[galleryId].photos[i][1] 
+                                                                + '" onload="fadeIn(this)"' + 'style="display:none;"' + '></div>');
+          Events.galleryImgSrcArray.push(postData[galleryId].photos[i][0]);
         }
 
         // create a reference to the thumbnail
