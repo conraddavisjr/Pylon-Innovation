@@ -1,13 +1,16 @@
 .bounding-container{
   .teaser{
-    width: 19%;
+    width: 24%;
     margin: 0.5em 0.5%;
-    height: 260px;
+    height: auto;
     .image-container {
-      height: 210px
+      img{
+        height: 100%;
+        width: auto;
+      }
     }
     figcaption{
-      padding: 0em 4%;
+      padding: 0.4em 4%;
       width: 92%;
       display: inline-block;
       h2{
@@ -17,6 +20,9 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      p{
+        margin: 0;
       }
       .date{
         color: $bpnDarkBlue;
@@ -48,8 +54,9 @@
   transition: 0.5s;
   .thumbnails-group{
     position: absolute;
-    width: 100%;
+    width: calc(100% + 15px);
     height: 100%;
+    right: -15px;
     z-index: 2;
     .thumbnail{
       height: 9em;

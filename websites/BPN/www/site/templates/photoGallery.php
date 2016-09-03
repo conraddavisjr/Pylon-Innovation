@@ -122,6 +122,10 @@
       function loadPostData() {
         // output the teasers
         for (var i = 0; i < postData.length; i++) {
+          // if the teaser has no photos associated with it, skip it
+          if (postData[i].photos.length == 0) {
+            continue;
+          }
           $('.figure-container .bounding-container').append(
           '<figure class="teaser photo-gallery-teaser" content-id="' + postData[i].id + '" id="' + postData[i].id + '">' +
             '<div class="image-container">' + 

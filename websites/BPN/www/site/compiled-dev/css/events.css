@@ -477,15 +477,16 @@ figure.open-up figcaption {
 }
 
 .bounding-container .teaser {
-  width: 19%;
+  width: 24%;
   margin: 0.5em 0.5%;
-  height: 260px;
+  height: auto;
 }
-.bounding-container .teaser .image-container {
-  height: 210px;
+.bounding-container .teaser .image-container img {
+  height: 100%;
+  width: auto;
 }
 .bounding-container .teaser figcaption {
-  padding: 0em 4%;
+  padding: 0.4em 4%;
   width: 92%;
   display: inline-block;
 }
@@ -496,6 +497,9 @@ figure.open-up figcaption {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.bounding-container .teaser figcaption p {
+  margin: 0;
 }
 .bounding-container .teaser figcaption .date {
   color: #383C3E;
@@ -527,8 +531,9 @@ figure.open-up figcaption {
 }
 .photo-gallery-container .thumbnails-group {
   position: absolute;
-  width: 100%;
+  width: calc(100% + 15px);
   height: 100%;
+  right: -15px;
   z-index: 2;
 }
 .photo-gallery-container .thumbnails-group .thumbnail {

@@ -52,7 +52,7 @@ $(function() {
         Events.$photoGalleryContainer.addClass('fade-in');
 
         // get the gallery id
-        var galleryId = Events.$photoGalleryTeaser.attr('id');
+        var galleryId = $(this).attr('id');
 
         // set array to all images before posting them to the DOM
         Events.galleryArray = [];
@@ -94,9 +94,10 @@ $(function() {
       $(el).addClass('go-to-center');
 
       // get the image belonging to the thumbnail
-      var selectedImage = $(el).find('img').attr('src');
+      var selectedImage = Events.galleryImgSrcArray[Events.thumbnailId]
 
       // update the img src of the main image
+
       Events.$mainImageSrc.attr('src', selectedImage);
 
       setTimeout(function(){
@@ -112,8 +113,6 @@ $(function() {
       // determine which direction was clicked
       var fieldClicked = $(this).attr('id');
       var pointedImage = '';
-
-      console.log('thumbnailId: ', Events.thumbnailId);
 
       // call the next or prev image
       switch (fieldClicked){
