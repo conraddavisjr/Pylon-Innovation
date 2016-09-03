@@ -82,7 +82,7 @@
 
 @include MQ(S){
   .grid__link{
-    img:nth-child(n+1){
+    img:nth-child(n+2){
     	display: none;
     }
   }

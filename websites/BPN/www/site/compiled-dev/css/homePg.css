@@ -284,6 +284,7 @@ h3 {
 }
 #gallery-frame .photo-gallery-title {
   font-size: 4em;
+  text-align: center;
 }
 
 #contact-frame {
@@ -328,6 +329,11 @@ h3 {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 960px) {
+  #events-frame .hp-events-teaser {
+    width: 31.3%;
+  }
+}
 @media only screen and (max-width: 768px) {
   body {
     background-image: url("../../assets/images/eventsBg.jpg");
@@ -353,12 +359,10 @@ h3 {
     background-size: contain;
   }
   #events-frame .hp-events-teaser {
-    width: 100%;
-    margin: 1em 0;
+    width: 48%;
   }
   #events-frame .hp-events-teaser .center-copy {
     font-weight: 700;
-    font-size: 1.4em;
   }
   #events-frame .hp-events-teaser .center-copy br {
     display: none;
@@ -381,6 +385,10 @@ h3 {
   }
 }
 @media only screen and (max-width: 480px) {
+  #events-frame .hp-events-teaser {
+    width: 99%;
+  }
+
   #gallery-frame .home-gallery-grid {
     top: 30%;
     width: 190vw;

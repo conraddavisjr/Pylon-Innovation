@@ -299,6 +299,7 @@ h3{
   }
   .photo-gallery-title{
     font-size: 4em;
+    text-align: center;
   }
 }
 
@@ -344,6 +345,14 @@ h3{
   }
 }
 
+@include MQ(L){
+  #events-frame{
+    .hp-events-teaser{
+      width: 31.3%;
+    }
+  }
+}
+
 // Breakpoints
 @include MQ(M){
   body{
@@ -366,11 +375,9 @@ h3{
     background-image: none;
     background-size: contain;
     .hp-events-teaser{
-      width: 100%;
-      margin: 1em 0;
+      width: 48%;
       .center-copy{
         font-weight: 700;
-        font-size: 1.4em;
         br {
           display: none;
         }
@@ -401,6 +408,11 @@ h3{
 }
 
 @include MQ(S){
+  #events-frame{
+    .hp-events-teaser{
+      width: 99%;
+    }
+  }
   #gallery-frame{
     .home-gallery-grid{
       top: 30%;

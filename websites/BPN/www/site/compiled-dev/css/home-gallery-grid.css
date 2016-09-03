@@ -81,7 +81,7 @@ Responsive Media Queries (END)
 }
 
 @media only screen and (max-width: 480px) {
-  .grid__link img:nth-child(n+1) {
+  .grid__link img:nth-child(n+2) {
     display: none;
   }
 }
