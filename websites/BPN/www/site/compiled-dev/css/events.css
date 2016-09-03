@@ -143,6 +143,7 @@ Animation
   position: absolute;
   height: 3px;
   z-index: 2;
+  left: 0;
   bottom: 0;
   background-color: #097ABB;
   width: 0%;
@@ -477,7 +478,6 @@ figure.open-up figcaption {
 
 .bounding-container .teaser {
   width: 19%;
-  min-width: 220px;
   margin: 0.5em 0.5%;
   height: 260px;
 }
@@ -496,6 +496,11 @@ figure.open-up figcaption {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.bounding-container .teaser figcaption .date {
+  color: #383C3E;
+  text-decoration: italic;
+  font-size: 0.8em;
 }
 
 .photo-gallery-perspective {
@@ -672,6 +677,16 @@ figure.open-up figcaption {
   background-color: #097ABB;
 }
 
+@media only screen and (max-width: 960px) {
+  .bounding-container .teaser {
+    width: 24%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bounding-container .teaser {
+    width: 49%;
+  }
+}
 @media only screen and (max-width: 480px) {
   .photo-gallery-container .thumbnails-group .thumbnail {
     height: 5em;

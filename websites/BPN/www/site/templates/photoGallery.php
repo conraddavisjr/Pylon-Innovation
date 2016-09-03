@@ -37,7 +37,9 @@
           // get each photo
           $photoCollection = "[";
           foreach($post->photos as $photo) {
-            $photoCollection .= "'{$photo->url}',";
+            $cycledPhoto = "['{$photo->url}',";
+            $photoCollection .= $cycledPhoto;
+            $photoCollection .= "'{$photo->size(150, 0)->url}'],";
           }
           $photoCollection .= "],";
 
@@ -122,7 +124,7 @@
             '</div>' +
             '<figcaption>' +
               '<h2>' + postData[i].title + '</h2>' +
-              '<p class="date">' + '<i class="fa fa-calendar"></i>' + postData[i].date + '</p>' +
+              '<p class="date">' + postData[i].date + '</p>' +
             '</figcaption>' +
           '</figure>');
         }

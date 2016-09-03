@@ -85,6 +85,8 @@ ErrorDocument 404 /index.php
   php_flag register_globals		off
 </IfModule>
 
+php_flag opcache.enable Off
+
 # -----------------------------------------------------------------------------------------------
 # Set default directory index files
 # -----------------------------------------------------------------------------------------------

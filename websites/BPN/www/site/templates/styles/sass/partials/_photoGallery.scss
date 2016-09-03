@@ -1,7 +1,6 @@
 .bounding-container{
   .teaser{
     width: 19%;
-    min-width: 220px;
     margin: 0.5em 0.5%;
     height: 260px;
     .image-container {
@@ -18,6 +17,11 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .date{
+        color: $bpnDarkBlue;
+        text-decoration: italic;
+        font-size: 0.8em;
       }
     }
   }
@@ -187,6 +191,22 @@
   z-index: 21;
   &:hover{
     background-color: $bpnBlue;
+  }
+}
+
+@include MQ(L){
+  .bounding-container{
+    .teaser{
+      width: 24%;
+    }
+  }
+}
+
+@include MQ(M){
+  .bounding-container{
+    .teaser{
+      width: 49%;
+    }
   }
 }
 
