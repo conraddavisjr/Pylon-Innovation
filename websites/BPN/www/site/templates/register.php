@@ -41,14 +41,17 @@
   // }
 ?>
 
+<!-- Form HTML -->
 <form action="./" method="post" id="reg-form">
-  <input name="first_name" placeholder="first Name"></input>
-  <input name="last_name" placeholder="Last Name"></input>
-  <input name="user_name" placeholder="User Name"></input>
+  <input name="first_name" placeholder="*first Name" required></input>
+  <input name="last_name" placeholder="*Last Name" required></input>
+  <input name="user_name" placeholder="*User Name" required></input>
   <input name="facebook_name" placeholder="Facebook Name"></input>
   <input name="linkedin_name" placeholder="LinkedIn Name"></input>
   <input name="email" placeholder="Email"></input>
   <input name="password" type="password" placeholder="Password"></input>
   <input name="password_confirmation" type="password" placeholder="Password Confirmation"></input>
+  <div class="security-image"><img src="<?php echo $config->urls->assets?>/images/security-image.jpg"></div>
+  <input name="human_confirmation" placeholder="security check" required humanField></input>
   <input type="submit" value="Submit" name="register_submit"></input>
 </form>

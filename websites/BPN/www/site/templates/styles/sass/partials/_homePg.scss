@@ -60,6 +60,14 @@
     transform: translate(0%, -50%);
     transition: 0.5s;
   }
+  .security-image{
+    float: left;
+    width: 49%;
+    padding-left: 0.5em;
+  }
+  input[name="human_confirmation"] {
+    width: 38%;
+  }  
 }
 
 #reg-form{
@@ -70,9 +78,10 @@
 }
 
 .register-open{
-  height: 25em;
+  height: 29em;
   width: 250px;
   top: -360px;
+  cursor: default;
   #reg-form{
     opacity: 1;
     visibility: visible;
