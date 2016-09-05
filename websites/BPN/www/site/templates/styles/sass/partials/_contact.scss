@@ -12,7 +12,7 @@
         width: 94%;
         border: 1px solid $bpnPaleGray;
         border-bottom: 2px solid $bpnPaleGray;
-        background-color: $bpnPaleGray;
+        background-color: white;
         transition: 0.3s;
         resize: none;
         &:focus{
@@ -29,7 +29,7 @@
     padding: 0.6em 6%;
     width: 100%;
     font-size: 1.1em;
-    background-color: $bpnGrayBlue;
+    background-color: $bpnLightGray;
     border: 0;
     color: $bpnParagraph;
   }
@@ -37,7 +37,7 @@
 
 // styles for the global contact form
 .contact-overlay{
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
@@ -49,14 +49,14 @@
 }
 
 .contact-container{
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 0;
   width: 300px;
   transform: translate(-50%,10%) rotateX(30deg);
-  padding: 10px;
-  background-color: $bpnMedDarkBlue;
-  border-radius: 8px;
+  padding: 0 10px;
+  background-color: $bpnBlue;
+  border-radius: 3px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;

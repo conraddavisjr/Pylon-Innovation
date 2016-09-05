@@ -152,12 +152,16 @@ $(function() {
       $('.thumbnail').attr('class', 'thumbnail');
       Events.$mainImage.removeClass('fade-in');
       Events.$clickFieldsContainer.removeClass('fade-in');
+      // update the img src of the main image
+      Events.$mainImageSrc.attr('src', '');
     },
 
     closeTheGallery: function(){
       Events.$photoGalleryContainer.removeClass('fade-in');
       Events.$mainImage.removeClass('fade-in');
       Events.$clickFieldsContainer.removeClass('fade-in');
+      // update the img src of the main image
+      Events.$mainImageSrc.attr('src', '');
     }
   }
 

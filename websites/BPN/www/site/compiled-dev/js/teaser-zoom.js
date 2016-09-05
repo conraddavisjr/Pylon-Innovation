@@ -126,7 +126,7 @@ $(function() {
       }else{
         // post the image and its gallery with an id
         teaserZoom.$photoGalleryTeaserImage.html('<h3>' + 'Photo Gallery' + '</h4>' + 
-          '<img src="' + postData[teaserZoom.teaserId].photos[0] + '">'
+          '<img src="' + postData[teaserZoom.teaserId].photos[0][1] + '">'
           //'<h4>' + 'View the Photos for this event' + '</h4>'
         )
         $('.photo-gallery-teaser').attr('has-gallery', 'true');

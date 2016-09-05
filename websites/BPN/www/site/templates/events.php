@@ -51,10 +51,14 @@
 
           // $categoryId = $post->category;
           // $postCategory = $pages->get($categoryId)->title;
+
           // get each photo
           $photoCollection = "[";
           foreach($post->photos as $photo) {
-            $photoCollection .= "'{$photo->url}',";
+            $cycledPhoto = "['{$photo->url}',";
+            $photoCollection .= $cycledPhoto;
+            $photoCollection .= "'{$photo->size(150, 0)->url}',";
+            $photoCollection .= "'{$photo->size(400, 0)->url}'],";
           }
           $photoCollection .= "],";
 
@@ -164,6 +168,7 @@
       </div><!-- content -->
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
+  <?php include('includes/contact-form.php');?>
   <!-- /Main container -->
 
   <!-- Photo Gallery container -->
@@ -183,12 +188,19 @@
 
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/font-awesome.min.css">
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
+  <script type="text/javascript">
+    // set fadeIn to global 
+    function fadeIn(obj) {
+      $(obj).fadeIn(1000);
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
   <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
 
   <script>
     (function() {
@@ -203,7 +215,7 @@
           $('.figure-container .bounding-container').append(
           '<figure class="teaser" content-id="' + postData[i].id + '">' +
             '<div class="image-container">' + 
-              '<img src="' + postData[i].thumbnail + '" alt="' + postData[i].thumbnailAlt + '"/>' +
+              '<img src="' + postData[i].photos[i][2] + '" alt="' + postData[i].thumbnailAlt + '"/>' +
               // '<div class="event-category">' + postData[i].category + '</div>' +
             '</div>' +
             '<figcaption>' +

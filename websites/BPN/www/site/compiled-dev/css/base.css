@@ -653,4 +653,82 @@ table {
   border-spacing: 0;
 }
 
+.contact-form ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+}
+.contact-form ul li {
+  list-style-type: none;
+  margin: 0.5em 0;
+}
+.contact-form ul li input,
+.contact-form ul li textarea {
+  padding: 0.5em 3%;
+  width: 94%;
+  border: 1px solid #efefef;
+  border-bottom: 2px solid #efefef;
+  background-color: white;
+  transition: 0.3s;
+  resize: none;
+}
+.contact-form ul li input:focus,
+.contact-form ul li textarea:focus {
+  border-bottom: 2px solid #097ABB;
+  color: #097ABB;
+}
+.contact-form .InputfieldHidden {
+  display: none;
+}
+.contact-form button {
+  padding: 0.6em 6%;
+  width: 100%;
+  font-size: 1.1em;
+  background-color: #d8d8d8;
+  border: 0;
+  color: #333;
+}
+
+.contact-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contact-container {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 300px;
+  transform: translate(-50%, 10%) rotateX(30deg);
+  padding: 0 10px;
+  background-color: #097ABB;
+  border-radius: 3px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.contact-container form ul {
+  width: 100%;
+}
+
+.contact-overlay-in {
+  opacity: 0.95;
+  visibility: visible;
+}
+
+.contact-form-in {
+  transform: translate(-50%, 50%) rotateX(0deg);
+  z-index: 21;
+  opacity: 1;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=base.css.map */

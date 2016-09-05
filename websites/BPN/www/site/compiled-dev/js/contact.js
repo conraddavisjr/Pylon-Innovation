@@ -4,7 +4,7 @@
 // 
 // Description: This file handles the calling and animating in the contact form
 // 
-
+console.log('Contact js loaded');
 
 $(function() {
 

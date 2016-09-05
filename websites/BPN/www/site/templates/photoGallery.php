@@ -87,6 +87,7 @@
       </div>
     </div><!-- /events-container -->
   <?php include('includes/page-wrapper-bottom.php');?>
+  <?php include('includes/contact-form.php');?>
   <!-- /Main container -->
 
   <!-- Photo Gallery container -->
@@ -116,6 +117,7 @@
   <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
 
   <script>
     (function() {

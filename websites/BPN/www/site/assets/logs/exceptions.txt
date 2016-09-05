@@ -81,3 +81,5 @@
 2016-09-02 19:35:58	?	?	SQLSTATE[HY000] [2002] Operation timed out (in /wire/core/ProcessWire.php line 216)
 2016-09-02 20:25:44	?	?	Unable to load Modules - SQLSTATE[HY000]: General error: 2006 MySQL server has gone away (in /wire/core/Modules.php line 591)
 2016-09-02 20:25:44	?	?	SQLSTATE[HY000]: General error: 2006 MySQL server has gone away (in /wire/core/WireSaveableItems.php line 154)
+2016-09-04 16:09:59	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] Operation timed out (in /wire/core/WireDatabasePDO.php line 112)
+2016-09-04 16:09:59	?	?	SQLSTATE[HY000] [2002] Operation timed out (in /wire/core/ProcessWire.php line 216)
