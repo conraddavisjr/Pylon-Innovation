@@ -73,11 +73,11 @@
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-  <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.js"></script>
+  <script src="<?php echo $config->urls->site?>compiled-dev/js/teaser-zoom.min.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/modernizr.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.min.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.min.js"></script>
 
   <script>
     (function() {
@@ -104,7 +104,7 @@
   </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.min.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.2.1/jssocials.css" />  
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/social-sharing.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/social-sharing.min.js"></script>
   <script>
     // $("#sharing").jsSocials({
     //     logo: "fa fa-twitter",

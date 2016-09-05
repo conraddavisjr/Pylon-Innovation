@@ -47,7 +47,7 @@
 
 			<div id="home-pg">
 				<section id="welcome-frame">
-					<video autoplay loop type="video/mp4" poster="<?php echo $config->urls->assets?>/images/golden-gate-mobile.jpg" src="<?php echo $config->urls->assets?>/videos/SF-bridge.mp4">Your browser does not support the video tag.</video>
+					<video autoplay loop type="video/mp4" poster="<?php echo $config->urls->assets?>/images/golden-gate-mobile.jpg" src="<?php echo $config->urls->assets?>/videos/SF-bridge.mp4">Your browser does not support modern video</video>
 				</section>
 				<section id="about-frame">
 					<div class="copy-container">
@@ -108,7 +108,7 @@
 					</div>
 					<div class="copy-container">
 						<h2>Contact</h2>
-						<h3>Lets get in touch</h3>
+						<h3>Let's get in touch</h3>
 						
 						<!-- Import Contact Form -->
 						<?php echo $modules->get('SimpleContactForm')->render(); ?>
@@ -130,7 +130,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->site?>compiled-dev/css/home-gallery-grid.css" />
 
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/intro.min.js"></script>
-	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.min.js"></script>
 	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/reg-form.min.js"></script>
-	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
+	<script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.min.js"></script>
 </html>

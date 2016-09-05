@@ -114,10 +114,10 @@
       $(obj).fadeIn(1000);
     }
   </script>
-  <script src="<?php echo $config->urls->site?>compiled-dev/js/events.js"></script>
+  <script src="<?php echo $config->urls->site?>compiled-dev/js/events.min.js"></script>
   <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/lib/classie.js"></script>
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.js"></script>
-  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/nav.min.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->site?>compiled-dev/js/contact.min.js"></script>
 
   <script>
     (function() {

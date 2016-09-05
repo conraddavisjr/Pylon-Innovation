@@ -18,7 +18,13 @@ module.exports = function(grunt) {
         files: {   // 'destination': 'source'
           'compiled-dev/js/intro.min.js': ['templates/js/intro.js'],
           'compiled-dev/js/filter-nav.min.js': ['templates/js/filter-nav.js'],
-          'compiled-dev/js/reg-form.min.js': ['templates/js/reg-form.js']
+          'compiled-dev/js/reg-form.min.js': ['templates/js/reg-form.js'],
+          'compiled-dev/js/nav.min.js': ['templates/js/nav.js'],
+          'compiled-dev/js/news.min.js': ['templates/js/news.js'],
+          'compiled-dev/js/events.min.js': ['templates/js/events.js'],
+          'compiled-dev/js/teaser-zoom.min.js': ['templates/js/teaser-zoom.js'],
+          'compiled-dev/js/contact.min.js': ['templates/js/contact.js'],
+          'compiled-dev/js/social-sharing.min.js': ['templates/js/social-sharing.js']
           // 'compiled-dev/js/item-zoom.min.js': ['templates/js/item-zoom.js']
         }
       }
